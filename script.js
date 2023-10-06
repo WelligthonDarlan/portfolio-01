@@ -25,6 +25,38 @@ function remove(){
     document.querySelector('#menu-btn').classList.remove('fa-times')
     document.querySelector('.navbar').classList.remove('active')
 }
+// ------------------EFEITO write------------------
+
+function typeWriter(element) {
+    const textArray = element.innerHTML.split('');
+    element.innerHTML = '';
+    textArray.forEach((letra, i) => {
+        setTimeout(() => element.innerHTML += letra, 30 * i);
+    });
+}
+
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+const aboutP = document.getElementById("description");
+
+function startTypeWriterWhenVisible() {
+    if (isElementInViewport(aboutP)) {
+        typeWriter(aboutP);
+        window.removeEventListener('scroll', startTypeWriterWhenVisible);
+    }
+}
+
+// Adiciona um event listener para verificar quando o usuário rola a página
+window.addEventListener('scroll', startTypeWriterWhenVisible);
+
 
 // ------------------EFEITO FADE------------------
 
@@ -76,13 +108,16 @@ if (fadeInScroll.length) {
     fade.init();
 
     window.addEventListener("scroll", () => {
+        
         let timer;
         if (timer) clearTimeout(timer);
         timer = setTimeout(() => {
             fade.checkFades();
             timer = null;
+            
         }, 200);
     });
+
 }
 
 // ------------------VER MAIS------------------
@@ -109,6 +144,21 @@ const containerYodaSMS = document.getElementById("containerYodaSMS")
 closeYodaSMS.addEventListener("click", function(){
     containerYodaSMS.style.display = "none"
 })
+
+// efeito maquina de escrever no sobre
+
+
+// function typeWriter (element) {
+//     const textArray = element.innerHTML.split('')
+//     element.innerHTML = ''
+//     textArray.forEach((letra, i) => {
+//     setTimeout(() => element.innerHTML += letra, 30 * i)
+//     })
+// }
+
+
+// const aboutP = document.getElementById("description")
+// typeWriter(aboutP)
 
 
 
