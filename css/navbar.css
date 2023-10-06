@@ -11,12 +11,16 @@
 background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);}
 
 .navbarDesktop img{
-    width: 250px;
+    width: 220px;
 }
-.navbarDesktop div a{
-   font-size: 25px;
-   padding: 0px 60px 0px 0px;
+.btnNavbar{
+   font-size: 22px;
+   margin: 0px 20px 0px 20px;
+   padding: 5px 20px;
    color: #fff;
+}
+.btnNavbar:hover{
+   color: #7b71ff;
 }
 
 /* ---------------------NAVBAR MOBILE--------------------- */

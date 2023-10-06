@@ -52,6 +52,40 @@ body {
     /* position: relative; */
     animation: myMovieYoda 2s infinite ease-out;
 }
+#containerYodaSMS{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    width: 255px;
+    height: 50px;
+    position: fixed;
+    bottom: 113px; 
+    left: 60px;
+    z-index: 2000;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: myMovieYodaSMS 2s infinite ease-out;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 25% 100%, 25% 75%, 0% 75%);
+    text-align: center;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#yodaSMS{
+    font-size: 15px;
+    padding: 9px 2px 20px 9px;
+    color: #000;
+}
+#closeYodaSMS{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 800;
+    color: #000;
+    padding: 3px 6px 10px 0px;
+}
 @keyframes myMovieYoda {
     0%   {bottom: 10px;
         filter: drop-shadow(-1px 1px 30px #2bfd945b);
@@ -60,6 +94,17 @@ body {
         filter: drop-shadow(-1px 1px 10px #2bfd945b);
     }
     100%   {bottom: 10px;
+        filter: drop-shadow(-1px 1px 30px #2bfd945b);
+    }
+  }
+@keyframes myMovieYodaSMS {
+    0%   {bottom: 100px;
+        filter: drop-shadow(-1px 1px 30px #2bfd945b);
+    }
+    50%  {bottom: 100px;
+        filter: drop-shadow(-1px 1px 10px #2bfd945b);
+    }
+    100%   {bottom: 100px;
         filter: drop-shadow(-1px 1px 30px #2bfd945b);
     }
   }
@@ -140,6 +185,33 @@ body {
 #download:hover{
     background: linear-gradient(to bottom,#2BFDBE,#167457 );
 }
+/* #download{
+   font-size: 22px;
+   margin: 0px 30px 0px 30px;
+   padding: 5px 20px;
+   border-radius: 5px;
+   color: #fff;
+   display: inline-block;
+   position: relative;
+}
+#download::before{
+   content: '';
+   background: linear-gradient(to bottom,#2bddfd,#106f80 ) ;
+   border-radius: 5px;
+   box-shadow: -3px 3px 4px 4px rgb(0, 0, 0);
+   display: block;
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+   transition:  transform 100ms ease;
+   transform-origin: left;
+   transform: scaleX(0);
+}
+#download:hover::before{
+   transform-origin: left;
+   transform: scaleX(1);
+   color: #000;
+} */
 #download img{
     width: 22px;
 }

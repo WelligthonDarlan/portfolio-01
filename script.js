@@ -101,6 +101,20 @@ function verMais() {
     
     }
 }
+// --------------------CLOSE YODA SMS------------------
+
+const closeYodaSMS = document.getElementById("closeYodaSMS")
+const containerYodaSMS = document.getElementById("containerYodaSMS")
+
+closeYodaSMS.addEventListener("click", function(){
+    containerYodaSMS.style.display = "none"
+})
+
+
+
+
+
+
 // const project = document.getElementById("projects")
 // const project = document.getElementById("projects")
 // const btnVerMais = document.getElementById("btnVerMais")
