@@ -4,11 +4,10 @@
     justify-content: space-between;
     text-align: center;
     position: fixed;
-    z-index: 1000;
+    z-index: 4000;
     width: 100%;
     padding: 0px 500px 0px 40px;
-    /* background-color: #000000df; */
-background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);}
+    background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);}
 
 .navbarDesktop img{
     width: 220px;

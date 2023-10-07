@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="./images/icons.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="./css/background.css">
     <link rel="stylesheet" href="./css/about.css">
@@ -23,9 +24,21 @@
     <title>Welligthon Paluchowski</title>
 </head>
 <body>
+    <div id="animationB" >
+
+        <canvas id="canvas" width="100%" height="500px"></canvas>
+
+        <h1 id="h1Animation">Oi, sou <span>Welligthon Paluchowski</span><br> Desenvolvedor Full Stack</h1>
+    
+        <a href="#header"><button id="ViewMyWork" >VEJA O MEU TRABALHO</button></a>
+    
+    
+    </div>
+    
     <!-- ------------------NAVBAR--\/------------------ -->
     <header>
         
+
         <div id="containerYodaSMS">
 
             <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank">
@@ -58,7 +71,11 @@
 
             <div class="headerText">
 
-                <h1>Oi, sou <span>Welligthon</span><br> Paluchowski Desenvolvedor Full Stack</h1>
+                <h1 class="sub-title">Sobre mim</h1>
+                
+                    <p id="description">
+                        Descobri minha verdadeira vocação na programação a um ano, comecei com um curso de desenvolvedor Full Stack. Hoje estou totalmente dedicado a me tornar um excelente programador, para isso, busco estudar novas tecnologias e reforçar meus conhecimentos através de cursos e muita prática.
+                    </p>
 
                 <div class="iconSocialMediaHeader">
 
@@ -75,6 +92,7 @@
         </div>
         
     </header>
+    
     <!-- ------------------NAVBAR--/\------------------ -->
     <!-- ------------------ABOUT---\/------------------ -->
     <main>
@@ -86,10 +104,7 @@
                         <img src="./images/user.png" >
                     </div>
                     <div class="about-col-2">
-                        <h1 class="sub-title">Sobre mim</h1>
-                        <p id="description">
-                         Descobri minha verdadeira vocação na programação a um ano, comecei com um curso de desenvolvedor Full Stack. Hoje estou totalmente dedicado a me tornar um excelente programador, para isso, busco estudar novas tecnologias e reforçar meus conhecimentos através de cursos e muita prática.
-                        </p>
+                        
                         <div class="tab-container">
                             <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="openTab('skills')">Habilidades</p>
@@ -213,6 +228,8 @@
                 </div>
             </div>
             <!-- ------------------CONTACT--/\------------------ -->
+            
+            
     </main>
 </body>
 </html>

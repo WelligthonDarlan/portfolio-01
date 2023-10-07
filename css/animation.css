@@ -1,0 +1,53 @@
+#animationB{
+    overflow: hidden;
+    height: 100vh;
+}
+#canvas {
+	position: relative;
+	left: 0;
+	top: 0;
+	background-image: radial-gradient(rgb(37, 41, 52) 0%, #252934 40%, #252934 100%);
+    z-index: 5000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#h1Animation{
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    padding: 3rem;
+    gap: 4rem;
+    font-size: 60px;
+    z-index: 30000;
+}
+#h1Animation span{
+    color: #2bdefd; 
+    
+}
+#ViewMyWork{
+    font-family: 'Chakra Petch', sans-serif;
+    border: 2px solid white;
+    top: 45%;
+    left:35%;
+    color: #fff;
+    background-color: #252934;
+    padding: 10px 20px;
+    width: 500px;
+    height: auto;
+    font-size: 30px;
+    z-index: 30000;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+#ViewMyWork:hover{
+    color: #fff;
+    background-color: #2bdefd;
+    border: 2px solid #2bdefd ;
+
+   
+}
