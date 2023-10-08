@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
@@ -13,70 +12,72 @@
     <link rel="shortcut icon" href="./images/icons.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/background.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/contact.css">
 
     <script src="script.js" defer></script>
+    <script src="introduction.js" defer></script>
 
     <title>Welligthon Paluchowski</title>
 </head>
 <body>
+    <!-- APRESENTAÇÃO INICIAL ⏬ -->
     <div id="animationB" >
-
         <canvas id="canvas" width="100%" height="500px"></canvas>
-
         <h1 id="h1Animation">Oi, sou <span>Welligthon Paluchowski</span><br> Desenvolvedor Full Stack</h1>
-    
-        <a href="#header"><button id="ViewMyWork" >VEJA O MEU TRABALHO</button></a>
-    
-    
+        <a href="#aboutMe"><button id="ViewMyWork" >VEJA O MEU TRABALHO</button></a>
     </div>
-    
-    <!-- ------------------NAVBAR--\/------------------ -->
+    <!-- APRESENTAÇÃO INICIAL ⏫ -->
+       <!-- NAVBAR DESKTOP ⏬ -->
+       <nav id="navbarDesktop">
+        <img src="./images/logo.png" >
+        <div>
+            <a href="#aboutMe" class="btnNavbar">Início</a>
+            <a href="#sobre" class="btnNavbar">Sobre</a>
+            <a href="#projects" class="btnNavbar">Projetos</a>
+            <a href="#contact" class="btnNavbar">Contato</a>
+        </div>
+    </nav>
+    <!-- NAVBAR DESKTOP ⏫ -->
     <header>
-        
-
+        <!-- ICONE YODA WHATSAPP ⏬ -->
         <div id="containerYodaSMS">
-
             <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank">
                 <p id="yodaSMS">Mandar mensagem você deve!</p>
             </a>
-            
             <p id="closeYodaSMS">x</p>
         </div>
-        
         <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank"><img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp"></a>
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <nav class="navbarDesktop">
-        <img src="./images/logo.png" >
-        <div>
-            <a href="#header"  class="btnNavbar">Início</a>
-            <a href="#sobre"  class="btnNavbar">Sobre</a>
-            <a href="#projects"  class="btnNavbar">Projetos</a>
-            <a href="#contact"  class="btnNavbar">Contato</a>
-        </div>
-    </nav>
-    <nav class="navbar" id="nav-bar">
-        <a href="#header" data-text="início" onclick="remove()">início</a>
-        <a href="#sobre" data-text="sobre" onclick="remove()">sobre</a>
-        <a href="#projects" data-text="projetos" onclick="remove()">projetos</a>
-        <a href="#contact" data-text="contato" onclick="remove()">contato</a>
-    </nav>
-        <div id="header">
+        <!-- ICONE YODA WHATSAPP ⏫ -->
+
+        <!-- ------------------NAVBAR--⏬------------------ -->
+
+     
             
+        <!-- NAVBAR MOBILE ⏬ -->
+        <!-- <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar" id="nav-bar">
+            <a href="#aboutMe" data-text="início" onclick="remove()">início</a>
+            <a href="#sobre" data-text="sobre" onclick="remove()">sobre</a>
+            <a href="#projects" data-text="projetos" onclick="remove()">projetos</a>
+            <a href="#contact" data-text="contato" onclick="remove()">contato</a>
+        </nav> -->
+        <!-- NAVBAR MOBILE ⏫ -->
+
+        <!-- ------------------NAVBAR--⏫------------------ -->
+        <!-- ------------------ABOUT--⏬------------------ -->
+
+        <div id="aboutMe">
+        
             <img src="./images/logo.png" class="logo">
-
             <div class="headerText">
-
                 <h1 class="sub-title">Sobre mim</h1>
-                
                     <p id="description">
                         Descobri minha verdadeira vocação na programação a um ano, comecei com um curso de desenvolvedor Full Stack. Hoje estou totalmente dedicado a me tornar um excelente programador, para isso, busco estudar novas tecnologias e reforçar meus conhecimentos através de cursos e muita prática.
                     </p>
-
                 <div class="iconSocialMediaHeader">
 
                     <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
@@ -86,14 +87,11 @@
                     <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
 
                 </div>
-
-                
             </div>
         </div>
-        
     </header>
-    
-    <!-- ------------------NAVBAR--/\------------------ -->
+    <!-- ------------------ABOUT--⏫------------------ -->
+
     <!-- ------------------ABOUT---\/------------------ -->
     <main>
         <div id="about" class="fadeInScroll">
@@ -223,13 +221,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- ------------------CONTACT--/\------------------ -->
                 <div class="copyright">
                     <p>Copyright © Welligthon Darlan.</p>
                 </div>
             </div>
-            <!-- ------------------CONTACT--/\------------------ -->
-            
-            
     </main>
 </body>
 </html>

@@ -1,15 +1,18 @@
-.navbarDesktop{
+#navbarDesktop{
+    border: 5px solid red !important;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    position: fixed;
-    z-index: 4000;
+    position: absolute;
+    z-index: 90000 !important;
     width: 100%;
     padding: 0px 500px 0px 40px;
-    background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);}
+    background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);
+}
 
-.navbarDesktop img{
+#navbarDesktop img{
     width: 220px;
 }
 .btnNavbar{
@@ -24,7 +27,7 @@
 
 /* ---------------------NAVBAR MOBILE--------------------- */
 
-#menu-btn{
+/* #menu-btn{
     display: none;
     position: fixed;
     top: 20px; right: 30px;
@@ -131,4 +134,4 @@
     .navbar a:hover::before{
         font-size: 60px;
     }
-  }
+  } */

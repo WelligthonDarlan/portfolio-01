@@ -1,19 +1,13 @@
-#animationB{
-    overflow: hidden;
-    height: 100vh;
-}
 #canvas {
 	position: relative;
 	left: 0;
 	top: 0;
 	background-image: radial-gradient(rgb(37, 41, 52) 0%, #252934 40%, #252934 100%);
     z-index: 5000;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 #h1Animation{
     top: 20%;
