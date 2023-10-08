@@ -1,12 +1,11 @@
-let tabLinks = document.getElementsByClassName('tab-links')
-
-let tabContents = document.getElementsByClassName('tab-contents')
+let links = document.getElementsByClassName('links')
+let contentLinks = document.getElementsByClassName('contentLinks')
 
 function openTab(tabname){
-    for(tabLink of tabLinks){
+    for(tabLink of links){
         tabLink.classList.remove('active-link')
     }
-    for(tabContent of tabContents){
+    for(tabContent of contentLinks){
         tabContent.classList.remove('active-tab')
     }
     event.currentTarget.classList.add('active-link')

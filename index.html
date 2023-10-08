@@ -40,7 +40,7 @@
             <img src="./images/logo.png" >
             <div>
                 <a href="#aboutMe" class="btnNavbar">Sobre mim</a>
-                <a href="#sobre" class="btnNavbar">Meu trabalho</a>
+                <a href="#myWork" class="btnNavbar">Meu trabalho</a>
                 <a href="#projects" class="btnNavbar">Projetos</a>
                 <a href="#contact" class="btnNavbar">Contato</a>
             </div>
@@ -100,38 +100,59 @@
     <!-- ------------------MEU TRABALHO--⏬------------------ -->
     <main>
         <div id="myWork" class="fadeInScroll">
-            <a id="upArrow" href="#aboutMe"><img src="./images/up-arrow.png" alt="up-arrow.png"></a>
-            <h1 class="myWorkTitle">Meu trabalho</h1>
+            <a href="#aboutMe"><img id="upArrow"  src="./images/up-arrow.png" alt="up-arrow.png"></a>
+            <h1 id="myWorkTitle">Meu trabalho</h1>
+
+            <div class="containerPrinciples">
+                <div class="principles">
+                    <img src="./images/intuitive.png" alt="intuitive.png">
+                    <h1>Intuitivo</h1>
+                    <p>Busco desenvolver sites intuitivos e fácil de usar.</p>
+                </div>
+                <div class="principles">
+                    <img src="./images/dynamic.png" alt="dynamic.png">
+                    <h1>Dinâmico</h1>
+                    <p>Os sites não precisam ser estáticos, adoro dar vida às páginas.</p>
+                </div>
+                <div class="principles">
+                    <img src="./images/responsive.png" alt="responsive.png">
+                    <h1>Responsivo</h1>
+                    <p>Meus layouts funcionarão em qualquer dispositivo, grande ou pequeno.</p>
+                </div>
+            </div>
+
             <div class="containerMyWork">
 
-                    <div class="myWorkLeft">
-                        <img src="./images/user.png" >
-                    </div>
+                <div class="myWorkLeft">
+                    <img src="./images/user.png" >
+                </div>
 
-                    <div class="myWorkRight">
-                    <div class="tab-container">
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('skills')">Habilidades</p>
-                            <p class="tab-links" onclick="openTab('experience')">Experiência</p>
-                            <p class="tab-links" onclick="openTab('education')">Educação</p>
+                <div class="myWorkRight">
+                    <div class="containerRight">
+                        <div class="containerLinks">
+                            <p class="links active-link" onclick="openTab('skills')">Habilidades</p>
+                            <p class="links" onclick="openTab('experience')">Experiência</p>
+                            <p class="links" onclick="openTab('education')">Educação</p>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
+                        <div class="contentLinks active-tab" id="skills">
                             <ul>
-                                <li><span>HTML / CSS / Javascript</span><br>&nbsp;Tenho muita pratica no desenvolvimento de páginas Web</li>
-                                <li><span>React</span><br>&nbsp;Tenho conhecimento basico de React </li>
-                                <li><span>Animação 2D e 3D</span><br>&nbsp;Desenvolvi habilidades com diversos software de animação</li>
+                                <li><span>HTML / CSS / Javascript</span><br>&nbsp;Tenho muita pratica no desenvolvimento de páginas Web com Javascript.</li>
+                                <li><span>Bootstrap / Sass</span><br>&nbsp;Tenho alguns projetos feitos com Bootstrap e Sass.</li>
+                                <li><span>React</span><br>&nbsp;Utilizo Javascript puro nos meus projetos para fortalecer a minha base na linguagem, mas tenho conhecimento em algumas bibliotecas e frameworks.</li>
+                                <li><span>Animação 2D e 3D</span><br>&nbsp;Desenvolvi habilidades com diversos software de animação.</li>
+                                <li><span>Edição de audio, video e imagem</span><br>&nbsp;Tenho experiência de edição de imagem, video e audio, com Lightroom, Photoshop, Vegas Pro, Adobe Animate cc...</li>
                             </ul>
                         </div>
-                        <div class="tab-contents" id="experience">
+                        <div class="contentLinks" id="experience">
                             <ul>
-                                <li><span>2018 - 2019</span><br>&nbsp;Criei um projeto de animação no youtube, onde desenvolvi muitas habilidades com edição de video, animação 2D, tratamento de audio e marketing (Esse projeto foi muito elogiado pela comunidade, mas não tive muito retorno monetário na época)</li>
+                                <li><span>2018 - 2019</span><br>&nbsp;Criei um projeto de animação no youtube, onde desenvolvi muitas habilidades com edição de video, animação 2D, tratamento de audio e marketing (Esse projeto foi muito elogiado pela comunidade, mas não tive muito retorno monetário na época, o canal chegou a ter 4000 inscritos em 6 meses)</li>
                                 <li><span>2020 - 2023</span><br>&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde aprendi muito como funciona a parte sistematica de um estoque fisico.</li>
                                 <li><span>2022 - 2023</span><br>&nbsp;Atualmente venho desenvolvendo inúmeros projetos para amplificar minhas habilidades em Javascript</li>
                             </ul>
                         </div>
-                        <div class="tab-contents" id="education">
+                        <div class="contentLinks" id="education">
                             <ul>
-                                <li><span>2022 - 2023</span><br>Estou no segundo ano do curso: <br>Análise e Desenvolvimento de Sistemas - Estácio</li>
+                                <li><span>2022 - 2023</span><br>&nbsp;&nbsp;&nbsp;&nbsp;Estou no segundo ano do curso: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Análise e Desenvolvimento de Sistemas - Estácio</li>
                             </ul>
                         </div>
                     </div>
