@@ -15,17 +15,7 @@ function openTab(tabname){
 
 // ------------------ABOUT------------------
 
-document.querySelector('#menu-btn').onclick = () => {
-    document.querySelector('#menu-btn').classList.toggle('fa-times')
-    document.querySelector('.navbar').classList.toggle('active')
-}
-
-
-function remove(){
-    document.querySelector('#menu-btn').classList.remove('fa-times')
-    document.querySelector('.navbar').classList.remove('active')
-}
-// ------------------EFEITO WRITE------------------
+// Efeito writer ⏬
 
 function typeWriter(element) {
     const textArray = element.innerHTML.split('');
@@ -55,9 +45,40 @@ function startTypeWriterWhenVisible() {
         window.removeEventListener('scroll', startTypeWriterWhenVisible);
     }
 }
-
 // Adiciona um event listener para verificar quando o usuário rola a página
 window.addEventListener('scroll', startTypeWriterWhenVisible);
+
+
+// Abrir nav bar ao aparacer na tela ⏬
+
+const introduction = document.getElementById("introduction")
+const navbar = document.getElementById("navbarDesktop")
+
+function fixedRed() {
+    navbarDesktop.classList.remove("relative-navbar");
+    navbarDesktop.classList.add("fixed-navbar");
+}
+
+function relativeBlue() {
+    navbarDesktop.classList.remove("fixed-navbar");
+    navbarDesktop.classList.add("relative-navbar");
+}
+
+function isElementAtTop(element) {
+    var rect = element.getBoundingClientRect();
+    console.log(rect)
+    return rect.bottom < 40;
+}
+
+function checkNavbar() {
+    if (isElementAtTop(introduction)) {
+        fixedRed();
+    } else {
+        relativeBlue();
+    }
+}
+
+window.addEventListener('scroll', checkNavbar);
 
 
 // ------------------EFEITO FADE------------------
@@ -122,22 +143,6 @@ if (fadeInScroll.length) {
 
 }
 
-// ------------------VER MAIS------------------
-
-const projectsList = document.getElementById("projectList")
-const btnVerMais = document.getElementById("btnVerMais")
-
-function verMais() {
-    if (projectsList.style.height === "50vh"){
-
-        projectsList.style.height = "100%"
-        btnVerMais.innerText = "VER MENOS"
-    }else {
-        projectsList.style.height = "50vh"
-        btnVerMais.innerText = "VER MAIS..."
-    
-    }
-}
 // --------------------CLOSE YODA SMS------------------
 
 const closeYodaSMS = document.getElementById("closeYodaSMS")

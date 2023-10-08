@@ -10,22 +10,22 @@
 }
 
 /* ------------------BACKGROUND--\/------------------ */
+
 html, body {
     overflow-x: hidden;
 }
-
 
 body{
     background: #232323;
     color: #d7f9ff;
 }
+
 /* body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 } */
 
- 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -38,125 +38,20 @@ body{
         opacity: 1;
      }
 }
-.iconWpp{
-    width: 110px;
-    position: fixed;
-    bottom: 30px; 
-    left: 30px;
-    /* border-radius: 50%; */
-    font-size: 40px;
-    cursor: pointer;
-    z-index: 1000;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    /* position: relative; */
-    animation: myMovieYoda 2s infinite ease-out;
-}
-#containerYodaSMS{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    width: 270px;
-    height: 50px;
-    position: fixed;
-    bottom: 113px; 
-    left: 60px;
-    z-index: 2000;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation: myMovieYodaSMS 2s infinite ease-out;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 25% 100%, 25% 75%, 0% 75%);
-    text-align: center;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-#yodaSMS{
-    font-size: 15px;
-    padding: 9px 2px 20px 15px;
-    color: #000;
-}
-#closeYodaSMS{
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 800;
-    color: #000;
-    padding: 3px 9px 10px 0px;
-}
-@keyframes myMovieYoda {
-    0%   {bottom: 10px;
-        filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
-    50%  {bottom: 0px;
-        filter: drop-shadow(-1px 1px 10px #2bfd945b);
-    }
-    100%   {bottom: 10px;
-        filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
-  }
-@keyframes myMovieYodaSMS {
-    0%   {bottom: 100px;
-        filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
-    50%  {bottom: 100px;
-        filter: drop-shadow(-1px 1px 10px #2bfd945b);
-    }
-    100%   {bottom: 100px;
-        filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
-  }
-#aboutMe{
-    width: 100%;
-    height: 105vh;
-    /* background-image: url(../images/background01.png); */
-    background-image: url(../images/background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    clip-path: polygon(100% 0, 100% 95%, 49% 95%, 46% 100%, 0 100%, 0% 0%);
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    box-shadow: 20px 20px 20px 20px black;
-}
 
-.logo{
-    display: none;
-    padding-left: 2rem;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+
 
 .container{
     height: 100%;
 }
 
-.headerText{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 3rem;
-    gap: 4rem;
-    font-size: 30px;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+
 .headerText span{
     color: #2bdefd; 
     animation: animate 2s linear forwards;
 
 }
-.iconSocialMediaHeader a img{
-    width: 40px;
-    margin: 10px;
-}
+
 @keyframes animate {
     0%{
         transform: translateY(0) scale(1);

@@ -13,8 +13,10 @@
 
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/whatsIcon.css">
     <link rel="stylesheet" href="./css/background.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/aboutMe.css">
+    <link rel="stylesheet" href="./css/MyWork.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/contact.css">
 
@@ -24,25 +26,27 @@
     <title>Welligthon Paluchowski</title>
 </head>
 <body>
-    <!-- APRESENTAÇÃO INICIAL ⏬ -->
-    <div id="animationB" >
-        <canvas id="canvas" width="100%" height="500px"></canvas>
-        <h1 id="h1Animation">Oi, sou <span>Welligthon Paluchowski</span><br> Desenvolvedor Full Stack</h1>
-        <a href="#aboutMe"><button id="ViewMyWork" >VEJA O MEU TRABALHO</button></a>
-    </div>
-    <!-- APRESENTAÇÃO INICIAL ⏫ -->
-       <!-- NAVBAR DESKTOP ⏬ -->
-       <nav id="navbarDesktop">
-        <img src="./images/logo.png" >
-        <div>
-            <a href="#aboutMe" class="btnNavbar">Início</a>
-            <a href="#sobre" class="btnNavbar">Sobre</a>
-            <a href="#projects" class="btnNavbar">Projetos</a>
-            <a href="#contact" class="btnNavbar">Contato</a>
-        </div>
-    </nav>
-    <!-- NAVBAR DESKTOP ⏫ -->
     <header>
+        <!-- APRESENTAÇÃO INICIAL ⏬ -->
+        <div id="introduction" >
+            <canvas id="canvas" width="100%" height="500px"></canvas>
+            <h1 id="h1Animation">Oi, sou <span>Welligthon Paluchowski</span><br> Desenvolvedor Full Stack</h1>
+            <a href="#navbarDesktop"><button id="ViewMyWork" >VEJA O MEU TRABALHO</button></a>
+        </div>
+        <!-- APRESENTAÇÃO INICIAL ⏫ -->
+
+        <!-- NAVBAR DESKTOP ⏬ -->
+        <nav id="navbarDesktop" class="navbar">
+            <img src="./images/logo.png" >
+            <div>
+                <a href="#aboutMe" class="btnNavbar">Sobre mim</a>
+                <a href="#sobre" class="btnNavbar">Meu trabalho</a>
+                <a href="#projects" class="btnNavbar">Projetos</a>
+                <a href="#contact" class="btnNavbar">Contato</a>
+            </div>
+        </nav>
+        <!-- NAVBAR DESKTOP ⏫ -->
+    
         <!-- ICONE YODA WHATSAPP ⏬ -->
         <div id="containerYodaSMS">
             <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank">
@@ -50,13 +54,13 @@
             </a>
             <p id="closeYodaSMS">x</p>
         </div>
-        <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank"><img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp"></a>
+        <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank">
+            <img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp">
+        </a>
         <!-- ICONE YODA WHATSAPP ⏫ -->
 
         <!-- ------------------NAVBAR--⏬------------------ -->
 
-     
-            
         <!-- NAVBAR MOBILE ⏬ -->
         <!-- <div id="menu-btn" class="fas fa-bars"></div>
         <nav class="navbar" id="nav-bar">
@@ -68,17 +72,18 @@
         <!-- NAVBAR MOBILE ⏫ -->
 
         <!-- ------------------NAVBAR--⏫------------------ -->
-        <!-- ------------------ABOUT--⏬------------------ -->
+
+        <!-- ------------------ABOUT ME--⏬------------------ -->
 
         <div id="aboutMe">
         
-            <img src="./images/logo.png" class="logo">
-            <div class="headerText">
-                <h1 class="sub-title">Sobre mim</h1>
+            <div class="aboutMeContainer">
+                <h1 class="aboutMeTitle">Sobre mim</h1>
                     <p id="description">
-                        Descobri minha verdadeira vocação na programação a um ano, comecei com um curso de desenvolvedor Full Stack. Hoje estou totalmente dedicado a me tornar um excelente programador, para isso, busco estudar novas tecnologias e reforçar meus conhecimentos através de cursos e muita prática.
+                        Desde a infancia estive conectado com a tecnologia,
+                        tenho grande paixão por efeitos de UI, animações e pela criação de experiências de usuário intuitivas e dinâmicas. 
                     </p>
-                <div class="iconSocialMediaHeader">
+                <div class="iconSocialMedia">
 
                     <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
 
@@ -90,50 +95,50 @@
             </div>
         </div>
     </header>
-    <!-- ------------------ABOUT--⏫------------------ -->
+    <!-- ------------------ABOUT ME--⏫------------------ -->
 
-    <!-- ------------------ABOUT---\/------------------ -->
+    <!-- ------------------MEU TRABALHO--⏬------------------ -->
     <main>
-        <div id="about" class="fadeInScroll">
-            <a href="#header"><img src="./images/up-arrow.png" alt="up-arrow.png" id="upArrow"></a>
-            <div class="containerAbout">
-                <div class="row" id="sobre">
-                    <div class="about-col-1" id="sobre">
+        <div id="myWork" class="fadeInScroll">
+            <a id="upArrow" href="#aboutMe"><img src="./images/up-arrow.png" alt="up-arrow.png"></a>
+            <h1 class="myWorkTitle">Meu trabalho</h1>
+            <div class="containerMyWork">
+
+                    <div class="myWorkLeft">
                         <img src="./images/user.png" >
                     </div>
-                    <div class="about-col-2">
-                        
-                        <div class="tab-container">
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="openTab('skills')">Habilidades</p>
-                                <p class="tab-links" onclick="openTab('experience')">Experiência</p>
-                                <p class="tab-links" onclick="openTab('education')">Educação</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>HTML / CSS / Javascript</span><br>&nbsp;Tenho muita pratica no desenvolvimento de páginas Web</li>
-                                    <li><span>React</span><br>&nbsp;Tenho conhecimento basico de React </li>
-                                    <li><span>Animação 2D e 3D</span><br>&nbsp;Desenvolvi habilidades com diversos software de animação</li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="experience">
-                                <ul>
-                                    <li><span>2018 - 2019</span><br>&nbsp;Criei um projeto de animação no youtube, onde desenvolvi muitas habilidades com edição de video, animação 2D, tratamento de audio e marketing (Esse projeto foi muito elogiado pela comunidade, mas não tive muito retorno monetário na época)</li>
-                                    <li><span>2020 - 2023</span><br>&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde aprendi muito como funciona a parte sistematica de um estoque fisico.</li>
-                                    <li><span>2022 - 2023</span><br>&nbsp;Atualmente venho desenvolvendo inúmeros projetos para amplificar minhas habilidades em Javascript</li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="education">
-                                <ul>
-                                    <li><span>2022 - 2023</span><br>Estou no segundo ano do curso: <br>Análise e Desenvolvimento de Sistemas - Estácio</li>
-                                </ul>
-                            </div>
+
+                    <div class="myWorkRight">
+                    <div class="tab-container">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Habilidades</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experiência</p>
+                            <p class="tab-links" onclick="openTab('education')">Educação</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML / CSS / Javascript</span><br>&nbsp;Tenho muita pratica no desenvolvimento de páginas Web</li>
+                                <li><span>React</span><br>&nbsp;Tenho conhecimento basico de React </li>
+                                <li><span>Animação 2D e 3D</span><br>&nbsp;Desenvolvi habilidades com diversos software de animação</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2018 - 2019</span><br>&nbsp;Criei um projeto de animação no youtube, onde desenvolvi muitas habilidades com edição de video, animação 2D, tratamento de audio e marketing (Esse projeto foi muito elogiado pela comunidade, mas não tive muito retorno monetário na época)</li>
+                                <li><span>2020 - 2023</span><br>&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde aprendi muito como funciona a parte sistematica de um estoque fisico.</li>
+                                <li><span>2022 - 2023</span><br>&nbsp;Atualmente venho desenvolvendo inúmeros projetos para amplificar minhas habilidades em Javascript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - 2023</span><br>Estou no segundo ano do curso: <br>Análise e Desenvolvimento de Sistemas - Estácio</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ------------------ABOUT-----/\------------------ -->
+        <!-- ------------------MEU TRABALHO--⏫------------------ -->
         <!-- ------------------PROJECTS--\/------------------ -->
             <div id="projects" class="fadeInScroll">
                 <h1 class="projectsTitle" id="projectsTitle">MEUS PROJETOS</h1>

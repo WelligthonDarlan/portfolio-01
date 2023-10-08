@@ -1,15 +1,14 @@
 #navbarDesktop{
-    border: 5px solid red !important;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    position: absolute;
     z-index: 90000 !important;
     width: 100%;
     padding: 0px 500px 0px 40px;
     background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);
+    top: 0;
 }
 
 #navbarDesktop img{
@@ -24,6 +23,15 @@
 .btnNavbar:hover{
    color: #7b71ff;
 }
+.fixed-navbar {
+    position: fixed !important;
+    z-index: 5000;
+}
+
+.relative-navbar {
+    position: relative !important;
+}
+
 
 /* ---------------------NAVBAR MOBILE--------------------- */
 
