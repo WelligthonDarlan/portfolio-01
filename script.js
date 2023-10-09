@@ -65,7 +65,6 @@ function relativeBlue() {
 
 function isElementAtTop(element) {
     var rect = element.getBoundingClientRect();
-    console.log(rect)
     return rect.bottom < 40;
 }
 

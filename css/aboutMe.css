@@ -25,6 +25,9 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.iconSocialMedia{
+    margin: 10px;
+}
 .aboutMeTitle{
     /* border: 3px solid rgb(238, 255, 0); */
     font-family: 'Chakra Petch', sans-serif;
