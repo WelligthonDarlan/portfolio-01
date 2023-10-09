@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +101,7 @@
 
     <!-- ------------------MEU TRABALHO--⏬------------------ -->
     <main>
-        <div id="myWork" class="fadeInScroll">
+        <div id="myWork">
             <a href="#aboutMe"><img id="upArrow"  src="./images/up-arrow.png" alt="up-arrow.png"></a>
             <h1 id="myWorkTitle">MEU TRABALHO</h1>
 
@@ -169,16 +171,22 @@
                     <button class="btnProjects">LOGICA JS</button>
                     <button class="btnProjects">JOGOS</button>
                 </div>
+<!-- 
+                animate__slow	2s
+                animate__slower	3s
+                animate__fast	800ms
+                animate__faster	500ms
+                 -->
                 <div id="containerProjects">
-                    <div class="card" id="card1"></div>
-                    <div class="card" id="card2"></div>
-                    <div class="card" id="card3"></div>
-                    <div class="card" id="card4"></div>
-                    <div class="card" id="card5"></div>
-                    <div class="card" id="card6"></div>
-                    <div class="card" id="card7"></div>
-                    <div class="card" id="card8"></div>
-                    <div class="card" id="card9"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-1s animate__fast	800ms" id="card1"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-2s animate__faster	500ms" id="card2"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-1s animate__fast	800ms" id="card3"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-2s animate__faster	500ms" id="card4"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-1s animate__slow	2s" id="card5"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-2s animate__fast	800ms" id="card6"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-1s animate__slow	2s" id="card7"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-2s animate__fast	800ms" id="card8"></div>
+                    <div class="animate__animated animate__backInUp animate__delay-1s animate__fast	800ms" id="card9"></div>
                 </div>
             </div>
             <!-- ------------------PROJETOS--⏫------------------ -->
@@ -187,7 +195,7 @@
                 <div class="containerContact">
                     <h1 class="titleContactLeft">ONDE ME ENCONTRAR</h1>
 
-                    <p id="workMe">Tem alguma dúvida ou quer trabalhar comigo?</p>
+                    <p id="workMe" >Tem alguma dúvida ou quer trabalhar comigo?</p>
 
                     <div class="containerIcons">
                         <div class="emailPhoneContainer">
