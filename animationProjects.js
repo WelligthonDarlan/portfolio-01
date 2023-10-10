@@ -20,14 +20,14 @@ function removeClass() {
     })
 }
 
-function isElementAtTop(element) {
+function isElementAtBottom(element) {
     var rect = element.getBoundingClientRect();
     console.log(rect)
-    return rect.bottom < 1240;
+    return rect.bottom < 2037;
 }
 
 function checkElement() {
-    if (isElementAtTop(projects)) {
+    if (isElementAtBottom(projects)) {
         addClass()
     } else {
         removeClass();
