@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
@@ -22,6 +20,7 @@
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/contact.css">
 
+    <script src="animationProjects.js" defer></script>
     <script src="script.js" defer></script>
     <script src="introduction.js" defer></script>
 
@@ -163,65 +162,62 @@
         </div>
         <!-- ------------------MEU TRABALHO--⏫------------------ -->
         <!-- ------------------PROJETOS--⏬------------------ -->
-            <div id="projects" class="fadeInScroll">
-                <h1 class="projectsTitle" id="projectsTitle">MEUS PROJETOS</h1>
-                <div id="containerBtnProjects">
-                    <button class="btnProjects">TODOS</button>
-                    <button class="btnProjects">E-COMMERCE</button>
-                    <button class="btnProjects">LOGICA JS</button>
-                    <button class="btnProjects">JOGOS</button>
-                </div>
-<!-- 
-                animate__slow	2s
-                animate__slower	3s
-                animate__fast	800ms
-                animate__faster	500ms
-                 -->
-                <div id="containerProjects">
-                    <div class="animate__animated animate__backInUp animate__delay-1s animate__fast	800ms" id="card1"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-2s animate__faster	500ms" id="card2"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-1s animate__fast	800ms" id="card3"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-2s animate__faster	500ms" id="card4"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-1s animate__slow	2s" id="card5"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-2s animate__fast	800ms" id="card6"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-1s animate__slow	2s" id="card7"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-2s animate__fast	800ms" id="card8"></div>
-                    <div class="animate__animated animate__backInUp animate__delay-1s animate__fast	800ms" id="card9"></div>
-                </div>
+        <div id="projects">
+            <h1 class="projectsTitle" id="projectsTitle">MEUS PROJETOS</h1>
+            <div id="containerBtnProjects">
+                <button class="btnProjects">TODOS</button>
+                <button class="btnProjects">E-COMMERCE</button>
+                <button class="btnProjects">LOGICA JS</button>
+                <button class="btnProjects">JOGOS</button>
             </div>
-            <!-- ------------------PROJETOS--⏫------------------ -->
-            <!-- ------------------CONTACT--\/------------------ -->
-            <div id="contact" class="fadeInScroll">
-                <div class="containerContact">
-                    <h1 class="titleContactLeft">ONDE ME ENCONTRAR</h1>
 
-                    <p id="workMe" >Tem alguma dúvida ou quer trabalhar comigo?</p>
+            <div id="containerProjects">
+                <div class="card" id="card1">
+                    <button id="btnCard1" class="btnCard">VER MAIS</button>
+                </div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
+                <div class="card" id="card4"></div>
+                <div class="card" id="card5"></div>
+                <div class="card" id="card6"></div>
+                <div class="card" id="card7"></div>
+                <div class="card" id="card8"></div>
+                <div class="card" id="card9"></div>
+            </div>
+        </div>
+        <!-- ------------------PROJETOS--⏫------------------ -->
+        <!-- ------------------CONTACT--\/------------------ -->
+        <div id="contact" class="fadeInScroll">
+            <div class="containerContact">
+                <h1 class="titleContactLeft">ONDE ME ENCONTRAR</h1>
 
-                    <div class="containerIcons">
-                        <div class="emailPhoneContainer">
-                            <p>
-                                <img src="./images/paper-plane-solid.png" alt="sendEmail" class="inconContact">welldarlan.pw@gmail.com
-                            </p>
-                            <p>
-                                <img src="./images/square-phone-solid.png" alt="phone" class="inconContact">+55 48 9 8824-0117
-                            </p>
-                        </div>
-                        <div class="iconSocialMediaContainer">
-                            <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
-                            <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
-                            <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
-                        </div>
+                <p id="workMe" >Tem alguma dúvida ou quer trabalhar comigo?</p>
+
+                <div class="containerIcons">
+                    <div class="emailPhoneContainer">
+                        <p>
+                            <img src="./images/paper-plane-solid.png" alt="sendEmail" class="inconContact">welldarlan.pw@gmail.com
+                        </p>
+                        <p>
+                            <img src="./images/square-phone-solid.png" alt="phone" class="inconContact">+55 48 9 8824-0117
+                        </p>
                     </div>
-
-                    <a href="./images/curriculo.pdf" download id="download">CURRÍCULO <img src="./images/file-arrow-down-solid.svg" alt="imgDownload">
-                    </a>
-
+                    <div class="iconSocialMediaContainer">
+                        <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
+                        <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
+                        <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
+                    </div>
                 </div>
-                <!-- ------------------CONTACT--/\------------------ -->
+
+                <a href="./images/curriculo.pdf" download id="download">CURRÍCULO <img src="./images/file-arrow-down-solid.svg" alt="imgDownload">
+                </a>
+
             </div>
-            <div class="copyright">
-                <p>Copyright © Welligthon Darlan.</p>
-            </div>
+            <!-- ------------------CONTACT--/\------------------ -->
+        </div>
+        <div class="copyright">
+            <p>Copyright © Welligthon Darlan.</p>
+        </div>
     </main>
 </body>
 </html>
