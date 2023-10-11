@@ -1,19 +1,19 @@
 const projects = document.getElementById("projects")
-const card = document.querySelectorAll(".card")
+const cards = document.querySelectorAll(".card")
 
 const animationDurations = ["0.5s", "0.9s", "1.3s", "0.9s", "1.3s", "1.7s", "1.3s", "1.7s", "2.1s"];
 
 function addClass() {
-    card.forEach((card, index) => {
-        card.style.animation = `fade ${animationDurations[index]} ease`;
-        card.style.opacity = "1"
+    cards.forEach((cards, index) => {
+        cards.style.animation = `fade ${animationDurations[index]} ease`;
+        cards.style.opacity = "1"
     })
 }
 
 function removeClass() {
-    card.forEach(card => {
-        card.style.animation = "";
-        card.style.opacity = "0"
+    cards.forEach(cards => {
+        cards.style.animation = "";
+        cards.style.opacity = "0"
     })
 }
 
@@ -35,40 +35,58 @@ window.addEventListener('scroll', checkElement);
 
 // BTN CARD
 
-//Ao selecionar uma classe com querySelector, a constante retorna uma NodeList, por isso tenho que usar o forEach para tratar cada elemento
-const cardClass = document.querySelector('.card')
-const cardContent = document.querySelector('.cardContent')
-const btnCard = document.querySelector('.btnCard')
 
-const cards = document.querySelectorAll('.card');
 
-cards.forEach(card => {
-    const cardContent = card.querySelector('.cardContent');
-    const btnCard = card.querySelector('.btnCard');
+// SLIDE CAROUSEL
 
-    card.addEventListener('mouseenter', () => {
-        cardContent.style.display = 'flex';
-        btnCard.style.display = 'block';
+const openCarouselBtn = document.querySelectorAll(".btnCard")
+const carouselContainer = document.getElementById("carouselContainer")
+const closeCarouselBtn = document.getElementById("carouselContainer")
+const prevBtn = document.getElementById("prevBtn")
+const nextBtn = document.getElementById("nextBtn")
+const slides = document.querySelectorAll(".carouselSlide")
+
+let slideIndex = 0
+
+openCarouselBtn.forEach((btn) => {
+    
+    btn.addEventListener('click', () => {
+        carouselContainer.style.display = 'block';
+        });
+})
+
+closeCarouselBtn.addEventListener('click', (e) => {
+    if (e.target === closeCarouselBtn) {
+        carouselContainer.style.display = 'none'
+    }
+})
+
+function showSlide(index) {
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
     });
+    slides[index].style.display = 'block';
+}
 
-    card.addEventListener('mouseleave', () => {
-        cardContent.style.display = 'none';
-        btnCard.style.display = 'none';
-    });
-});
+function nextSlide() {
+    if (slideIndex < slides.length - 1) {
+        slideIndex++;
+    } else {
+        slideIndex = 0;
+    }
+    showSlide(slideIndex);
+}
 
-// const card1 = document.getElementById('card1')
-// const cardClass = document.querySelectorAll('.card')
+function prevSlide() {
+    if (slideIndex > 0) {
+        slideIndex--;
+    } else {
+        slideIndex = slides.length - 1;
+    }
+    showSlide(slideIndex);
+}
 
-// const btnCard = document.getElementById('btnCard1')
-// const cardContent = document.querySelector('.cardContent')
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
 
-// card1.addEventListener('mouseenter', () => {
-//     btnCard.style.display = 'block'
-//     cardContent.style.display = 'flex'
-// })
-
-// card1.addEventListener('mouseleave', () => {
-//     btnCard.style.display = 'none'
-//     cardContent.style.display = 'none'
-// })
+showSlide(slideIndex);

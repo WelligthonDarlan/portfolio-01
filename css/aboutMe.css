@@ -42,6 +42,7 @@
     text-align: justify;
     width: 50%;
     height: 100%;
+    color: #d7f9ff;
 }
 #description::after{
     content: '|';

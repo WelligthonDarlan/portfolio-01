@@ -48,10 +48,7 @@
     width: 100%;
     height: 100%;
 }
-.card{
-    width: 400px;
-    height: 400px;
-}
+
 #card1{
     background: url(../images/ASB.png) no-repeat center center/cover;    
 }
@@ -79,68 +76,70 @@
 #card9{
     background-color: darkgoldenrod;
 }
-.cardContent{
+
+.card {
     width: 400px;
     height: 400px;
-    background-color: #F5F5F5;
-    display: none;
+}
+.contentCard{
+    width: 400px;
+    height: 400px;
+    background:#F5F5F5;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
-    gap: 40px;
-    animation: fadeProjectDiv 0.5s ease;
+    gap: 20px;
+    opacity: 0;
+    position: relative; 
+    transition: 0.3s;
 }
-.card h1, p{
+.contentCard:hover{
+    opacity: 1;
+}
+.card h1{
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100px);
     color: #1B242F;
-    animation: animationH1 0.5s ease;
+    opacity: 0;
 }
-.btnCard{
-    display: none;
+.contentCard:hover h1{
+    transform: translateY(0); 
+    opacity: 1;
+}
+.card p{
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100px);
+    color: #1B242F;
+    opacity: 0;
+}
+.contentCard:hover p {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+.btnCard {
+    transform: translateY(100px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
     border: 3px solid #2bdefd;
     padding: 10px 30px;
     font-size: 15px;
     color: black;
     text-align: center;
     cursor: pointer;
-    animation: animationBtnCard 0.5s ease;
+    opacity: 0;
 }
-.btnCard:hover{
+.btn:hover{
     background-color: #2bdefd;
     color: #fff;
 }
 
-@keyframes fadeProjectDiv {
-    0%{
-        opacity: 0;
-    }
-    
-    100%{
-        opacity: 1;
-    }
+.contentCard:hover .btnCard {
+    transform: translateY(0); 
+    opacity: 1;
 }
-@keyframes animationBtnCard {
-    0%{
-        transform: translate(0px, 80px) scale(0.5);
-        opacity: 0;
-    }
-    
-    100%{
-        transform: translate(0px, 0px) scale(1.0);
-        opacity: 1;
-    }
-}
-@keyframes animationH1 {
-    0%{
-        transform: translate(0px, -80px);
-        opacity: 0;
-    }
-    
-    100%{
-        transform: translate(0px, 0px);
-        opacity: 1;
-    }
-}
+
+
 @keyframes fade {
     0%{
         transform: translate(0px, 300px) scale(0.5);
@@ -157,3 +156,62 @@
         opacity: 1 !important;
     }
 }
+
+/* ------------------CAROCEL-------------- */
+
+.carouselContainer {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.carouselContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+.carouselSlides {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carouselSlide {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.carouselBtn {
+    /* background-color: #00000065; */
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#slide1{
+    background-color: blue;
+}
+#slide2{
+    background-color: rgb(9, 255, 0);
+}
+#slide3{
+    background-color: rgb(255, 230, 0);
+}
+
