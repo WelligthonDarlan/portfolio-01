@@ -113,7 +113,29 @@
   color: lightgray;
 }
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
-
+@media (min-width: 361px) and (max-width: 480px){
+  #contact {
+    height: 90vh;
+  }
+  .titleContactLeft {
+    font-size: 30px;
+  }
+  #workMe {
+    font-size: 16px;
+  }
+  .containerContact {
+    width: 100%;
+    height: 70vh;
+  }
+  .containerIcons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .emailPhoneContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 @media (max-width: 360px){
   #contact {
     height: 90vh;

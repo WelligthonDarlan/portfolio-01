@@ -224,6 +224,149 @@
 }
 
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
+@media (min-width: 361px) and (max-width: 480px){
+    #myWork {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+        gap: 0px;
+    }
+
+    #myWorkTitle {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerPrinciples {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 30px 5px 30px 5px ;
+        gap: 40px;
+    }
+
+    .principles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .principles img {
+        background-color: #2bddfdbd;
+        width: 70px;
+    }
+
+    .principles h1 {
+        padding: 0px;
+        font-size: 22px;
+    }
+
+    .principles p {
+        width: 100%;
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .containerMyWork {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
+    .myWorkLeft {
+        width: 100%;
+    }
+    .myWorkLeft img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        animation: mymove 3s infinite ease;
+        padding: 10px 0px 10px 0px;
+    }
+
+    @keyframes mymove {
+        0% {
+            bottom: -10px;
+        }
+        50% {
+            bottom: 10px;
+        }
+        100% {
+            bottom: -10px;
+        }
+    }
+
+    /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
+
+    .myWorkRight {
+        width: 100%;
+        height: 100vh;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .containerRight {
+        padding: 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .links::after {
+        height: 1px;
+    }
+
+    .contentLinks {
+        padding: 30px 5px;
+    }
+
+    .contentLinks ul li span {
+        color: #1e9db4;
+        font-size: 16px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .contentLinks ul li {
+        font-size: 18px;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .active-tab.active-tab {
+        display: block;
+    }
+
+    #upArrow {
+        padding: 7px;
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
 
 @media (max-width: 360px) {
     #myWork {
