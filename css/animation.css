@@ -1,44 +1,92 @@
 #canvas {
-	position: relative;
-	left: 0;
-	top: 0;
-	background-image: radial-gradient(rgb(37, 41, 52) 0%, #252934 40%, #252934 100%);
-    z-index: 5000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  background-image: radial-gradient(
+    rgb(37, 41, 52) 0%,
+    #252934 40%,
+    #252934 100%
+  );
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#h1Animation{
-    top: 20%;
-    left: 20%;
-    position: absolute;
-    padding: 3rem;
-    gap: 4rem;
-    font-size: 60px;
-    z-index: 30000;
+#h1Animation {
+  top: 20%;
+  left: 20%;
+  position: absolute;
+  padding: 3rem;
+  gap: 4rem;
+  font-size: 60px;
+  z-index: 30000;
 }
-#h1Animation span{
-    color: #2bdefd; 
+#h1Animation span {
+  color: #2bdefd;
 }
-#ViewMyWork{
-    font-family: 'Chakra Petch', sans-serif;
-    border: 2px solid white;
-    top: 45%;
-    left:35%;
-    color: #fff;
-    background-color: #252934;
-    padding: 10px 20px;
-    width: 500px;
-    height: auto;
+#ViewMyWork {
+  font-family: "Chakra Petch", sans-serif;
+  border: 2px solid white;
+  top: 45%;
+  left: 35%;
+  color: #fff;
+  background-color: #252934;
+  padding: 10px 20px;
+  width: 500px;
+  height: auto;
+  font-size: 30px;
+  z-index: 30000;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+}
+#ViewMyWork:hover {
+  color: #fff;
+  background-color: #2bdefd;
+  border: 2px solid #2bdefd;
+}
+
+
+/* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
+@media (min-width: 361px) and (max-width: 480px){
+  #canvas {
+    width: 100%;
+    height: 100vh;
+  }
+  #h1Animation {
+    top: 200px;
+    left: 0px;
+    padding: 0px;
     font-size: 30px;
     z-index: 30000;
-    position: absolute;
     text-align: center;
-    cursor: pointer;
+  }
+  #ViewMyWork {
+    top: 400px;
+    left: 50px;
+    width: 250px;
+    font-size: 15px;
+  }
 }
-#ViewMyWork:hover{
-    color: #fff;
-    background-color: #2bdefd;
-    border: 2px solid #2bdefd ;
+@media (max-width: 360px){
+  #canvas {
+    width: 100%;
+    height: 100vh;
+  }
+  #h1Animation {
+    top: 200px;
+    left: 0px;
+    padding: 0px;
+    font-size: 30px;
+    z-index: 30000;
+    text-align: center;
+  }
+  #ViewMyWork {
+    top: 400px;
+    left: 55px;
+    width: 250px;
+    font-size: 15px;
+  }
+ 
 }

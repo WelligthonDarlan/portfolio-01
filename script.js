@@ -158,3 +158,14 @@ const ViewMyWork = document.getElementById("ViewMyWork")
 
 
 
+// close navbar
+document.querySelector('#menu-btn').onclick = () => {
+    document.querySelector('#menu-btn').classList.toggle('fa-times')
+    document.querySelector('.navbar').classList.toggle('active')
+}
+
+
+function remove(){
+    document.querySelector('#menu-btn').classList.remove('fa-times')
+    document.querySelector('.navbar').classList.remove('active')
+}

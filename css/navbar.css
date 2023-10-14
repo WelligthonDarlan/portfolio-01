@@ -1,42 +1,41 @@
-#navbarDesktop{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    z-index: 90000 !important;
-    width: 100%;
-    height: 60px;
-    padding: 0px 500px 0px 40px;
-    background: linear-gradient(to bottom,#000000ff,#000000ff,#222222df);
-    top: 0;
+#navbarDesktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 90000 !important;
+  width: 100%;
+  height: 60px;
+  padding: 0px 500px 0px 40px;
+  background: linear-gradient(to bottom, #000000ff, #000000ff, #222222df);
+  top: 0;
 }
 
-#navbarDesktop img{
-    width: 220px;
+#navbarDesktop img {
+  width: 220px;
 }
-.btnNavbar{
-   font-size: 22px;
-   margin: 0px 20px 0px 20px;
-   padding: 5px 20px;
-   color: #fff;
+.btnNavbar {
+  font-size: 22px;
+  margin: 0px 20px 0px 20px;
+  padding: 5px 20px;
+  color: #fff;
 }
-.btnNavbar:hover{
-   color: #7b71ff;
+.btnNavbar:hover {
+  color: #7b71ff;
 }
 .fixed-navbar {
-    position: fixed !important;
-    z-index: 5000;
+  position: fixed !important;
+  z-index: 5000;
 }
-
 .relative-navbar {
-    position: relative !important;
+  position: relative !important;
 }
+/* ---------------------NAVBAR DESKTOP--⏫⏫⏫⏫⏫⏫------------------- */
 
+/* ---------------------NAVBAR MOBILE--⏬⏬⏬⏬⏬⏬------------------- */
 
-/* ---------------------NAVBAR MOBILE--------------------- */
-
-/* #menu-btn{
+#menu-btn{
     display: none;
     position: fixed;
     top: 20px; right: 30px;
@@ -50,9 +49,6 @@
     color: #d7f9ff;
     text-align: center;
     z-index: 1000;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 #menu-btn.fa-times{
     transform: rotate(180deg);
@@ -76,12 +72,10 @@
 }
 .navbar.active{
     clip-path: circle(140% at 95.3% 8.5%);
-
 }
 .navbar.desactive{
     clip-path: circle(0% at 95.3% 8.5%);
 }
-
 .navbar a{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 30px;
@@ -109,7 +103,12 @@
     opacity: .1;
     transition: .3s ease-out;
 }
-@media only screen and (max-width: 410px){
+
+/* ---------------------NAVBAR MOBILE--⏫⏫⏫⏫⏫⏫------------------- */
+
+/* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
+
+/* @media only screen and (max-width: 410px){
     #menu-btn{
         height: 40px;
         width: 40px;
@@ -133,14 +132,54 @@
     .navbar a:hover::before{
         font-size: 100px;
     }
-  }
+}
 @media screen and (max-width: 540px){
     .navbar a:hover::before{
         font-size: 80px;
     }
-  }
+}
 @media screen and (max-width: 440px){
     .navbar a:hover::before{
         font-size: 60px;
     }
-  } */
+} */
+@media (min-width: 361px) and (max-width: 480px){
+    #navbarDesktop{
+        display: none;
+    }
+    #menu-btn{
+    display: block;
+    top: 10px; right: 10px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    }
+    .navbar a:hover::before{
+        font-size: 65px;
+    }
+    body{
+        overflow: hidden;
+    }
+   
+}
+@media (max-width: 360px){
+    #navbarDesktop{
+        display: none;
+    }
+    #menu-btn{
+    display: block;
+    top: 10px; right: 30px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    }
+    .navbar a:hover::before{
+        font-size: 65px;
+    }
+    body{
+        overflow: hidden;
+    }
+   
+}

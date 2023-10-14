@@ -1,283 +1,609 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link icone Navbar -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="shortcut icon" href="./images/icons.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/icons.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/whatsIcon.css">
-    <link rel="stylesheet" href="./css/background.css">
-    <link rel="stylesheet" href="./css/aboutMe.css">
-    <link rel="stylesheet" href="./css/myWork.css">
-    <link rel="stylesheet" href="./css/projects.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/whatsIcon.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/aboutMe.css" />
+    <link rel="stylesheet" href="./css/myWork.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/slides.css" />
 
     <script src="animationProjects.js" defer></script>
     <script src="script.js" defer></script>
     <script src="introduction.js" defer></script>
 
     <title>Welligthon Paluchowski</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- APRESENTAÇÃO INICIAL ⏬ -->
-        <div id="introduction" >
-            <canvas id="canvas" width="100%" height="500px"></canvas>
-            <h1 id="h1Animation">Oi, sou <span>Welligthon Paluchowski</span><br> Desenvolvedor Full Stack</h1>
-            <a href="#navbarDesktop"><button id="ViewMyWork" >VEJA O MEU TRABALHO</button></a>
-        </div>
-        <!-- APRESENTAÇÃO INICIAL ⏫ -->
+      <!-- APRESENTAÇÃO INICIAL ⏬⏬⏬⏬⏬⏬ -->
+      <div id="introduction">
+        <canvas id="canvas" width="100%" height="500px"></canvas>
+        <h1 id="h1Animation">
+          Oi, sou <span>Welligthon Paluchowski</span><br />
+          Desenvolvedor Full Stack
+        </h1>
+        <a href="#navbarDesktop"
+          ><button id="ViewMyWork">VEJA O MEU TRABALHO</button></a
+        >
+      </div>
+      <!-- APRESENTAÇÃO INICIAL ⏫⏫⏫⏫⏫⏫ -->
 
-        <!-- NAVBAR DESKTOP ⏬ -->
-        <nav id="navbarDesktop" class="navbar">
-            <img src="./images/logo.png" >
-            <div>
-                <a href="#aboutMe" class="btnNavbar">Sobre mim</a>
-                <a href="#myWorkTitle" class="btnNavbar">Meu trabalho</a>
-                <a href="#projectsTitle" class="btnNavbar">Projetos</a>
-                <a href="#contact" class="btnNavbar">Contato</a>
-            </div>
-        </nav>
-        <!-- NAVBAR DESKTOP ⏫ -->
-    
-        <!-- ICONE YODA WHATSAPP ⏬ -->
-        <div id="containerYodaSMS">
-            <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank">
-                <p id="yodaSMS">Mandar mensagem você deve!</p>
-            </a>
-            <p id="closeYodaSMS">x</p>
+      <!-- NAVBAR DESKTOP ⏬⏬⏬⏬⏬⏬ -->
+      <nav id="navbarDesktop" >
+        <img src="./images/logo.png" />
+        <div>
+          <a href="#aboutMe" class="btnNavbar">Sobre mim</a>
+          <a href="#myWorkTitle" class="btnNavbar">Meu trabalho</a>
+          <a href="#projectsTitle" class="btnNavbar">Projetos</a>
+          <a href="#contact" class="btnNavbar">Contato</a>
         </div>
-        <a href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!" target="_blank">
-            <img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp">
+      </nav>
+      <!-- NAVBAR DESKTOP ⏫⏫⏫⏫⏫⏫ -->
+
+      <!-- ICONE YODA WHATSAPP ⏬⏬⏬⏬⏬⏬ -->
+      <div id="containerYodaSMS">
+        <a
+          href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!"
+          target="_blank"
+        >
+          <p id="yodaSMS">Mandar mensagem você deve!</p>
         </a>
-        <!-- ICONE YODA WHATSAPP ⏫ -->
+        <p id="closeYodaSMS">x</p>
+      </div>
+      <a
+        href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!"
+        target="_blank"
+      >
+        <img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp" />
+      </a>
+      <!-- ICONE YODA WHATSAPP ⏫⏫⏫⏫⏫⏫ -->
 
-        <!-- ------------------NAVBAR--⏬------------------ -->
+      <!-- ------------------NAVBAR--⏬⏬⏬⏬⏬⏬------------------ -->
 
-        <!-- NAVBAR MOBILE ⏬ -->
-        <!-- <div id="menu-btn" class="fas fa-bars"></div>
+      <!-- NAVBAR MOBILE ⏬⏬⏬⏬⏬⏬ -->
+      <div id="menu-btn" class="fas fa-bars"></div>
         <nav class="navbar" id="nav-bar">
-            <a href="#aboutMe" data-text="início" onclick="remove()">início</a>
-            <a href="#sobre" data-text="sobre" onclick="remove()">sobre</a>
-            <a href="#projects" data-text="projetos" onclick="remove()">projetos</a>
+            <a href="#aboutMe" data-text="início" onclick="remove()">Sobre mim</a>
+            <a href="#myWorkTitle" data-text="sobre" onclick="remove()">Meu trabalho</a>
+            <a href="#projectsTitle" data-text="projetos" onclick="remove()">Projetos</a>
             <a href="#contact" data-text="contato" onclick="remove()">contato</a>
-        </nav> -->
-        <!-- NAVBAR MOBILE ⏫ -->
+        </nav>
+      <!-- NAVBAR MOBILE ⏫⏫⏫⏫⏫⏫ -->
 
-        <!-- ------------------NAVBAR--⏫------------------ -->
+      <!-- ------------------NAVBAR--⏫⏫⏫⏫⏫⏫------------------ -->
 
-        <!-- ------------------ABOUT ME--⏬------------------ -->
+      <!-- ------------------ABOUT ME--⏬⏬⏬⏬⏬⏬------------------ -->
 
-        <div id="aboutMe">
-        
-            <div class="aboutMeContainer">
-                <h1 class="aboutMeTitle">Sobre mim</h1>
-                    <p id="description">
-                        Desde a infancia estive conectado com a tecnologia,
-                        tenho grande paixão por efeitos de UI, animações e pela criação de experiências de usuário intuitivas e dinâmicas. 
-                    </p>
-                <div class="iconSocialMedia">
+      <div id="aboutMe" class="fadeInScroll">
+        <div class="aboutMeContainer">
+          <h1 class="aboutMeTitle">Sobre mim</h1>
+          <p id="description">
+            Desde a infancia estive conectado com a tecnologia, tenho grande
+            paixão por efeitos de UI, animações e pela criação de experiências
+            de usuário intuitivas e dinâmicas.
+          </p>
+          <div class="iconSocialMedia">
+            <a
+              href="https://www.linkedin.com/in/welligthon-paluchowski/"
+              target="_blank"
+              ><img
+                src="./images/linkedin.png"
+                alt="linkedin"
+                class="inconContact"
+            /></a>
 
-                    <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
+            <a href="https://www.instagram.com/well_ligth_on/" target="_blank"
+              ><img
+                src="./images/instagram.png"
+                alt="instagram"
+                class="inconContact"
+            /></a>
 
-                    <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
-
-                    <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
-
-                </div>
-            </div>
+            <a href="https://github.com/WelligthonDarlan" target="_blank"
+              ><img
+                src="./images/square-github.png"
+                alt="square-github.png"
+                class="inconContact"
+            /></a>
+          </div>
         </div>
+      </div>
     </header>
-    <!-- ------------------ABOUT ME--⏫------------------ -->
+    <!-- ------------------ABOUT ME--⏫⏫⏫⏫⏫⏫------------------ -->
 
-    <!-- ------------------MEU TRABALHO--⏬------------------ -->
+    <!-- ------------------MEU TRABALHO--⏬⏬⏬⏬⏬⏬------------------ -->
     <main>
-        <div id="myWork">
-            <a href="#aboutMe"><img id="upArrow"  src="./images/up-arrow.png" alt="up-arrow.png"></a>
-            <h1 id="myWorkTitle">MEU TRABALHO</h1>
+      <div id="myWork" class="fadeInScroll">
+        <a href="#aboutMe"
+          ><img id="upArrow" src="./images/up-arrow.png" alt="up-arrow.png"
+        /></a>
+        <h1 id="myWorkTitle">MEU TRABALHO</h1>
 
-            <div class="containerPrinciples">
-                <div class="principles">
-                    <img src="./images/intuitive.png" alt="intuitive.png">
-                    <h1>Intuitivo</h1>
-                    <p>Busco desenvolver sites intuitivos e fácil de usar.</p>
-                </div>
-                <div class="principles">
-                    <img src="./images/dynamic.png" alt="dynamic.png">
-                    <h1>Dinâmico</h1>
-                    <p>Os sites não precisam ser estáticos, adoro dar vida às páginas.</p>
-                </div>
-                <div class="principles">
-                    <img src="./images/responsive.png" alt="responsive.png">
-                    <h1>Responsivo</h1>
-                    <p>Meus layouts funcionarão em qualquer dispositivo, grande ou pequeno.</p>
-                </div>
-            </div>
-
-            <div class="containerMyWork">
-
-                <div class="myWorkLeft">
-                    <img src="./images/user.png" >
-                </div>
-
-                <div class="myWorkRight">
-                    <div class="containerRight">
-                        <div class="containerLinks">
-                            <p class="links active-link" onclick="openTab('skills')">Habilidades</p>
-                            <p class="links" onclick="openTab('experience')">Experiência</p>
-                            <p class="links" onclick="openTab('education')">Educação</p>
-                        </div>
-                        <div class="contentLinks active-tab" id="skills">
-                            <ul>
-                                <li><span>HTML / CSS / Javascript</span><br>&nbsp;Tenho muita pratica no desenvolvimento de páginas Web com Javascript.</li>
-                                <li><span>Bootstrap / Sass</span><br>&nbsp;Tenho alguns projetos feitos com Bootstrap e Sass.</li>
-                                <li><span>React</span><br>&nbsp;Utilizo Javascript puro nos meus projetos para fortalecer a minha base na linguagem, mas tenho conhecimento em algumas bibliotecas e frameworks.</li>
-                                <li><span>Animação 2D e 3D</span><br>&nbsp;Desenvolvi habilidades com diversos software de animação.</li>
-                                <li><span>Edição de audio, video e imagem</span><br>&nbsp;Tenho experiência de edição de imagem, video e audio, com Lightroom, Photoshop, Vegas Pro, Adobe Animate cc...</li>
-                            </ul>
-                        </div>
-                        <div class="contentLinks" id="experience">
-                            <ul>
-                                <li><span>2018 - 2019</span><br>&nbsp;Criei um projeto de animação no youtube, onde desenvolvi muitas habilidades com edição de video, animação 2D, tratamento de audio e marketing (Esse projeto foi muito elogiado pela comunidade, mas não tive muito retorno monetário na época, o canal chegou a ter 4000 inscritos em 6 meses)</li>
-                                <li><span>2020 - 2023</span><br>&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde aprendi muito como funciona a parte sistematica de um estoque fisico.</li>
-                                <li><span>2022 - 2023</span><br>&nbsp;Atualmente venho desenvolvendo inúmeros projetos para amplificar minhas habilidades em Javascript</li>
-                            </ul>
-                        </div>
-                        <div class="contentLinks" id="education">
-                            <ul>
-                                <li><span>2022 - 2023</span><br>&nbsp;&nbsp;&nbsp;&nbsp;Estou no segundo ano do curso: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Análise e Desenvolvimento de Sistemas - Estácio</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="containerPrinciples">
+          <div class="principles">
+            <img src="./images/intuitive.png" alt="intuitive.png" />
+            <h1>Intuitivo</h1>
+            <p>Busco desenvolver sites intuitivos e fácil de usar.</p>
+          </div>
+          <div class="principles">
+            <img src="./images/dynamic.png" alt="dynamic.png" />
+            <h1>Dinâmico</h1>
+            <p>
+              Os sites não precisam ser estáticos, adoro dar vida às páginas.
+            </p>
+          </div>
+          <div class="principles">
+            <img src="./images/responsive.png" alt="responsive.png" />
+            <h1>Responsivo</h1>
+            <p>
+              Meus layouts funcionarão em qualquer dispositivo, grande ou
+              pequeno.
+            </p>
+          </div>
         </div>
-        <!-- ------------------MEU TRABALHO--⏫------------------ -->
-        <!-- ------------------PROJETOS--⏬------------------ -->
-        <div id="projects">
-            <h1 class="projectsTitle" id="projectsTitle">MEUS PROJETOS</h1>
-            <div id="containerBtnProjects">
-                <button class="btnProjects">TODOS</button>
-                <button class="btnProjects">E-COMMERCE</button>
-                <button class="btnProjects">LOGICA JS</button>
-                <button class="btnProjects">JOGOS</button>
+
+        <div class="containerMyWork">
+          <div class="myWorkLeft">
+            <img src="./images/user.png" />
+          </div>
+
+          <div class="myWorkRight">
+            <div class="containerRight">
+              <div class="containerLinks">
+                <p class="links active-link" onclick="openTab('skills')">
+                  HABILIDADES
+                </p>
+                <p class="links" onclick="openTab('experience')">EXPERIÊNCIA</p>
+                <p class="links" onclick="openTab('education')">EDUCAÇÃO</p>
+              </div>
+              <div class="contentLinks active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>HTML / CSS / Javascript</span><br />&nbsp;Tenho muita
+                    pratica no desenvolvimento de páginas Web com Javascript.
+                  </li>
+                  <li>
+                    <span>Bootstrap / Sass</span><br />&nbsp;Tenho experiência e
+                    alguns projetos feitos com Bootstrap e Sass.
+                  </li>
+                  <li>
+                    <span>React</span><br />&nbsp;Utilizo Javascript puro nos
+                    meus projetos para fortalecer a minha base na linguagem, mas
+                    tenho conhecimento em algumas bibliotecas e frameworks.
+                  </li>
+                  <li>
+                    <span>Animação 2D e 3D</span><br />&nbsp;Desenvolvi
+                    habilidades com diversos software de animação.
+                  </li>
+                  <li>
+                    <span>Edição de audio, video e imagem</span
+                    ><br />&nbsp;Tenho experiência de edição de imagem, video e
+                    audio, com Lightroom, Photoshop, Vegas Pro, Adobe Animate
+                    cc...
+                  </li>
+                </ul>
+              </div>
+              <div class="contentLinks" id="experience">
+                <ul>
+                  <li>
+                    <span>2018 - 2019</span><br />&nbsp;Criei um projeto de
+                    animação no youtube, onde desenvolvi muitas habilidades com
+                    edição de video, animação 2D, tratamento de audio e
+                    marketing (Esse projeto foi muito elogiado pela comunidade,
+                    mas não tive muito retorno monetário na época, o canal
+                    chegou a ter 4000 inscritos em 6 meses)
+                    <a href="./https://www.youtube.com/watch?v=eAHkOEhXsLI&t=0s"
+                      >Canal Youtube</a
+                    >
+                  </li>
+                  <li>
+                    <span>2020 - 2023</span><br />&nbsp;Trabalhei na
+                    administração e gerenciamento de estoque na TokStok, onde
+                    aprendi muito como funciona a parte sistematica de um
+                    estoque fisico.
+                  </li>
+                  <li>
+                    <span>2022 - 2023</span><br />&nbsp;Atualmente venho
+                    desenvolvendo inúmeros projetos para amplificar minhas
+                    habilidades em Javascript
+                  </li>
+                </ul>
+              </div>
+              <div class="contentLinks" id="education">
+                <ul>
+                  <li>
+                    <span>2022 - 2023</span><br />&nbsp;&nbsp;&nbsp;&nbsp;Estou
+                    no segundo ano do curso:
+                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Análise e
+                    Desenvolvimento de Sistemas - Estácio
+                  </li>
+                  <li>
+                    <span>2023</span><br />&nbsp;&nbsp;&nbsp;&nbsp;Curso Full
+                    Stack OniBitCode:
+                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conclui os
+                    modulos de: HTML / CSS / Javascript / NodeJS /
+                    Bootstrap-Sass / React
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------MEU TRABALHO--⏫⏫⏫⏫⏫⏫------------------ -->
 
-            <div id="containerProjects">
-                <div class="card" id="card1">
-                    <div class="contentCard">
-                        <div>
-                            <h1>Name project</h1>
-                            <p>Javascript</p>
-                        </div>
-                        <button id="btnCard1" class="btnCard">VER MAIS</button>
+      <!-- ------------------PROJETOS--⏬⏬⏬⏬⏬⏬------------------ -->
+      <div id="projects">
+        <h1 class="projectsTitle" id="projectsTitle">MEUS PROJETOS</h1>
+        <!-- <div id="containerBtnProjects">
+          <button class="btnProjects">TODOS</button>
+          <button class="btnProjects">E-COMMERCE</button>
+          <button class="btnProjects">LOGICA JS</button>
+          <button class="btnProjects">JOGOS</button>
+        </div> -->
 
-                        <div id="carouselContainer" class="carouselContainer">
-                            <div class="carouselContent">
-                                <div class="carouselSlides">
-                                    <button id="prevBtn" class="carouselBtn"><img src="./images/iconVoltar.png" alt="iconVoltar.png"></button>
-                                    <div class="carouselSlide" id="slide1"></div>
-                                    <div class="carouselSlide" id="slide2"></div>
-                                    <div class="carouselSlide" id="slide3"></div>
-                                    <button id="nextBtn" class="carouselBtn"><img src="./images/iconAvancar.png" alt="iconAvancar.png"></button>
-                                </div>
-                            </div>
-                        </div>
+        <div id="containerProjects">
+          <div class="card" id="card1">
+            <div class="contentCard">
+              <div>
+                <h1>CALCULADORA DE CONSUMO</h1>
+                <p>Bootstrap / Sass / Javascript</p>
+              </div>
+              <button id="btnCard1" class="btnCard">VER MAIS</button>
+
+              <div id="carouselContainer" class="carouselContainer">
+                
+                <div class="carouselContent">
+                  <div class="carouselSlides">
+                    <div class="containerImage">
+                      
+                      <button id="prevBtn" class="carouselBtnPrev">
+                        <img
+                          src="./images/iconVoltar.png"
+                          alt="iconVoltar.png"
+                        />
+                      </button>
+                      <div class="carouselSlide" id="slide1-1"></div>
+                      <div class="carouselSlide" id="slide1-2"></div>
+                      <div class="carouselSlide" id="slide1-3"></div>
+                      <button id="nextBtn" class="carouselBtnNext">
+                        <img
+                          src="./images/iconAvancar.png"
+                          alt="iconAvancar.png"
+                        />
+                      </button>
+                      <button class="carouselBtnClose">X</button>
                     </div>
-                    
+                    <div class="informCard">
+                      <h1>CALCULADORA DE CONSUMO</h1>
+                      <p>
+                        A pagina faz um calculo de consumo de combustível gasto
+                        diariamente, semanalmente, mensalmente e anual. Além
+                        disso ela tem informações sobre veículos que tem baixo
+                        consumo de combustível, entre outras coisas
+                      </p>
+                      <div class="slideLinks">
+                        <a
+                          href="https://github.com/WelligthonDarlan/Calcular-consumo"
+                          target="_blank"
+                          >REPOSITÓRIO</a
+                        >
+                        <a
+                          href="https://welligthondarlan.github.io/Calcular-consumo/"
+                          target="_blank"
+                          >DEPLOY</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card" id="card2">
-                        <div class="contentCard">
-                            <div>
-                                <h1>Name project</h1>
-                                <p>Javascript</p>
-                            </div>
-                            <button id="btnCard1" class="btnCard">VER MAIS</button>
-                        </div>
-                    <!-- <div class="cardContent">
-                        <div>
-                            <h1>Name project</h1>
-                            <p>Javascript</p>
-                        </div>
-                        <button id="openCarouselBtn2" class="btnCard">VER MAIS</button>
-
-                        <div id="carouselContainer" class="carouselContainer">
-                            <div class="carouselContent">
-                                <div class="carouselSlides">
-                                    <button id="prevBtn" class="carouselBtn"><img src="./images/iconVoltar.png" alt="iconVoltar.png"></button>
-                                    <div class="carouselSlide" id="slide1"></div>
-                                    <div class="carouselSlide" id="slide2"></div>
-                                    <div class="carouselSlide" id="slide3"></div>
-                                    <button id="nextBtn" class="carouselBtn"><img src="./images/iconAvancar.png" alt="iconAvancar.png"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <div class="card" id="card3">
-                    <button id="btnCard3" class="btn">click aqui</button>
-                </div>
-                <div class="card" id="card4">
-                    <button id="btnCard4" class="btn">click aqui</button>
-                </div>
-                <div class="card" id="card5">
-                    <button id="btnCard5" class="btn">click aqui</button>
-                </div>
-                <div class="card" id="card6">
-                    <button id="btnCard6" class="btn">click aqui</button>
-                </div>
-                <div class="card" id="card7">
-                    <button id="btnCard7" class="btn">click aqui</button>
-                </div>
-                <div class="card" id="card8">
-                    <button id="btnCard8" class="btn">click aqui</button>
-                </div>
-                <div class="card" id="card9">
-                    <button id="btnCard9" class="btn">click aqui</button>
-                </div>
+              </div>
             </div>
-        </div>
-        <!-- ------------------PROJETOS--⏫------------------ -->
-        <!-- ------------------CONTACT--\/------------------ -->
-        <div id="contact" class="fadeInScroll">
-            <div class="containerContact">
-                <h1 class="titleContactLeft">ONDE ME ENCONTRAR</h1>
+          </div>
+          <div class="card" id="card2">
+            <div class="contentCard">
+              <div>
+                <h1>CALCULADORA JS</h1>
+                <p>HTML / CSS / Javascript</p>
+              </div>
+              <button id="btnCard2" class="btnCard">VER MAIS</button>
 
-                <p id="workMe" >Tem alguma dúvida ou quer trabalhar comigo?</p>
-
-                <div class="containerIcons">
-                    <div class="emailPhoneContainer">
-                        <p>
-                            <img src="./images/paper-plane-solid.png" alt="sendEmail" class="inconContact">welldarlan.pw@gmail.com
-                        </p>
-                        <p>
-                            <img src="./images/square-phone-solid.png" alt="phone" class="inconContact">+55 48 9 8824-0117
-                        </p>
+              <div id="carouselContainer" class="carouselContainer">
+                <div class="carouselContent">
+                  <div class="carouselSlides">
+                    <div class="containerImage">
+                      <button id="prevBtn" class="carouselBtnPrev">
+                        <img
+                          src="./images/iconVoltar.png"
+                          alt="iconVoltar.png"
+                        />
+                      </button>
+                      <div class="carouselSlide" id="slide2-1"></div>
+                      <div class="carouselSlide" id="slide2-2"></div>
+                      <div class="carouselSlide" id="slide2-3"></div>
+                      <button id="nextBtn" class="carouselBtnNext">
+                        <img
+                          src="./images/iconAvancar.png"
+                          alt="iconAvancar.png"
+                        />
+                      </button>
+                      <button class="carouselBtnClose">X</button>
                     </div>
-                    <div class="iconSocialMediaContainer">
-                        <a href="https://www.linkedin.com/in/welligthon-paluchowski/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" class="inconContact"></a>
-                        <a href="https://www.instagram.com/well_ligth_on/" target="_blank"><img src="./images/instagram.png" alt="instagram" class="inconContact"></a>
-                        <a href="https://github.com/WelligthonDarlan" target="_blank"><img src="./images/square-github.png" alt="square-github.png"  class="inconContact"></a>
+                    <div class="informCard">
+                      <h1>CALCULADORA JS</h1>
+                      <p>
+                        Calculadora com função de alternar tema e copiar
+                        resultado do cálculo para área de transferência.
+                      </p>
+                      <div class="slideLinks">
+                        <a
+                          href="https://github.com/WelligthonDarlan/calculadoraJS/tree/master"
+                          target="_blank"
+                          >REPOSITÓRIO</a
+                        >
+                        <a
+                          href="https://welligthondarlan.github.io/calculadoraJS/"
+                          target="_blank"
+                          >DEPLOY</a
+                        >
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-                <a href="./images/curriculo.pdf" download id="download">CURRÍCULO <img src="./images/file-arrow-down-solid.svg" alt="imgDownload">
-                </a>
-
+              </div>
             </div>
-            <!-- ------------------CONTACT--/\------------------ -->
+          </div>
+          <div class="card" id="card3">
+            <div class="contentCard">
+              <div>
+                <h1>SushiCom - Em produção</h1>
+                <p>HTML / CSS / Javascript</p>
+              </div>
+              <button id="btnCard3" class="btnCard">VER MAIS</button>
+
+              <div id="carouselContainer" class="carouselContainer">
+                <div class="carouselContent">
+                  <div class="carouselSlides">
+                    <div class="containerImage">
+                      <button id="prevBtn" class="carouselBtnPrev">
+                        <img
+                          src="./images/iconVoltar.png"
+                          alt="iconVoltar.png"
+                        />
+                      </button>
+                      <div class="carouselSlide" id="slide3-1"></div>
+                      <div class="carouselSlide" id="slide3-2"></div>
+                      <div class="carouselSlide" id="slide3-3"></div>
+                      <button id="nextBtn" class="carouselBtnNext">
+                        <img
+                          src="./images/iconAvancar.png"
+                          alt="iconAvancar.png"
+                        />
+                      </button>
+                      <button class="carouselBtnClose">X</button>
+                    </div>
+                    <div class="informCard">
+                      <h1>SushiCom - Em produção</h1>
+                      <p>Página com cardápio de comida japonesa.</p>
+                      <div class="slideLinks">
+                        <a
+                          href="https://github.com/WelligthonDarlan/sushi-ecommerce/tree/master"
+                          target="_blank"
+                          >REPOSITÓRIO</a
+                        >
+                        <a
+                          href="https://welligthondarlan.github.io/sushi-ecommerce/"
+                          target="_blank"
+                          >DEPLOY</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card4">
+            <div class="contentCard">
+              <div>
+                <h1>To do list</h1>
+                <p>HTML / CSS / Javascript</p>
+              </div>
+              <button id="btnCard3" class="btnCard">VER MAIS</button>
+
+              <div id="carouselContainer" class="carouselContainer">
+                <div class="carouselContent">
+                  <div class="carouselSlides">
+                    <div class="containerImage">
+                      <button id="prevBtn" class="carouselBtnPrev">
+                        <img
+                          src="./images/iconVoltar.png"
+                          alt="iconVoltar.png"
+                        />
+                      </button>
+                      <div class="carouselSlide" id="slide4-1"></div>
+                      <div class="carouselSlide" id="slide4-2"></div>
+                      <div class="carouselSlide" id="slide4-3"></div>
+                      <button id="nextBtn" class="carouselBtnNext">
+                        <img
+                          src="./images/iconAvancar.png"
+                          alt="iconAvancar.png"
+                        />
+                      </button>
+                      <button class="carouselBtnClose">X</button>
+                    </div>
+                    <div class="informCard">
+                      <h1>To do list</h1>
+                      <p>
+                        Projeto "to do list" com animação de fundo. Adiciona,
+                        remove e conclui tarefas, além disso, armazena as
+                        informações no local host. Possui tratamento de texto,
+                        alerta de campo vazio e está responsivo.
+                      </p>
+                      <div class="slideLinks">
+                        <a
+                          href="https://github.com/WelligthonDarlan/ToDoListJS"
+                          target="_blank"
+                          >REPOSITÓRIO</a
+                        >
+                        <a
+                          href="https://welligthondarlan.github.io/ToDoListJS/"
+                          target="_blank"
+                          >DEPLOY</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card5">
+            <div class="contentCard">
+              <div>
+                <h1>Canal Youtube de Animação</h1>
+                <p>Animate / Photoshop / ...</p>
+              </div>
+              <button id="btnCard3" class="btnCard">VER MAIS</button>
+
+              <div id="carouselContainer" class="carouselContainer">
+                <div class="carouselContent">
+                  <div class="carouselSlides">
+                    <div class="containerImage">
+                      <button id="prevBtn" class="carouselBtnPrev">
+                        <img
+                          src="./images/iconVoltar.png"
+                          alt="iconVoltar.png"
+                        />
+                      </button>
+                      <div class="carouselSlide" id="slide5-1"></div>
+                      <div class="carouselSlide" id="slide5-2"></div>
+                      <div class="carouselSlide" id="slide5-3"></div>
+                      <button id="nextBtn" class="carouselBtnNext">
+                        <img
+                          src="./images/iconAvancar.png"
+                          alt="iconAvancar.png"
+                        />
+                      </button>
+                      <button class="carouselBtnClose">X</button>
+                    </div>
+                    <div class="informCard">
+                      <h1>Canal Youtube de Animação</h1>
+                      <p>
+                        Criei um projeto de animação no youtube, onde desenvolvi
+                        muitas habilidades com edição de video, animação 2D,
+                        tratamento de audio e marketing (Esse projeto foi muito
+                        elogiado pela comunidade, mas não tive muito retorno
+                        monetário na época, o canal chegou a ter 4000 inscritos
+                        em 6 meses)
+                      </p>
+                      <div class="slideLinks">
+                        <a
+                          href="https://www.youtube.com/watch?v=eAHkOEhXsLI&t=0s"
+                          target="_blank"
+                          >Link canal</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card6">
+            <button id="btnCard6" class="btn">click aqui</button>
+          </div>
+          <div class="card" id="card7">
+            <button id="btnCard7" class="btn">click aqui</button>
+          </div>
+          <div class="card" id="card8">
+            <button id="btnCard8" class="btn">click aqui</button>
+          </div>
+          <div class="card" id="card9">
+            <button id="btnCard9" class="btn">click aqui</button>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Welligthon Darlan.</p>
+      </div>
+      <!-- ------------------PROJETOS--⏫⏫⏫⏫⏫⏫------------------ -->
+      <!-- ------------------CONTACT--⏬⏬⏬⏬⏬⏬------------------ -->
+      <div id="contact" class="fadeInScroll">
+        <div class="containerContact">
+          <h1 class="titleContactLeft">ONDE ME ENCONTRAR</h1>
+
+          <p id="workMe">Tem alguma dúvida ou quer trabalhar comigo?</p>
+
+          <div class="containerIcons">
+            <div class="emailPhoneContainer">
+              <p>
+                <img
+                  src="./images/paper-plane-solid.png"
+                  alt="sendEmail"
+                  class="inconContact"
+                />welldarlan.pw@gmail.com
+              </p>
+              <p>
+                <img
+                  src="./images/square-phone-solid.png"
+                  alt="phone"
+                  class="inconContact"
+                />+55 48 9 8824-0117
+              </p>
+            </div>
+            <div class="iconSocialMediaContainer">
+              <a
+                href="https://www.linkedin.com/in/welligthon-paluchowski/"
+                target="_blank"
+                ><img
+                  src="./images/linkedin.png"
+                  alt="linkedin"
+                  class="inconContact"
+              /></a>
+              <a href="https://www.instagram.com/well_ligth_on/" target="_blank"
+                ><img
+                  src="./images/instagram.png"
+                  alt="instagram"
+                  class="inconContact"
+              /></a>
+              <a href="https://github.com/WelligthonDarlan" target="_blank"
+                ><img
+                  src="./images/square-github.png"
+                  alt="square-github.png"
+                  class="inconContact"
+              /></a>
+            </div>
+          </div>
+
+          <a href="./images/curriculo.pdf" download id="download"
+            >CURRÍCULO
+            <img src="./images/file-arrow-down-solid.svg" alt="imgDownload" />
+          </a>
         </div>
+        <!-- ------------------CONTACT--⏫⏫⏫⏫⏫⏫------------------ -->
+      </div>
+      <div class="copyright">
+        <p>Copyright © Welligthon Darlan.</p>
+      </div>
     </main>
-</body>
+  </body>
 </html>

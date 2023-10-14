@@ -1,4 +1,4 @@
-#myWork{
+#myWork {
     color: #ababab;
     /* border: 4px solid red; */
     width: 100%;
@@ -8,19 +8,21 @@
     flex-direction: column;
     padding: 200px;
     text-align: center;
-    /* gap: 30px; */
+    gap: 30px;
 }
-#myWorkTitle{
+
+#myWorkTitle {
     /* border: 3px solid rgb(17, 0, 255); */
     padding-top: 60px;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     font-size: 40px;
     font-weight: 600;
     color: #d7f9ff;
     width: 100%;
     height: 100%;
 }
-.containerPrinciples{
+
+.containerPrinciples {
     /* border: 3px solid rgb(255, 0, 212); */
     display: flex;
     flex-direction: row;
@@ -29,26 +31,37 @@
     width: 100%;
     padding: 100px;
 }
-.principles{
+
+.principles {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.principles img{
+
+.principles img {
     background-color: #2bddfdbd;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%,
+            80% 0%,
+            100% 20%,
+            100% 80%,
+            80% 100%,
+            20% 100%,
+            0% 80%,
+            0% 20%);
     padding: 10px;
     width: 100px;
 }
-.principles h1{
-    font-family: 'Chakra Petch', sans-serif;
+
+.principles h1 {
+    font-family: "Chakra Petch", sans-serif;
     text-align: center;
     padding: 10px;
     font-size: 35px;
     color: #d7f9ff;
 }
-.principles p{
+
+.principles p {
     /* border: 3px solid rgb(17, 0, 255); */
     width: 490px;
     text-align: center;
@@ -57,7 +70,7 @@
     color: #d7f9ff;
 }
 
-.containerMyWork{
+.containerMyWork {
     /* border: 4px solid yellow; */
     display: flex;
     flex-direction: row;
@@ -66,13 +79,14 @@
     width: 100%;
     height: 100%;
 }
-/* --------------COLUNA--1--\/------------------ */
-.myWorkLeft{
+
+/* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
+.myWorkLeft {
     width: 50%;
     /* border: 4px solid rgb(0, 255, 34); */
-} 
+}
 
-.myWorkLeft img{
+.myWorkLeft img {
     /* border: 4px solid rgb(11, 109, 24); */
     position: relative;
     width: 60%;
@@ -81,20 +95,27 @@
 }
 
 @keyframes mymove {
-    0%   {bottom: -10px;}
-    50%  {bottom: 20px;}
-    100%   {bottom: -10px;}
-  }
+    0% {
+        bottom: -10px;
+    }
 
-/* --------------COLUNA--1--/\------------------ */
-/* --------------COLUNA--2--\/------------------ */
-.myWorkRight{
+    50% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: -10px;
+    }
+}
+
+/* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
+.myWorkRight {
     /* border: 4px solid rebeccapurple; */
     width: 50%;
     height: 100%;
 }
 
-.containerRight{
+.containerRight {
     /* border: 5px solid rgb(221, 12, 12); */
     width: 100%;
     height: 100%;
@@ -105,32 +126,32 @@
     justify-content: center;
 }
 
-.containerLinks{
+.containerLinks {
     display: flex;
-    /* gap: 10px; */
     /* border: 5px solid rgb(255, 0, 0); */
     width: 100%;
 }
 
-.links{
+.links {
     /* border: 5px solid rgb(12, 78, 221); */
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     text-align: center;
     width: 100%;
     color: #2bdefd;
     font-size: 20px;
     font-weight: 100;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
-}  
-.links:hover{
-    color:#2bddfd93;
 }
 
-.links::after{
+.links:hover {
+    color: #2bddfd93;
+}
+
+.links::after {
     /* border: 5px solid rgb(12, 221, 57); */
-    content: '';
+    content: "";
     width: 0%;
     height: 3px;
     background: #2bdefd;
@@ -142,12 +163,12 @@
     flex-direction: column;
     transition: 0.5s;
 }
-.links.active-link::after{
+
+.links.active-link::after {
     width: 100%;
 }
 
-
-.contentLinks{
+.contentLinks {
     /* border: 5px solid rgb(12, 78, 221); */
     width: 100%;
     height: 70%;
@@ -158,11 +179,13 @@
     text-align: start;
     display: none;
 }
-.contentLinks ul li span{
+
+.contentLinks ul li span {
     color: #1e9db4;
     font-size: 18px;
     padding: 10px;
 }
+
 .contentLinks ul li {
     text-align: justify;
     list-style: none;
@@ -171,17 +194,17 @@
     padding: 10px 0px;
 }
 
-
-.active-tab.active-tab{
+.active-tab.active-tab {
     display: block;
 }
-#upArrow{
+
+#upArrow {
     background-color: #ff8c2a;
     padding: 13px;
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 40px; 
+    bottom: 40px;
     right: 40px;
     z-index: 4000;
     animation: myMovieYodaSMS 2s infinite ease-out;
@@ -194,7 +217,153 @@
     clip-path: polygon(0 0, 50% 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
     transition: clip-path 0.5s;
 }
-#upArrow:hover{
+
+#upArrow:hover {
     background-color: #fa9945;
     clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 50% 70%, 0 100%);
+}
+
+/* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
+
+@media (max-width: 360px) {
+    #myWork {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+        gap: 0px;
+    }
+
+    #myWorkTitle {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerPrinciples {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 30px 5px 30px 5px ;
+        gap: 40px;
+    }
+
+    .principles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .principles img {
+        background-color: #2bddfdbd;
+        width: 70px;
+    }
+
+    .principles h1 {
+        padding: 0px;
+        font-size: 22px;
+    }
+
+    .principles p {
+        width: 100%;
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .containerMyWork {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
+    .myWorkLeft {
+        width: 100%;
+    }
+    .myWorkLeft img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        animation: mymove 3s infinite ease;
+        padding: 10px 0px 10px 0px;
+    }
+
+    @keyframes mymove {
+        0% {
+            bottom: -10px;
+        }
+        50% {
+            bottom: 10px;
+        }
+        100% {
+            bottom: -10px;
+        }
+    }
+
+    /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
+
+    .myWorkRight {
+        width: 100%;
+        height: 100vh;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .containerRight {
+        padding: 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .links::after {
+        height: 1px;
+    }
+
+    .contentLinks {
+        padding: 30px 5px;
+    }
+
+    .contentLinks ul li span {
+        color: #1e9db4;
+        font-size: 16px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .contentLinks ul li {
+        font-size: 18px;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .active-tab.active-tab {
+        display: block;
+    }
+
+    #upArrow {
+        padding: 7px;
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
+    }
 }
