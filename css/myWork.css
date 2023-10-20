@@ -224,7 +224,7 @@
 }
 
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
-@media (min-width: 361px) and (max-width: 480px){
+@media (min-width: 361px) and (max-width: 600px){
     #myWork {
         width: 100%;
         height: 100%;

@@ -1,17 +1,17 @@
 #card1 {
-  background: url(../images/proj-card-1.png) no-repeat center center/cover;
+  background: url(../images/slides/proj-card-1.png) no-repeat center center/cover;
 }
 #card2 {
-  background: url(../images/proj-card-2.png) no-repeat center center/cover;
+  background: url(../images/slides/proj-card-2.png) no-repeat center center/cover;
 }
 #card3 {
-  background: url(../images/proj-card-3.png) no-repeat center center/cover;
+  background: url(../images/slides/proj-card-3.png) no-repeat center center/cover;
 }
 #card4 {
-  background: url(../images/proj-card-4.png) no-repeat center center/cover;
+  background: url(../images/slides/proj-card-4.png) no-repeat center center/cover;
 }
 #card5 {
-  background: url(../images/proj-card-5.png) no-repeat center center/cover;
+  background: url(../images/slides/proj-card-5.png) no-repeat center center/cover;
 }
 #card6 {
   background-color: coral;
@@ -27,51 +27,51 @@
 }
 
 #slide1-1 {
-  background-image: url(../images/slide1-1.png);
+  background-image: url(../images/slides/slide1-1.png);
 }
 #slide1-2 {
-  background-image: url(../images/slide1-2.png);
+  background-image: url(../images/slides/slide1-2.png);
 }
 #slide1-3 {
-  background-image: url(../images/slide1-3.png);
+  background-image: url(../images/slides/slide1-3.png);
 }
 
 #slide2-1 {
-  background-image: url(../images/slide2-1.png);
+  background-image: url(../images/slides/slide2-1.png);
 }
 #slide2-2 {
-  background-image: url(../images/slide2-2.png);
+  background-image: url(../images/slides/slide2-2.png);
 }
 #slide2-3 {
-  background-image: url(../images/slide2-3.png);
+  background-image: url(../images/slides/slide2-3.png);
 }
 
 #slide3-1 {
-  background-image: url(../images/slide3-1.png);
+  background-image: url(../images/slides/slide3-1.png);
 }
 #slide3-2 {
-  background-image: url(../images/slide3-2.png);
+  background-image: url(../images/slides/slide3-2.png);
 }
 #slide3-3 {
-  background-image: url(../images/slide3-3.png);
+  background-image: url(../images/slides/slide3-3.png);
 }
 
 #slide4-1 {
-  background-image: url(../images/slide4-1.png);
+  background-image: url(../images/slides/slide4-1.png);
 }
 #slide4-2 {
-  background-image: url(../images/slide4-2.png);
+  background-image: url(../images/slides/slide4-2.png);
 }
 #slide4-3 {
-  background-image: url(../images/slide4-3.png);
+  background-image: url(../images/slides/slide4-3.png);
 }
 
 #slide5-1 {
-  background-image: url(../images/slide5-1.png);
+  background-image: url(../images/slides/slide5-1.png);
 }
 #slide5-2 {
-  background-image: url(../images/slide5-2.png);
+  background-image: url(../images/slides/slide5-2.png);
 }
 #slide5-3 {
-  background-image: url(../images/slide5-3.png);
+  background-image: url(../images/slides/slide5-3.png);
 }

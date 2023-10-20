@@ -67,6 +67,10 @@ function isElementAtTop(element) {
     var rect = element.getBoundingClientRect();
     return rect.bottom < 40;
 }
+// function isElementAtTop(element) {
+//     var rect = element.getBoundingClientRect();
+//     return rect.bottom < 40;
+// }
 
 function checkNavbar() {
     if (isElementAtTop(introduction)) {

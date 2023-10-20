@@ -32,19 +32,14 @@ function checkElement() {
 
 window.addEventListener('scroll', checkElement);
 
-
-// BTN CARD
-
-
-
 // SLIDE CAROUSEL
 
-const openCarouselBtn = document.querySelectorAll(".btnCard")
-const carouselContainer = document.querySelectorAll(".carouselContainer")
-const closeCarouselBtn = document.querySelectorAll(".carouselContainer")
-const prevBtn = document.querySelectorAll(".carouselBtnPrev")
-const nextBtn = document.querySelectorAll(".carouselBtnNext")
-const slides = document.querySelectorAll(".carouselSlide")
+const openCarouselBtn = document.querySelectorAll(".btnCard");
+const carouselContainer = document.querySelectorAll(".carouselContainer");
+const closeCarouselBtn = document.querySelectorAll(".carouselBtnClose");
+const prevBtn = document.querySelectorAll(".carouselBtnPrev");
+const nextBtn = document.querySelectorAll(".carouselBtnNext");
+const slides = document.querySelectorAll(".carouselSlide");
 
 let slideIndexes = Array.from({ length: openCarouselBtn.length }, () => 0);
 
@@ -57,10 +52,17 @@ openCarouselBtn.forEach((btn, index) => {
 });
 
 function showSlide(index, slideIndex) {
-    slides.forEach((slide) => {
-        slide.style.display = 'none';
-    });
-    slides[index * 3 + slideIndex].style.display = 'block';
+    const totalSlides = slides.length;
+    const calculatedIndex = index * 3 + slideIndex;
+
+    if (calculatedIndex >= 0 && calculatedIndex < totalSlides) {
+        slides.forEach((slide) => {
+            slide.style.display = 'none';
+        });
+        slides[calculatedIndex].style.display = 'block';
+    } else {
+        console.error('Índice de slide inválido:', calculatedIndex);
+    }
 }
 
 function nextSlide(index) {
@@ -77,11 +79,12 @@ closeCarouselBtn.forEach((out) => {
     out.addEventListener('click', (e) => {
         if (e.target === out) {
             carouselContainer.forEach((close) => {
-                close.style.display = 'none'
-            })
+                close.style.display = 'none';
+            });
         }
-    })
-})
+    });
+});
+
 nextBtn.forEach((next, index) => {
     next.addEventListener('click', () => nextSlide(index));
 });
@@ -89,19 +92,6 @@ nextBtn.forEach((next, index) => {
 prevBtn.forEach((prev, index) => {
     prev.addEventListener('click', () => prevSlide(index));
 });
-
-const carouselBtnClose = document.querySelectorAll(".carouselBtnClose")
-carouselBtnClose.forEach((out) => {
-    out.addEventListener('click', (e) => {
-        if (e.target === out) {
-            carouselContainer.forEach((close) => {
-                close.style.display = 'none'
-            })
-        }
-    })
-})
-
-showSlide(slideIndexes);
 
 
 
