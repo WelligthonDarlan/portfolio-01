@@ -48,6 +48,8 @@ openCarouselBtn.forEach((btn, index) => {
         slideIndexes[index] = 0;
         showSlide(index, slideIndexes[index]);
         carouselContainer[index].style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Desabilita o scroll da página
+        document.body.style.overflowX = 'hidden'; // Habilita o scroll da página novamente
     });
 });
 
@@ -80,6 +82,9 @@ closeCarouselBtn.forEach((out) => {
         if (e.target === out) {
             carouselContainer.forEach((close) => {
                 close.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Habilita o scroll da página novamente
+                document.body.style.overflowX = 'hidden'; // Habilita o scroll da página novamente
+
             });
         }
     });

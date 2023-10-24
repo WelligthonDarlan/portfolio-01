@@ -10,6 +10,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation: myMovieYoda 2s infinite ease-out;
+    
 }
 #containerYodaSMS{
     display: flex;
@@ -22,7 +23,7 @@
     position: fixed;
     bottom: 90px; 
     left: 25px;
-    z-index: 2000;
+    z-index: 4000;
     text-align: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 25% 100%, 25% 75%, 0% 75%);
 }

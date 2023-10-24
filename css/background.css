@@ -8,15 +8,17 @@
   text-decoration: none;
   transition: all 0.3s ease-out;
 }
+
 html,
 body {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  
 }
 
 body {
   background: #232323;
   color: #d7f9ff;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInAnimation {
