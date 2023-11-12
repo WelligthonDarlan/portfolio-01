@@ -1,9 +1,5 @@
-
-
-
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
-
 
 // Definindo variáveis globais
 let w, h, particles;
@@ -11,7 +7,7 @@ let particleDistance = 30; //Distancia entre as particulas(Tamanho dos quadrados
 let mouse = {
 	x: undefined,
 	y: undefined,
-	radius: 90,//Distancia que as particulas firam do mouse
+	radius: 90,//Distancia que as particulas ficam do mouse
 	color: "#7b71ffcc"
 };
 
@@ -22,7 +18,6 @@ function init() {
 	resizeReset();
 	animationLoop();
 }
-
 
 // Redimensiona o canvas para o tamanho da janela
 function resizeReset() {
@@ -154,9 +149,8 @@ class Particle {
 }
 
 // Inicializa o código e adiciona os ouvintes de eventos
-if (window.innerWidth > 3200) {
-	console.log("A largura da janela é maior que 3200px. O script foi interrompido para evitar possivel lag da pagina.");
-	
+if (window.innerWidth > 3200 ) {
+	console.log("A largura da janela é maior que 3200px. O script foi interrompido para evitar possivel travamento da pagina.");
 } else {
 	window.addEventListener("mousemove", handleMouseMove);
 	window.addEventListener("mouseout", handleMouseOut);

@@ -5,12 +5,11 @@
     left: 10px;
     font-size: 40px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 4000;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation: myMovieYoda 2s infinite ease-out;
-    
 }
 #containerYodaSMS{
     display: flex;

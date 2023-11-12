@@ -14,7 +14,7 @@
   background: url(../images/slides/proj-card-5.png) no-repeat center center/cover;
 }
 #card6 {
-  background-color: coral;
+  background: url(../images/slides/proj-card-6.png) no-repeat center center/cover;
 }
 #card7 {
   background-color: crimson;
@@ -74,4 +74,14 @@
 }
 #slide5-3 {
   background-image: url(../images/slides/slide5-3.png);
+}
+
+#slide6-1 {
+  background-image: url(../images/slides/slide6-1.png);
+}
+#slide6-2 {
+  background-image: url(../images/slides/slide6-2.png);
+}
+#slide6-3 {
+  background-image: url(../images/slides/slide6-3.png);
 }

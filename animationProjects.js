@@ -50,6 +50,9 @@ openCarouselBtn.forEach((btn, index) => {
         carouselContainer[index].style.display = 'block';
         document.body.style.overflow = 'hidden'; // Desabilita o scroll da página
         document.body.style.overflowX = 'hidden'; // Habilita o scroll da página novamente
+        if (window.innerWidth > 480){
+            document.getElementById('navbarDesktop').style.display = "none"
+        }
     });
 });
 
@@ -84,7 +87,23 @@ closeCarouselBtn.forEach((out) => {
                 close.style.display = 'none';
                 document.body.style.overflow = 'auto'; // Habilita o scroll da página novamente
                 document.body.style.overflowX = 'hidden'; // Habilita o scroll da página novamente
-
+                if (window.innerWidth > 480){
+                    document.getElementById('navbarDesktop').style.display = "flex"
+                }
+            });
+        }
+    });
+});
+carouselContainer.forEach((out) => {
+    out.addEventListener('click', (e) => {
+        if (e.target === out) {
+            carouselContainer.forEach((close) => {
+                close.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Habilita o scroll da página novamente
+                document.body.style.overflowX = 'hidden'; // Habilita o scroll da página novamente
+                if (window.innerWidth > 480){
+                    document.getElementById('navbarDesktop').style.display = "flex"
+                }
             });
         }
     });
