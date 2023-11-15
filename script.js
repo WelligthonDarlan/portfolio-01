@@ -12,9 +12,7 @@ function openTab(tabname){
     document.getElementById(tabname).classList.add("active-tab")
 }
 
-// ------------------ABOUT------------------
-
-// Efeito writer ⏬
+//------------------EFEITO WRITER--⏬⏬⏬⏬⏬⏬------------------
 
 function typeWriter(element) {
     const textArray = element.innerHTML.split('');
@@ -36,7 +34,6 @@ function isElementInViewport(element) {
 
 const aboutP = document.getElementById("description");
 
-
 //Função será acionada assim que o elemento estiver visivel
 function startTypeWriterWhenVisible() {
     if (isElementInViewport(aboutP)) {
@@ -47,8 +44,7 @@ function startTypeWriterWhenVisible() {
 // Adiciona um event listener para verificar quando o usuário rola a página
 window.addEventListener('scroll', startTypeWriterWhenVisible);
 
-
-// Abrir nav bar ao aparacer na tela ⏬
+//------------------ABRIR NAVBAR AO APARECER NA TELA--⏬⏬⏬⏬⏬⏬------------------
 
 const introduction = document.getElementById("introduction")
 const navbar = document.getElementById("navbarDesktop")
@@ -67,11 +63,6 @@ function isElementAtTop(element) {
     var rect = element.getBoundingClientRect();
     return rect.bottom < 40;
 }
-// function isElementAtTop(element) {
-//     var rect = element.getBoundingClientRect();
-//     return rect.bottom < 40;
-// }
-
 function checkNavbar() {
     if (isElementAtTop(introduction)) {
         fixedRed();
@@ -82,8 +73,7 @@ function checkNavbar() {
 
 window.addEventListener('scroll', checkNavbar);
 
-
-// ------------------EFEITO FADE------------------
+//------------------EFEITO FADE--⏬⏬⏬⏬⏬⏬------------------
 
 class Fade {
     constructor(items, delay) {
@@ -133,19 +123,16 @@ if (fadeInScroll.length) {
     fade.init();
 
     window.addEventListener("scroll", () => {
-        
         let timer;
         if (timer) clearTimeout(timer);
         timer = setTimeout(() => {
             fade.checkFades();
             timer = null;
-            
         }, 200);
     });
-
 }
 
-// --------------------CLOSE YODA SMS------------------
+//------------------CLOSE YODA SMS--⏬⏬⏬⏬⏬⏬------------------
 
 const closeYodaSMS = document.getElementById("closeYodaSMS")
 const containerYodaSMS = document.getElementById("containerYodaSMS")
@@ -154,21 +141,12 @@ closeYodaSMS.addEventListener("click", function(){
     containerYodaSMS.style.display = "none"
 })
 
+//------------------CLOSE NAVBAR--⏬⏬⏬⏬⏬⏬------------------
 
-
-
-// -----------------BTN START
-const ViewMyWork = document.getElementById("ViewMyWork")
-
-
-
-// close navbar
 document.querySelector('#menu-btn').onclick = () => {
     document.querySelector('#menu-btn').classList.toggle('fa-times')
     document.querySelector('.navbar').classList.toggle('active')
 }
-
-
 function remove(){
     document.querySelector('#menu-btn').classList.remove('fa-times')
     document.querySelector('.navbar').classList.remove('active')
