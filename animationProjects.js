@@ -1,3 +1,5 @@
+//------------------ANIMAÇÃO APARECER CARDS--⏬⏬⏬⏬⏬⏬------------------
+
 const projects = document.getElementById("projects");
 const cards = document.querySelectorAll(".card");
 
@@ -32,7 +34,7 @@ function checkElement() {
 
 window.addEventListener('scroll', checkElement);
 
-// SLIDE CAROUSEL
+//------------------SLIDE CAROUSEL--⏬⏬⏬⏬⏬⏬------------------
 
 const openCarouselBtn = document.querySelectorAll(".btnCard");
 const carouselContainer = document.querySelectorAll(".carouselContainer");
@@ -40,6 +42,7 @@ const closeCarouselBtn = document.querySelectorAll(".carouselBtnClose");
 const prevBtn = document.querySelectorAll(".carouselBtnPrev");
 const nextBtn = document.querySelectorAll(".carouselBtnNext");
 const slides = document.querySelectorAll(".carouselSlide");
+const contentCard = document.querySelectorAll('.contentCard')
 
 let slideIndexes = Array.from({ length: openCarouselBtn.length }, () => 0);
 
@@ -53,6 +56,13 @@ openCarouselBtn.forEach((btn, index) => {
         if (window.innerWidth > 480){
             document.getElementById('navbarDesktop').style.display = "none"
         }
+
+        contentCard.forEach((content) => {
+            content.classList.add('opacityOn')
+            content.classList.remove('opacityOff')
+        })
+        document.getElementById('upArrow').style.display = 'none'
+        document.getElementById('iconWpp').style.opacity = '0'
     });
 });
 
@@ -90,6 +100,12 @@ closeCarouselBtn.forEach((out) => {
                 if (window.innerWidth > 480){
                     document.getElementById('navbarDesktop').style.display = "flex"
                 }
+                contentCard.forEach((content) => {
+                    content.classList.add('opacityOff')
+                    content.classList.remove('opacityOn')
+                })
+                document.getElementById('upArrow').style.display = 'block'
+                document.getElementById('iconWpp').style.opacity = '1'
             });
         }
     });
@@ -104,6 +120,12 @@ carouselContainer.forEach((out) => {
                 if (window.innerWidth > 480){
                     document.getElementById('navbarDesktop').style.display = "flex"
                 }
+                contentCard.forEach((content) => {
+                    content.classList.add('opacityOff')
+                    content.classList.remove('opacityOn')
+                })
+                document.getElementById('upArrow').style.display = 'block'
+                document.getElementById('iconWpp').style.opacity = '1'
             });
         }
     });

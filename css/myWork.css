@@ -194,6 +194,11 @@
     padding: 10px 0px;
 }
 
+#chanel{
+    color: #ff8c2a;
+    font-weight: 900;
+}
+
 .active-tab.active-tab {
     display: block;
 }

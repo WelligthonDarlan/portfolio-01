@@ -43,7 +43,7 @@
           Oi, sou <span>Welligthon Paluchowski</span><br />
           Desenvolvedor Front End
         </h1>
-        <a href="#navbarDesktop"
+        <a href="#aboutMe"
           id="ancorIntroduction"><button id="ViewMyWork">VEJA O MEU TRABALHO</button></a
         >
       </div>
@@ -63,21 +63,23 @@
       <!-- NAVBAR DESKTOP ⏫⏫⏫⏫⏫⏫ -->
 
       <!-- ICONE YODA WHATSAPP ⏬⏬⏬⏬⏬⏬ -->
-      <div id="containerYodaSMS">
+      <div id="iconWpp">
+        <div id="containerYodaSMS">
+          <a
+            href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!"
+            target="_blank"
+          >
+            <p id="yodaSMS">Mandar mensagem você deve!</p>
+          </a>
+          <p id="closeYodaSMS">x</p>
+        </div>
         <a
           href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!"
           target="_blank"
         >
-          <p id="yodaSMS">Mandar mensagem você deve!</p>
+          <img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp" />
         </a>
-        <p id="closeYodaSMS">x</p>
       </div>
-      <a
-        href="https://wa.me/48988240117?text=Olá Wellighon, estou entrando em contato através do seu portfólio!"
-        target="_blank"
-      >
-        <img src="./images/icon-wpp.png" alt="icon-wpp.png" class="iconWpp" />
-      </a>
       <!-- ICONE YODA WHATSAPP ⏫⏫⏫⏫⏫⏫ -->
 
       <!-- ------------------NAVBAR--⏬⏬⏬⏬⏬⏬------------------ -->
@@ -209,25 +211,23 @@
                 <ul>
                   <li>
                     <span>2018 - 2019</span><br />&nbsp;Criei um projeto de
-                    animação no youtube, onde desenvolvi muitas habilidades com
-                    edição de video, animação 2D, tratamento de audio e
+                    animação no YouTube, onde desenvolvi muitas habilidades com
+                    edição de video, animação 2D, tratamento de áudio e
                     marketing (Esse projeto foi muito elogiado pela comunidade,
                     mas não tive muito retorno monetário na época, o canal
-                    chegou a ter 4000 inscritos em 6 meses)
-                    <a href="https://www.youtube.com/watch?v=eAHkOEhXsLI&t=0s"
+                    chegou a ter 4000 inscritos em 6 meses).
+                    <a id="chanel" href="https://www.youtube.com/watch?v=eAHkOEhXsLI&t=0s"
                       target="_blank">Canal Youtube</a
                     >
                   </li>
                   <li>
-                    <span>2020 - 2023</span><br />&nbsp;Trabalhei na
-                    administração e gerenciamento de estoque na TokStok, onde
-                    aprendi muito como funciona a parte sistematica de um
-                    estoque fisico.
+                    <span>2020 - 2023</span><br />&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde
+                    aprendi muito como funciona a parte sistemática de um estoque físico.
                   </li>
                   <li>
                     <span>2022 - 2023</span><br />&nbsp;Atualmente venho
                     desenvolvendo inúmeros projetos para amplificar minhas
-                    habilidades em Javascript
+                    habilidades em Javascript.
                   </li>
                 </ul>
               </div>
@@ -266,12 +266,11 @@
 
         <div id="containerProjects">
           <div class="card" id="card1">
-            <div class="contentCard">
-              <div>
+            <div class="contentCard opacityOff"><div>
                 <h1>CALCULADORA DE CONSUMO</h1>
                 <p>Bootstrap / Sass / Javascript</p>
               </div>
-              <a href="#card1"><button id="btnCard1" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"><button id="btnCard1" class="btnCard">VER MAIS</button></a>
 
               <div id="carouselContainer" class="carouselContainer">
                 
@@ -299,10 +298,10 @@
                     <div class="informCard">
                       <h1>CALCULADORA DE CONSUMO</h1>
                       <p>
-                        A pagina faz um calculo de consumo de combustível gasto
+                        A pagina faz um cálculo de consumo de combustível gasto
                         diariamente, semanalmente, mensalmente e anual. Além
                         disso ela tem informações sobre veículos que tem baixo
-                        consumo de combustível, entre outras coisas
+                        consumo de combustível, entre outras coisas.
                       </p>
                       <div class="slideLinks">
                         <a
@@ -323,12 +322,12 @@
             </div>
           </div>
           <div class="card" id="card2">
-            <div class="contentCard">
+            <div class="contentCard opacityOff">
               <div>
                 <h1>CALCULADORA JS</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#card2"><button id="btnCard2" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"><button id="btnCard2" class="btnCard">VER MAIS</button></a>
 
               <div id="carouselContainer" class="carouselContainer">
                 <div class="carouselContent">
@@ -376,12 +375,12 @@
             </div>
           </div>
           <div class="card" id="card3">
-            <div class="contentCard">
+            <div class="contentCard opacityOff">
               <div>
                 <h1>SushiCom - Em produção</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#card3"><button id="btnCard3" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"><button id="btnCard3" class="btnCard">VER MAIS</button></a>
 
               <div id="carouselContainer" class="carouselContainer">
                 <div class="carouselContent">
@@ -426,13 +425,12 @@
             </div>
           </div>
           <div class="card" id="card4">
-            <div class="contentCard">
+            <div class="contentCard opacityOff">
               <div>
                 <h1>To do list</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#card4"><button id="btnCard4" class="btnCard">VER MAIS</button></a>
-
+              <a href="#projectsTitle"><button id="btnCard4" class="btnCard">VER MAIS</button></a>
               <div id="carouselContainer" class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
@@ -481,13 +479,12 @@
             </div>
           </div>
           <div class="card" id="card5">
-            <div class="contentCard">
+            <div class="contentCard opacityOff">
               <div>
                 <h1>Canal Youtube de Animação</h1>
                 <p>Animate / Photoshop / ...</p>
               </div>
-              <a href="#card5"><button id="btnCard5" class="btnCard">VER MAIS</button></a>
-
+              <a href="#projectsTitle"><button id="btnCard5" class="btnCard">VER MAIS</button></a>
               <div id="carouselContainer" class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
@@ -533,12 +530,12 @@
             </div>
           </div>
           <div class="card" id="card6">
-            <div class="contentCard">
+            <div class="contentCard opacityOff">
               <div>
                 <h1>Jogo da velha</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#card6"><button id="btnCard6" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"><button id="btnCard6" class="btnCard">VER MAIS</button></a>
 
               <div id="carouselContainer" class="carouselContainer">
                 <div class="carouselContent">
@@ -584,7 +581,7 @@
               </div>
             </div>
           </div>
-          <div class="card" id="card7">
+          <!-- <div class="card" id="card7">
             <button id="btnCard7" class="btn">click aqui</button>
           </div>
           <div class="card" id="card8">
@@ -592,7 +589,7 @@
           </div>
           <div class="card" id="card9">
             <button id="btnCard9" class="btn">click aqui</button>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- ------------------PROJETOS--⏫⏫⏫⏫⏫⏫------------------ -->
@@ -651,9 +648,9 @@
         </div>
         <!-- ------------------CONTACT--⏫⏫⏫⏫⏫⏫------------------ -->
       </div>
-      <div class="copyright">
-        <p>Copyright © Welligthon Darlan.</p>
-      </div>
     </main>
+    <footer class="copyright">
+      <p>Copyright © Welligthon Darlan.</p>
+    </footer>
   </body>
 </html>

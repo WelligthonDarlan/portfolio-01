@@ -17,6 +17,7 @@
   gap: 4rem;
   font-size: 60px;
   z-index: 30000;
+  width: 100%;
 }
 #h1Animation span {
   color: #2bdefd;
@@ -90,7 +91,7 @@
     z-index: 30000;
     padding: 0px;
     margin: 0px;
-    width: 100%;
+    width: 50%;
   }
   #introduction{
     display: flex;

@@ -70,7 +70,22 @@
 
 .iconSocialMedia a img {
     width: 40px;
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
+}
+.iconSocialMedia a img:hover{
+    animation: icon .5s forwards ease-out;
+}
+@keyframes icon{
+    0%{
+        /* background-color: #2bddfdbe; */
+    }
+    50%{
+        /* background-color: #2bddfd; */
+        padding: 0px 5px 10px 5px;
+        border-radius: 5px;
+        filter: drop-shadow(-5px 15px 2px #2bddfd79);
+    }
+    100%{}
 }
 
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */

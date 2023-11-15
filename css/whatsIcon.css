@@ -5,7 +5,7 @@
     left: 10px;
     font-size: 40px;
     cursor: pointer;
-    z-index: 4000;
+    z-index: 4999;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -22,7 +22,7 @@
     position: fixed;
     bottom: 90px; 
     left: 25px;
-    z-index: 4000;
+    z-index: 4999;
     text-align: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 30% 75%, 25% 100%, 25% 75%, 0% 75%);
 }

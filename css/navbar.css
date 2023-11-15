@@ -11,6 +11,7 @@
   background: linear-gradient(to bottom, #000000ff, #000000ff, #222222df);
   top: 0;
   overflow: hidden;
+  width: 100%;
 }
 
 #navbarDesktop img {
