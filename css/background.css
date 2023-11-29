@@ -42,6 +42,22 @@ body {
   animation: animate 2s linear forwards;
 }
 
+[data-animate] {
+  opacity: 0;
+}
+
+[data-animate="toRight"] {
+  transform: translate3d(-300px, 0, 0);
+}
+[data-animate="toleft"] {
+  transform: translate3d(300px, 0, 0);
+}
+
+[data-animate].on{
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
+
 @keyframes animate {
   0% {
     transform: translateY(0) scale(1);

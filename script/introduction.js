@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 
 // Definindo variáveis globais
 let w, h, particles;
-let particleDistance = 30; //Distancia entre as particulas(Tamanho dos quadrados)
+let particleDistance = 40; //Distancia entre as particulas(Tamanho dos quadrados)
 let mouse = {
 	x: undefined,
 	y: undefined,
@@ -57,7 +57,7 @@ function drawLine() {
 			let dx = particles[a].x - particles[b].x;
 			let dy = particles[a].y - particles[b].y;
 			let distance = Math.sqrt(dx * dx + dy * dy);
-			let changeColorDistance = 29;//Distancia da mudança de cor ao passar o mouse
+			let changeColorDistance = 39.9;//Distancia da mudança de cor ao passar o mouse
 
 			if (distance < particleDistance * 1.5) {
 				let opacity = 1 - (distance / (particleDistance * 1.5));

@@ -339,11 +339,14 @@
   .carouselSlides {
     width: 100%;
     height: 100%;
+    /* border: 2px solid rgb(0, 255, 21); */
   }
   .containerImage {
     width: 100%;
     height: 100%;
     background-color: #ffffffff;
+    padding-top: 10px;
+   
   }
   .informCard {
     background-color: #ffffffff;
@@ -379,7 +382,7 @@
   .carouselSlide {
     /* border: 2px solid rgb(162, 0, 255); */
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   .carouselBtnClose{
     font-size: 20px;

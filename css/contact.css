@@ -114,9 +114,6 @@
   background: #363636;
   font-weight: 300;
   margin-top: 20px;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  z-index: 5000;
 }
 .copyright p {
   color: lightgray;

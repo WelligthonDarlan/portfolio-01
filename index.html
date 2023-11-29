@@ -28,9 +28,10 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/slides.css" />
 
-    <script src="animationProjects.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="introduction.js" defer></script>
+    <script src="script/animationProjects.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/introduction.js" defer></script>
+    <script src="script/animation.js" defer></script>
 
     <title>Welligthon Paluchowski</title>
   </head>
@@ -84,23 +85,23 @@
 
       <div id="menu-btn" class="fas fa-bars"></div>
         <nav class="navbar" id="nav-bar">
-            <a href="#aboutMe" data-text="início" onclick="remove()">Sobre mim</a>
-            <a href="#myWorkTitle" data-text="sobre" onclick="remove()">Meu trabalho</a>
+            <a href="#aboutMe" data-text="Sobre mim" onclick="remove()">Sobre mim</a>
+            <a href="#myWorkTitle" data-text="Meu trabalho" onclick="remove()">Meu trabalho</a>
             <a href="#projectsTitle" data-text="projetos" onclick="remove()">Projetos</a>
             <a href="#contact" data-text="contato" onclick="remove()">contato</a>
         </nav>
 
       <!-- ------------------ABOUT ME--⏬⏬⏬⏬⏬⏬------------------ -->
 
-      <div id="aboutMe" class="fadeInScroll">
+      <div id="aboutMe" >
         <div class="aboutMeContainer">
-          <h1 class="aboutMeTitle">Sobre mim</h1>
+          <h1 class="aboutMeTitle" data-animate="toRight">Sobre mim</h1>
           <p id="description">
             Desde a infância estive conectado com a tecnologia, tenho grande
             paixão por efeitos de UI, animações e pela criação de experiências
             de usuário intuitivas e dinâmicas.
           </p>
-          <div class="iconSocialMedia">
+          <div class="iconSocialMedia" data-animate="toleft">
             <a
               href="https://www.linkedin.com/in/welligthon-paluchowski/"
               target="_blank"
@@ -135,9 +136,9 @@
         <a href="#aboutMe"
           ><img id="upArrow" src="./images/up-arrow.png" alt="up-arrow.png"
         /></a>
-        <h1 id="myWorkTitle">MEU TRABALHO</h1>
+        <h1 id="myWorkTitle" data-animate="toRight" >MEU TRABALHO</h1>
 
-        <div class="containerPrinciples">
+        <div class="containerPrinciples" data-animate="toleft">
           <div class="principles">
             <img src="./images/intuitive.png" alt="intuitive.png" />
             <h1>Intuitivo</h1>
@@ -160,7 +161,7 @@
           </div>
         </div>
 
-        <div class="containerMyWork">
+        <div class="containerMyWork" data-animate="toRight">
           <div class="myWorkLeft">
             <img src="./images/user.png" />
           </div>
@@ -235,7 +236,7 @@
                   </li>
                   <li>
                     <span>2023</span><br />&nbsp;&nbsp;&nbsp;&nbsp;Curso Full
-                    Stack OniBitCode:
+                    Stack OneBitCode:
                     <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conclui os
                     modulos de: HTML / CSS / Javascript / NodeJS /
                     Bootstrap-Sass / React /SQL
@@ -250,7 +251,7 @@
       <!-- ------------------PROJETOS--⏬⏬⏬⏬⏬⏬------------------ -->
 
       <div id="projects">
-        <h1 class="projectsTitle" id="projectsTitle">MEUS PROJETOS</h1>
+        <h1 class="projectsTitle" id="projectsTitle" data-animate="toRight">MEUS PROJETOS</h1>
         <!-- <div id="containerBtnProjects">
           <button class="btnProjects">TODOS</button>
           <button class="btnProjects">E-COMMERCE</button>
@@ -555,7 +556,7 @@
                     <div class="informCard">
                       <h1>Jogo da velha</h1>
                       <p>
-                        O jogo da velha, embora seja muito simples, é preciso um bom conhecimento com lógica de programação. Ele tem as funcionalidades básicas de um jogo da velha, é possível alterar o nome dos jogadores ou não, possui um placar que manipula os resultados e ele tem algumas regras informadas no início do jogo.
+                        O jogo da velha, embora seja muito simples, é preciso um bom conhecimento com lógica de programação. Esse projeto possui as funcionalidades básicas de um jogo da velha, é possível alterar o nome dos jogadores ou não, possui um placar que manipula os resultados e ele tem algumas regras informadas no início do jogo.
                       </p>
                       <div class="slideLinks">
                         <a
@@ -591,11 +592,11 @@
       
       <div id="contact" class="fadeInScroll">
         <div class="containerContact">
-          <h1 class="titleContactLeft">ONDE ME ENCONTRAR</h1>
+          <h1 class="titleContactLeft" data-animate="toRight" >ONDE ME ENCONTRAR</h1>
 
-          <p id="workMe">Tem alguma dúvida ou quer trabalhar comigo?</p>
+          <p id="workMe" data-animate="toleft">Tem alguma dúvida ou quer trabalhar comigo?</p>
 
-          <div class="containerIcons">
+          <div class="containerIcons" data-animate="toRight">
             <div class="emailPhoneContainer">
               <p>
                 <img
@@ -637,7 +638,7 @@
           </div>
 
           <a href="./images/curriculo.pdf" download id="download"
-            >CURRÍCULO
+          data-animate="toleft">CURRÍCULO
             <img src="./images/file-arrow-down-solid.svg" alt="imgDownload" />
           </a>
         </div>
