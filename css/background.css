@@ -6,7 +6,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 html,
@@ -20,52 +20,18 @@ body {
   overflow-x: hidden;
   overflow: auto;
 }
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-    margin-left: -40px;
-  }
-  50% {
-    margin: 0px;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.container {
-  height: 100%;
-}
-
-.headerText span {
-  color: #2bdefd;
-  animation: animate 2s linear forwards;
-}
 
 [data-animate] {
   opacity: 0;
 }
-
 [data-animate="toRight"] {
-  transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-100px, 0, 0) scale(0.1, 1);
 }
 [data-animate="toleft"] {
-  transform: translate3d(300px, 0, 0);
+  transform: translate3d(100px, 0, 0) scale(0.1, 1);
 }
-
 [data-animate].on{
   opacity: 1;
-  transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0) scale(1, 1);
 }
 
-@keyframes animate {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-  70% {
-    transform: translateY(290) scale(1);
-  }
-  100% {
-    transform: translateY(290) scale(0);
-  }
-}

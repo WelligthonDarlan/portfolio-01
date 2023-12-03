@@ -49,14 +49,14 @@ openCarouselBtn.forEach((btn, index) => {
         slideIndexes[index] = 0;
         showSlide(index, slideIndexes[index]);
         carouselContainer[index].style.display = 'block';
-        document.body.style.overflow = 'hidden'; 
-        document.body.style.overflowX = 'hidden'; 
-        if (window.innerWidth > 480){
+        document.body.style.overflow = 'hidden';
+        document.body.style.overflowX = 'hidden';
+        if (window.innerWidth > 480) {
             document.getElementById('navbarDesktop').style.opacity = "0"
             btnNavbar.forEach((link) => {
                 link.style.display = 'none'
             })
-        } else if (window.innerWidth <= 480){
+        } else if (window.innerWidth <= 480) {
             document.getElementById('menu-btn').style.opacity = "0"
             document.getElementById('menu-btn').style.top = "-200px"
         }
@@ -99,14 +99,14 @@ closeCarouselBtn.forEach((out) => {
         if (e.target === out) {
             carouselContainer.forEach((close) => {
                 close.style.display = 'none';
-                document.body.style.overflow = 'auto'; 
-                document.body.style.overflowX = 'hidden'; 
-                if (window.innerWidth > 480){
+                document.body.style.overflow = 'auto';
+                document.body.style.overflowX = 'hidden';
+                if (window.innerWidth > 480) {
                     document.getElementById('navbarDesktop').style.opacity = '1'
-                     btnNavbar.forEach((link) => {
-                link.style.display = 'inline'
-            })
-                } else if (window.innerWidth <= 480){
+                    btnNavbar.forEach((link) => {
+                        link.style.display = 'inline'
+                    })
+                } else if (window.innerWidth <= 480) {
                     document.getElementById('menu-btn').style.opacity = "1"
                     document.getElementById('menu-btn').style.top = "20px"
                 }
@@ -125,13 +125,13 @@ carouselContainer.forEach((out) => {
         if (e.target === out) {
             carouselContainer.forEach((close) => {
                 close.style.display = 'none';
-                document.body.style.overflow = 'auto'; 
-                document.body.style.overflowX = 'hidden'; 
-                if (window.innerWidth > 480){
+                document.body.style.overflow = 'auto';
+                document.body.style.overflowX = 'hidden';
+                if (window.innerWidth > 480) {
                     document.getElementById('navbarDesktop').style.opacity = '1'
-                     btnNavbar.forEach((link) => {
-                link.style.display = 'inline'
-            })
+                    btnNavbar.forEach((link) => {
+                        link.style.display = 'inline'
+                    })
                 } else if (window.innerWidth <= 480) {
                     document.getElementById('menu-btn').style.opacity = "1"
                     document.getElementById('menu-btn').style.top = "20px"

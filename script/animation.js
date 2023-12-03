@@ -13,12 +13,11 @@ function debounce(func, delay) {
 
 
 const target = document.querySelectorAll('[data-animate]')
-
 const classAnimate = 'on'
 
 function animateScroll() {
 
-  const windowTop = window.scrollY + ((window.innerHeight * 4) / 4)
+  const windowTop = window.scrollY + ((window.innerHeight * 3.5) / 4)
 
   target.forEach(function (element) {
     if (windowTop > element.offsetTop) {
