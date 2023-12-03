@@ -75,6 +75,12 @@
   padding-bottom: 50px;
   clip-path: circle(0% at 95.3% 8.5%);
 }
+.overflowOn{
+  overflow: auto;
+}
+.overflowOff{
+  overflow: hidden;
+}
 .navbar.active {
   clip-path: circle(140% at 95.3% 8.5%);
 }

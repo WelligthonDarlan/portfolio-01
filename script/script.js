@@ -84,16 +84,47 @@ closeYodaSMS.addEventListener("click", function(){
 })
 
 //------------------CLOSE NAVBAR--⏬⏬⏬⏬⏬⏬------------------
+const body = document.querySelector("body")
+const linkNavbarMobile = document.querySelectorAll('.linkNavbarMobile')
+
+if (window.innerWidth <= 480 && body.classList.contains('overflowOff')) {
+    console.log(`condição on`)
+    document.querySelector('#menu-btn').addEventListener('click', () => {
+        console.log('Clique no botão de menu.');
+        body.classList.add('overflowOn')    
+        body.classList.remove('overflowOff')    
+    })
+}
 
 document.querySelector('#menu-btn').onclick = () => {
     document.querySelector('#menu-btn').classList.toggle('fa-times')
     document.querySelector('.navbar').classList.toggle('active')
     document.getElementById('upArrow').classList.toggle('navDisplayOff')
     document.getElementById('iconWpp').classList.toggle('navOpacityOff')
+    if (window.innerWidth <= 480) {
+        body.classList.add('overflowOff')
+        body.classList.remove('overflowOn')
+    }
 }
 function remove(){
     document.querySelector('#menu-btn').classList.remove('fa-times')
     document.querySelector('.navbar').classList.remove('active')
     document.getElementById('upArrow').classList.remove('navDisplayOff')
     document.getElementById('iconWpp').classList.remove('navOpacityOff')
+    if (window.innerWidth <= 480) {
+        document.querySelector('#menu-btn').addEventListener('click', () => {
+            body.classList.add('overflowOn')    
+            body.classList.remove('overflowOff')    
+        })
+    }
 }
+
+
+linkNavbarMobile.forEach((element) => {
+    element.addEventListener('click', () => {
+        if (window.innerWidth <= 480) {
+            body.classList.add('overflowOn')
+            body.classList.remove('overflowOff')
+        }
+    })
+})
