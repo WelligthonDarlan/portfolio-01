@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <link rel="shortcut icon" href="./images/icons.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/icons/icons.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/slides.css" />
 
-    <script src="script/animationProjects.js" defer></script>
     <script src="script/script.js" defer></script>
+    <script src="script/animationProjects.js" defer></script>
     <script src="script/introduction.js" defer></script>
-    <script src="script/animation.js" defer></script>
+    <script src="script/animationPage.js" defer></script>
 
     <title>Welligthon Paluchowski</title>
   </head>
@@ -83,7 +83,7 @@
 
       <!-- NAVBAR MOBILE ⏬⏬⏬⏬⏬⏬ -->
 
-      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="menuBtn" class="fas fa-bars"></div>
         <nav class="navbar" id="nav-bar">
             <a href="#aboutMe" data-text="Sobre mim" onclick="remove()" class="linkNavbarMobile">Sobre mim</a>
             <a href="#myWorkTitle" data-text="Meu trabalho" onclick="remove()" class="linkNavbarMobile">Meu trabalho</a>
@@ -96,12 +96,12 @@
       <div id="aboutMe" >
         <div class="aboutMeContainer">
           <h1 class="aboutMeTitle" data-animate="toRight">Sobre mim</h1>
-          <p id="description">
+          <p id="description" data-animate="toleft">
             Desde a infância estive conectado com a tecnologia, tenho grande
             paixão por efeitos de UI, animações e pela criação de experiências
             de usuário intuitivas e dinâmicas.
           </p>
-          <div class="iconSocialMedia" data-animate="toleft">
+          <div class="iconSocialMedia" data-animate="toRight">
             <a
               href="https://www.linkedin.com/in/welligthon-paluchowski/"
               target="_blank"
@@ -267,13 +267,13 @@
               </div>
               <a href="#projectsTitle"><button id="btnCard1" class="btnCard">VER MAIS</button></a>
 
-              <div id="carouselContainer" class="carouselContainer">
+              <div class="carouselContainer">
                 
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
                       
-                      <button id="prevBtn" class="carouselBtnPrev">
+                      <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
                           alt="iconVoltar.png"
@@ -282,7 +282,7 @@
                       <div class="carouselSlide" id="slide1-1"></div>
                       <div class="carouselSlide" id="slide1-2"></div>
                       <div class="carouselSlide" id="slide1-3"></div>
-                      <button id="nextBtn" class="carouselBtnNext">
+                      <button class="carouselBtnNext">
                         <img
                           src="./images/iconAvancar.png"
                           alt="iconAvancar.png"
@@ -324,11 +324,11 @@
               </div>
               <a href="#projectsTitle"><button id="btnCard2" class="btnCard">VER MAIS</button></a>
 
-              <div id="carouselContainer" class="carouselContainer">
+              <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
-                      <button id="prevBtn" class="carouselBtnPrev">
+                      <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
                           alt="iconVoltar.png"
@@ -337,7 +337,7 @@
                       <div class="carouselSlide" id="slide2-1"></div>
                       <div class="carouselSlide" id="slide2-2"></div>
                       <div class="carouselSlide" id="slide2-3"></div>
-                      <button id="nextBtn" class="carouselBtnNext">
+                      <button class="carouselBtnNext">
                         <img
                           src="./images/iconAvancar.png"
                           alt="iconAvancar.png"
@@ -377,11 +377,11 @@
               </div>
               <a href="#projectsTitle"><button id="btnCard3" class="btnCard">VER MAIS</button></a>
 
-              <div id="carouselContainer" class="carouselContainer">
+              <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
-                      <button id="prevBtn" class="carouselBtnPrev">
+                      <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
                           alt="iconVoltar.png"
@@ -390,7 +390,7 @@
                       <div class="carouselSlide" id="slide3-1"></div>
                       <div class="carouselSlide" id="slide3-2"></div>
                       <div class="carouselSlide" id="slide3-3"></div>
-                      <button id="nextBtn" class="carouselBtnNext">
+                      <button class="carouselBtnNext">
                         <img
                           src="./images/iconAvancar.png"
                           alt="iconAvancar.png"
@@ -426,11 +426,11 @@
                 <p>HTML / CSS / Javascript</p>
               </div>
               <a href="#projectsTitle"><button id="btnCard4" class="btnCard">VER MAIS</button></a>
-              <div id="carouselContainer" class="carouselContainer">
+              <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
-                      <button id="prevBtn" class="carouselBtnPrev">
+                      <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
                           alt="iconVoltar.png"
@@ -439,7 +439,7 @@
                       <div class="carouselSlide" id="slide4-1"></div>
                       <div class="carouselSlide" id="slide4-2"></div>
                       <div class="carouselSlide" id="slide4-3"></div>
-                      <button id="nextBtn" class="carouselBtnNext">
+                      <button class="carouselBtnNext">
                         <img
                           src="./images/iconAvancar.png"
                           alt="iconAvancar.png"
@@ -480,11 +480,11 @@
                 <p>Animate / Photoshop / ...</p>
               </div>
               <a href="#projectsTitle"><button id="btnCard5" class="btnCard">VER MAIS</button></a>
-              <div id="carouselContainer" class="carouselContainer">
+              <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
-                      <button id="prevBtn" class="carouselBtnPrev">
+                      <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
                           alt="iconVoltar.png"
@@ -493,7 +493,7 @@
                       <div class="carouselSlide" id="slide5-1"></div>
                       <div class="carouselSlide" id="slide5-2"></div>
                       <div class="carouselSlide" id="slide5-3"></div>
-                      <button id="nextBtn" class="carouselBtnNext">
+                      <button class="carouselBtnNext">
                         <img
                           src="./images/iconAvancar.png"
                           alt="iconAvancar.png"
@@ -532,11 +532,11 @@
               </div>
               <a href="#projectsTitle"><button id="btnCard6" class="btnCard">VER MAIS</button></a>
 
-              <div id="carouselContainer" class="carouselContainer">
+              <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
-                      <button id="prevBtn" class="carouselBtnPrev">
+                      <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
                           alt="iconVoltar.png"
@@ -545,7 +545,7 @@
                       <div class="carouselSlide" id="slide6-1"></div>
                       <div class="carouselSlide" id="slide6-2"></div>
                       <div class="carouselSlide" id="slide6-3"></div>
-                      <button id="nextBtn" class="carouselBtnNext">
+                      <button class="carouselBtnNext">
                         <img
                           src="./images/iconAvancar.png"
                           alt="iconAvancar.png"
@@ -639,7 +639,7 @@
 
           <a href="./images/curriculo.pdf" download id="download"
           data-animate="toleft">CURRÍCULO
-            <img src="./images/file-arrow-down-solid.svg" alt="imgDownload" />
+            <img src="./images/file-arrow-down-solid.png" alt="imgDownload" />
           </a>
         </div>
         <!-- ------------------CONTACT--⏫⏫⏫⏫⏫⏫------------------ -->

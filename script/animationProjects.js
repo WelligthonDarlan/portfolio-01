@@ -1,4 +1,4 @@
-//------------------ANIMAÇÃO APARECER CARDS--⏬⏬⏬⏬⏬⏬------------------
+//------------------ANIMAÇÃO PARA APARECER CARDS--⏬⏬⏬⏬⏬⏬------------------
 
 const projects = document.getElementById("projects");
 const cards = document.querySelectorAll(".card");
@@ -35,12 +35,10 @@ window.addEventListener('scroll', checkElement);
 
 const openCarouselBtn = document.querySelectorAll(".btnCard");
 const carouselContainer = document.querySelectorAll(".carouselContainer");
-const closeCarouselBtn = document.querySelectorAll(".carouselBtnClose");
-const prevBtn = document.querySelectorAll(".carouselBtnPrev");
-const nextBtn = document.querySelectorAll(".carouselBtnNext");
 const slides = document.querySelectorAll(".carouselSlide");
 const contentCard = document.querySelectorAll('.contentCard')
 const btnNavbar = document.querySelectorAll('.btnNavbar')
+const navbarDesktop = document.querySelector('#navbarDesktop')
 
 let slideIndexes = Array.from({ length: openCarouselBtn.length }, () => 0);
 
@@ -49,24 +47,24 @@ openCarouselBtn.forEach((btn, index) => {
         slideIndexes[index] = 0;
         showSlide(index, slideIndexes[index]);
         carouselContainer[index].style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        document.body.style.overflowX = 'hidden';
+        body.style.overflow = 'hidden';
+        body.style.overflowX = 'hidden';
         if (window.innerWidth > 480) {
-            document.getElementById('navbarDesktop').style.opacity = "0"
+            navbarDesktop.style.opacity = "0"
             btnNavbar.forEach((link) => {
                 link.style.display = 'none'
             })
         } else if (window.innerWidth <= 480) {
-            document.getElementById('menu-btn').style.opacity = "0"
-            document.getElementById('menu-btn').style.top = "-200px"
+            menuBtn.style.opacity = "0"
+            menuBtn.style.top = "-200px"
         }
 
         contentCard.forEach((content) => {
             content.classList.add('opacityOn')
             content.classList.remove('opacityOff')
         })
-        document.getElementById('upArrow').style.display = 'none'
-        document.getElementById('iconWpp').style.opacity = '0'
+        upArrow.style.display = 'none'
+        iconWpp.style.opacity = '0'
     });
 });
 
@@ -94,28 +92,28 @@ function prevSlide(index) {
     showSlide(index, slideIndexes[index]);
 }
 
-closeCarouselBtn.forEach((out) => {
+document.querySelectorAll(".carouselBtnClose").forEach((out) => {
     out.addEventListener('click', (e) => {
         if (e.target === out) {
             carouselContainer.forEach((close) => {
                 close.style.display = 'none';
-                document.body.style.overflow = 'auto';
-                document.body.style.overflowX = 'hidden';
+                body.style.overflow = 'auto';
+                body.style.overflowX = 'hidden';
                 if (window.innerWidth > 480) {
-                    document.getElementById('navbarDesktop').style.opacity = '1'
+                    navbarDesktop.style.opacity = '1'
                     btnNavbar.forEach((link) => {
                         link.style.display = 'inline'
                     })
                 } else if (window.innerWidth <= 480) {
-                    document.getElementById('menu-btn').style.opacity = "1"
-                    document.getElementById('menu-btn').style.top = "20px"
+                    menuBtn.style.opacity = "1"
+                    menuBtn.style.top = "20px"
                 }
                 contentCard.forEach((content) => {
                     content.classList.add('opacityOff')
                     content.classList.remove('opacityOn')
                 })
-                document.getElementById('upArrow').style.display = 'block'
-                document.getElementById('iconWpp').style.opacity = '1'
+                upArrow.style.display = 'block'
+                iconWpp.style.opacity = '1'
             });
         }
     });
@@ -125,33 +123,33 @@ carouselContainer.forEach((out) => {
         if (e.target === out) {
             carouselContainer.forEach((close) => {
                 close.style.display = 'none';
-                document.body.style.overflow = 'auto';
-                document.body.style.overflowX = 'hidden';
+                body.style.overflow = 'auto';
+                body.style.overflowX = 'hidden';
                 if (window.innerWidth > 480) {
-                    document.getElementById('navbarDesktop').style.opacity = '1'
+                    navbarDesktop.style.opacity = '1'
                     btnNavbar.forEach((link) => {
                         link.style.display = 'inline'
                     })
                 } else if (window.innerWidth <= 480) {
-                    document.getElementById('menu-btn').style.opacity = "1"
-                    document.getElementById('menu-btn').style.top = "20px"
+                    menuBtn.style.opacity = "1"
+                    menuBtn.style.top = "20px"
                 }
                 contentCard.forEach((content) => {
                     content.classList.add('opacityOff')
                     content.classList.remove('opacityOn')
                 })
-                document.getElementById('upArrow').style.display = 'block'
-                document.getElementById('iconWpp').style.opacity = '1'
+                upArrow.style.display = 'block'
+                iconWpp.style.opacity = '1'
             });
         }
     });
 });
 
-nextBtn.forEach((next, index) => {
+document.querySelectorAll(".carouselBtnNext").forEach((next, index) => {
     next.addEventListener('click', () => nextSlide(index));
 });
 
-prevBtn.forEach((prev, index) => {
+document.querySelectorAll(".carouselBtnPrev").forEach((prev, index) => {
     prev.addEventListener('click', () => prevSlide(index));
 });
 

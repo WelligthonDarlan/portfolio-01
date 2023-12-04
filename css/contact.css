@@ -79,14 +79,13 @@
   position: relative;
   gap: 9px;
   background: linear-gradient(to bottom, #2bfdbe, #2bfdbe);
-  color: #010816;
-  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 50%, 85% 100%);
+  color: #232323;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 50%, 90% 100%);
   font-weight: 900;
   font-size: 22px;
   height: 50px;
   width: 250px;
   font-size: 22px;
-  color: #000;
 }
 #download::before {
   content: "";
@@ -102,7 +101,7 @@
 #download:hover::before {
   transform-origin: left;
   transform: scaleX(1);
-  color: #000;
+
 }
 #download img {
   width: 22px;

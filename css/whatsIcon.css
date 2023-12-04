@@ -15,6 +15,16 @@
 .iconWpp:hover {
   opacity: 1;
 }
+.copyrightWppImg{
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation: myMovieYodaCP 2s infinite ease-out;
+}
+.copyrightWppContainer{
+  bottom: 170px !important;
+}
+
 #containerYodaSMS {
   display: flex;
   flex-direction: row;
@@ -64,15 +74,23 @@
 @keyframes myMovieYoda {
   0% {
     bottom: 10px;
-    /* filter: drop-shadow(-1px 1px 30px #2bfd945b); */
   }
   50% {
     bottom: 0px;
-    /* filter: drop-shadow(-1px 1px 10px #2bfd945b); */
   }
   100% {
     bottom: 10px;
-    /* filter: drop-shadow(-1px 1px 30px #2bfd945b); */
+  }
+}
+@keyframes myMovieYodaCP {
+  0% {
+    bottom: 90px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 90px;
   }
 }
 

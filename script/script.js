@@ -1,13 +1,9 @@
-let links = document.getElementsByClassName('links')
-let contentLinks = document.getElementsByClassName('contentLinks')
+let links = document.querySelectorAll('.links');
+let contentLinks = document.querySelectorAll('.contentLinks');
 
-function openTab(tabname){
-    for(tabLink of links){
-        tabLink.classList.remove('active-link')
-    }
-    for(tabContent of contentLinks){
-        tabContent.classList.remove('active-tab')
-    }
+function openTab(tabname) {
+    links.forEach(tabLink => tabLink.classList.remove('active-link'));
+    contentLinks.forEach(tabContent => tabContent.classList.remove('active-tab'));
     event.currentTarget.classList.add('active-link')
     document.getElementById(tabname).classList.add("active-tab")
 }
@@ -32,7 +28,7 @@ function isElementInViewport(element) {
     );
 }
 
-const aboutP = document.getElementById("description");
+const aboutP = document.querySelector("#description");
 
 //Função será acionada assim que o elemento estiver visivel
 function startTypeWriterWhenVisible() {
@@ -44,17 +40,17 @@ function startTypeWriterWhenVisible() {
 // Adiciona um event listener para verificar quando o usuário rola a página
 window.addEventListener('scroll', startTypeWriterWhenVisible);
 
-//------------------ABRIR NAVBAR AO APARECER NA TELA--⏬⏬⏬⏬⏬⏬------------------
+//------------------ABRIR NAVBAR DESKTOP AO APARECER NA TELA--⏬⏬⏬⏬⏬⏬------------------
 
-const introduction = document.getElementById("introduction")
-const navbar = document.getElementById("navbarDesktop")
+const introduction = document.querySelector("#introduction");
+const navbar = document.querySelector("#navbarDesktop")
 
-function fixedRed() {
+function fixed() {
     navbarDesktop.classList.remove("relative-navbar");
     navbarDesktop.classList.add("fixed-navbar");
 }
 
-function relativeBlue() {
+function relative() {
     navbarDesktop.classList.remove("fixed-navbar");
     navbarDesktop.classList.add("relative-navbar");
 }
@@ -65,9 +61,9 @@ function isElementAtTop(element) {
 }
 function checkNavbar() {
     if (isElementAtTop(introduction)) {
-        fixedRed();
+        fixed();
     } else {
-        relativeBlue();
+        relative();
     }
 }
 
@@ -76,55 +72,68 @@ window.addEventListener('scroll', checkNavbar);
 
 //------------------CLOSE YODA SMS--⏬⏬⏬⏬⏬⏬------------------
 
-const closeYodaSMS = document.getElementById("closeYodaSMS")
-const containerYodaSMS = document.getElementById("containerYodaSMS")
 
-closeYodaSMS.addEventListener("click", function(){
+const closeYodaSMS = document.querySelector("#closeYodaSMS")
+const containerYodaSMS = document.querySelector("#containerYodaSMS")
+
+closeYodaSMS.addEventListener("click", () => {
     containerYodaSMS.style.display = "none"
 })
 
-//------------------CLOSE NAVBAR--⏬⏬⏬⏬⏬⏬------------------
-const body = document.querySelector("body")
+//------------------NAVBAR MOBILE--⏬⏬⏬⏬⏬⏬------------------
+const body = document.body
 const linkNavbarMobile = document.querySelectorAll('.linkNavbarMobile')
+const menuBtn = document.querySelector('#menuBtn')
+const classNavbarMobile = document.querySelector('.navbar')
+const upArrow = document.getElementById('upArrow')
+const iconWpp = document.getElementById('iconWpp')
 
-if (window.innerWidth <= 480 && body.classList.contains('overflowOff')) {
-    console.log(`condição on`)
-    document.querySelector('#menu-btn').addEventListener('click', () => {
-        console.log('Clique no botão de menu.');
-        body.classList.add('overflowOn')    
-        body.classList.remove('overflowOff')    
+if (window.innerWidth <= 480) {
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('open')
+        classNavbarMobile.classList.toggle('active')
+        upArrow.classList.toggle('navDisplayOff')
+        iconWpp.classList.toggle('navOpacityOff')
+        body.classList.toggle('overflowOff')
+        body.classList.toggle('overflowOn')
     })
-}
 
-document.querySelector('#menu-btn').onclick = () => {
-    document.querySelector('#menu-btn').classList.toggle('fa-times')
-    document.querySelector('.navbar').classList.toggle('active')
-    document.getElementById('upArrow').classList.toggle('navDisplayOff')
-    document.getElementById('iconWpp').classList.toggle('navOpacityOff')
-    if (window.innerWidth <= 480) {
-        body.classList.add('overflowOff')
-        body.classList.remove('overflowOn')
+    function remove() {
+        menuBtn.classList.remove('open')
+        classNavbarMobile.classList.remove('active')
+        upArrow.classList.remove('navDisplayOff')
+        iconWpp.classList.remove('navOpacityOff')
     }
-}
-function remove(){
-    document.querySelector('#menu-btn').classList.remove('fa-times')
-    document.querySelector('.navbar').classList.remove('active')
-    document.getElementById('upArrow').classList.remove('navDisplayOff')
-    document.getElementById('iconWpp').classList.remove('navOpacityOff')
-    if (window.innerWidth <= 480) {
-        document.querySelector('#menu-btn').addEventListener('click', () => {
-            body.classList.add('overflowOn')    
-            body.classList.remove('overflowOff')    
-        })
-    }
-}
 
-
-linkNavbarMobile.forEach((element) => {
-    element.addEventListener('click', () => {
-        if (window.innerWidth <= 480) {
+    linkNavbarMobile.forEach((element) => {
+        element.addEventListener('click', () => {
             body.classList.add('overflowOn')
             body.classList.remove('overflowOff')
-        }
+        })
     })
-})
+}
+
+//------------------copyright--⏬⏬⏬⏬⏬⏬------------------
+
+function copyrightOn () {
+    const iconWppImg = document.querySelector('.iconWpp')
+    const copyright = document.querySelector('.copyright')
+    if (isCopyrightInViewport(copyright)){
+        iconWppImg.classList.add('copyrightWppImg')
+        containerYodaSMS.classList.add('copyrightWppContainer')
+    } else {
+        iconWppImg.classList.remove('copyrightWppImg')
+        containerYodaSMS.classList.remove('copyrightWppContainer')
+    }
+}
+
+function isCopyrightInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+window.addEventListener('scroll', copyrightOn)

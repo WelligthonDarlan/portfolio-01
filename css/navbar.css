@@ -22,6 +22,7 @@
   margin: 0px 20px 0px 20px;
   padding: 5px 20px;
   color: #fff;
+  transition: 0.3s;
 }
 .btnNavbar:hover {
   color: #7b71ff;
@@ -33,11 +34,9 @@
 .relative-navbar {
   position: relative !important;
 }
-/* ---------------------NAVBAR DESKTOP--⏫⏫⏫⏫⏫⏫------------------- */
-
 /* ---------------------NAVBAR MOBILE--⏬⏬⏬⏬⏬⏬------------------- */
 
-#menu-btn {
+#menuBtn {
   display: none;
   position: fixed;
   top: 20px;
@@ -53,7 +52,7 @@
   text-align: center;
   z-index: 1000;
 }
-#menu-btn.fa-times {
+#menuBtn.open {
   transform: rotate(180deg);
   background: #2bfdbe;
   color: #000;
@@ -122,8 +121,6 @@
 .navOpacityOff {
   opacity: 0;
 }
-
-/* ---------------------NAVBAR MOBILE--⏫⏫⏫⏫⏫⏫------------------- */
 
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
 
@@ -335,7 +332,7 @@
   #navbarDesktop {
     display: none;
   }
-  #menu-btn {
+  #menuBtn {
     display: block;
     top: 10px;
     right: 10px;
@@ -360,7 +357,7 @@
   #navbarDesktop {
     display: none;
   }
-  #menu-btn {
+  #menuBtn {
     display: block;
     top: 10px;
     right: 10px;
