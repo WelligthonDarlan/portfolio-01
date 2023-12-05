@@ -1,9 +1,8 @@
 let links = document.querySelectorAll('.links');
-let contentLinks = document.querySelectorAll('.contentLinks');
 
 function openTab(tabname) {
     links.forEach(tabLink => tabLink.classList.remove('active-link'));
-    contentLinks.forEach(tabContent => tabContent.classList.remove('active-tab'));
+    document.querySelectorAll('.contentLinks').forEach(tabContent => tabContent.classList.remove('active-tab'));
     event.currentTarget.classList.add('active-link')
     document.getElementById(tabname).classList.add("active-tab")
 }
@@ -85,8 +84,8 @@ const body = document.body
 const linkNavbarMobile = document.querySelectorAll('.linkNavbarMobile')
 const menuBtn = document.querySelector('#menuBtn')
 const classNavbarMobile = document.querySelector('.navbar')
-const upArrow = document.getElementById('upArrow')
-const iconWpp = document.getElementById('iconWpp')
+const upArrow = document.querySelector('#upArrow')
+const iconWpp = document.querySelector('#iconWpp')
 
 if (window.innerWidth <= 480) {
     menuBtn.addEventListener('click', () => {
@@ -103,6 +102,7 @@ if (window.innerWidth <= 480) {
         classNavbarMobile.classList.remove('active')
         upArrow.classList.remove('navDisplayOff')
         iconWpp.classList.remove('navOpacityOff')
+
     }
 
     linkNavbarMobile.forEach((element) => {
@@ -119,6 +119,7 @@ function copyrightOn () {
     const iconWppImg = document.querySelector('.iconWpp')
     const copyright = document.querySelector('.copyright')
     if (isCopyrightInViewport(copyright)){
+        console.log(`copyright está a  vista`)
         iconWppImg.classList.add('copyrightWppImg')
         containerYodaSMS.classList.add('copyrightWppContainer')
     } else {
@@ -132,7 +133,7 @@ function isCopyrightInViewport(element) {
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom <= (((window.innerHeight || document.documentElement.clientHeight) / 3 ) * 4 ) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }

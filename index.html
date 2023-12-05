@@ -16,7 +16,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <link rel="shortcut icon" href="./images/icons/icons.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/icons/icons.png"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
@@ -36,7 +40,7 @@
     <title>Welligthon Paluchowski</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <!-- APRESENTAÇÃO INICIAL ⏬⏬⏬⏬⏬⏬ -->
       <div id="introduction">
         <canvas id="canvas" width="100%" height="500px"></canvas>
@@ -44,14 +48,16 @@
           Oi, sou <span>Welligthon Paluchowski</span><br />
           Desenvolvedor Front End
         </h1>
-        <a href="#aboutMe"
-          id="ancorIntroduction"><button id="ViewMyWork">VEJA O MEU TRABALHO</button></a
+        <a href="#init" id="ancorIntroduction"
+          ><button id="ViewMyWork">VEJA O MEU TRABALHO</button></a
         >
       </div>
 
+      <div id="init"></div>
+
       <!-- NAVBAR DESKTOP ⏬⏬⏬⏬⏬⏬ -->
 
-      <nav id="navbarDesktop" >
+      <nav id="navbarDesktop">
         <img src="./images/logo.png" />
         <div>
           <a href="#aboutMe" class="btnNavbar">Sobre mim</a>
@@ -84,19 +90,43 @@
       <!-- NAVBAR MOBILE ⏬⏬⏬⏬⏬⏬ -->
 
       <div id="menuBtn" class="fas fa-bars"></div>
-        <nav class="navbar" id="nav-bar">
-            <a href="#aboutMe" data-text="Sobre mim" onclick="remove()" class="linkNavbarMobile">Sobre mim</a>
-            <a href="#myWorkTitle" data-text="Meu trabalho" onclick="remove()" class="linkNavbarMobile">Meu trabalho</a>
-            <a href="#projectsTitle" data-text="projetos" onclick="remove()" class="linkNavbarMobile">Projetos</a>
-            <a href="#contact" data-text="contato" onclick="remove()" class="linkNavbarMobile">contato</a>
-        </nav>
+      <nav class="navbar" id="nav-bar">
+        <a
+          href="#aboutMe"
+          data-text="Sobre mim"
+          onclick="remove()"
+          class="linkNavbarMobile"
+          >Sobre mim</a
+        >
+        <a
+          href="#myWorkTitle"
+          data-text="Meu trabalho"
+          onclick="remove()"
+          class="linkNavbarMobile"
+          >Meu trabalho</a
+        >
+        <a
+          href="#projectsTitle"
+          data-text="projetos"
+          onclick="remove()"
+          class="linkNavbarMobile"
+          >Projetos</a
+        >
+        <a
+          href="#contact"
+          data-text="contato"
+          onclick="remove()"
+          class="linkNavbarMobile"
+          >contato</a
+        >
+      </nav>
 
       <!-- ------------------ABOUT ME--⏬⏬⏬⏬⏬⏬------------------ -->
 
-      <div id="aboutMe" >
+      <div id="aboutMe">
         <div class="aboutMeContainer">
           <h1 class="aboutMeTitle" data-animate="toRight">Sobre mim</h1>
-          <p id="description" data-animate="toleft">
+          <p id="description" data-animate="toUP">
             Desde a infância estive conectado com a tecnologia, tenho grande
             paixão por efeitos de UI, animações e pela criação de experiências
             de usuário intuitivas e dinâmicas.
@@ -128,7 +158,7 @@
         </div>
       </div>
     </header>
-    
+
     <!-- ------------------MEU TRABALHO--⏬⏬⏬⏬⏬⏬------------------ -->
 
     <main>
@@ -136,9 +166,9 @@
         <a href="#aboutMe"
           ><img id="upArrow" src="./images/up-arrow.png" alt="up-arrow.png"
         /></a>
-        <h1 id="myWorkTitle" data-animate="toRight" >MEU TRABALHO</h1>
+        <h1 id="myWorkTitle" data-animate="toRight">MEU TRABALHO</h1>
 
-        <div class="containerPrinciples" data-animate="toleft">
+        <div class="containerPrinciples" data-animate="toLeft">
           <div class="principles">
             <img src="./images/intuitive.png" alt="intuitive.png" />
             <h1>Intuitivo</h1>
@@ -211,13 +241,18 @@
                     marketing (Esse projeto foi muito elogiado pela comunidade,
                     mas não tive muito retorno monetário na época, o canal
                     chegou a ter 4000 inscritos em 6 meses).
-                    <a id="chanel" href="https://www.youtube.com/watch?v=eAHkOEhXsLI&t=0s"
-                      target="_blank">Canal Youtube</a
+                    <a
+                      id="chanel"
+                      href="https://www.youtube.com/watch?v=eAHkOEhXsLI&t=0s"
+                      target="_blank"
+                      >Canal Youtube</a
                     >
                   </li>
                   <li>
-                    <span>2020 - 2023</span><br />&nbsp;Trabalhei na administração e gerenciamento de estoque na TokStok, onde
-                    aprendi muito como funciona a parte sistemática de um estoque físico.
+                    <span>2020 - 2023</span><br />&nbsp;Trabalhei na
+                    administração e gerenciamento de estoque na TokStok, onde
+                    aprendi muito como funciona a parte sistemática de um
+                    estoque físico.
                   </li>
                   <li>
                     <span>2022 - 2023</span><br />&nbsp;Atualmente venho
@@ -251,7 +286,9 @@
       <!-- ------------------PROJETOS--⏬⏬⏬⏬⏬⏬------------------ -->
 
       <div id="projects">
-        <h1 class="projectsTitle" id="projectsTitle" data-animate="toRight">MEUS PROJETOS</h1>
+        <h1 class="projectsTitle" id="projectsTitle" data-animate="toRight">
+          MEUS PROJETOS
+        </h1>
         <!-- <div id="containerBtnProjects">
           <button class="btnProjects">TODOS</button>
           <button class="btnProjects">E-COMMERCE</button>
@@ -261,18 +298,19 @@
 
         <div id="containerProjects">
           <div class="card" id="card1">
-            <div class="contentCard opacityOff"><div>
+            <div class="contentCard opacityOff">
+              <div>
                 <h1>CALCULADORA DE CONSUMO</h1>
                 <p>Bootstrap / Sass / Javascript</p>
               </div>
-              <a href="#projectsTitle"><button id="btnCard1" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"
+                ><button id="btnCard1" class="btnCard">VER MAIS</button></a
+              >
 
               <div class="carouselContainer">
-                
                 <div class="carouselContent">
                   <div class="carouselSlides">
                     <div class="containerImage">
-                      
                       <button class="carouselBtnPrev">
                         <img
                           src="./images/iconVoltar.png"
@@ -322,7 +360,9 @@
                 <h1>CALCULADORA JS</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#projectsTitle"><button id="btnCard2" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"
+                ><button id="btnCard2" class="btnCard">VER MAIS</button></a
+              >
 
               <div class="carouselContainer">
                 <div class="carouselContent">
@@ -375,7 +415,9 @@
                 <h1>SushiCom - Em produção</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#projectsTitle"><button id="btnCard3" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"
+                ><button id="btnCard3" class="btnCard">VER MAIS</button></a
+              >
 
               <div class="carouselContainer">
                 <div class="carouselContent">
@@ -425,7 +467,9 @@
                 <h1>To do list</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#projectsTitle"><button id="btnCard4" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"
+                ><button id="btnCard4" class="btnCard">VER MAIS</button></a
+              >
               <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
@@ -479,7 +523,9 @@
                 <h1>Canal Youtube de Animação</h1>
                 <p>Animate / Photoshop / ...</p>
               </div>
-              <a href="#projectsTitle"><button id="btnCard5" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"
+                ><button id="btnCard5" class="btnCard">VER MAIS</button></a
+              >
               <div class="carouselContainer">
                 <div class="carouselContent">
                   <div class="carouselSlides">
@@ -530,7 +576,9 @@
                 <h1>Jogo da velha</h1>
                 <p>HTML / CSS / Javascript</p>
               </div>
-              <a href="#projectsTitle"><button id="btnCard6" class="btnCard">VER MAIS</button></a>
+              <a href="#projectsTitle"
+                ><button id="btnCard6" class="btnCard">VER MAIS</button></a
+              >
 
               <div class="carouselContainer">
                 <div class="carouselContent">
@@ -556,7 +604,12 @@
                     <div class="informCard">
                       <h1>Jogo da velha</h1>
                       <p>
-                        O jogo da velha, embora seja muito simples, é preciso um bom conhecimento com lógica de programação. Esse projeto possui as funcionalidades básicas de um jogo da velha, é possível alterar o nome dos jogadores ou não, possui um placar que manipula os resultados e ele tem algumas regras informadas no início do jogo.
+                        O jogo da velha, embora seja muito simples, é preciso um
+                        bom conhecimento com lógica de programação. Esse projeto
+                        possui as funcionalidades básicas de um jogo da velha, é
+                        possível alterar o nome dos jogadores ou não, possui um
+                        placar que manipula os resultados e ele tem algumas
+                        regras informadas no início do jogo.
                       </p>
                       <div class="slideLinks">
                         <a
@@ -589,12 +642,16 @@
       </div>
 
       <!-- ------------------CONTACT--⏬⏬⏬⏬⏬⏬------------------ -->
-      
+
       <div id="contact" class="fadeInScroll">
         <div class="containerContact">
-          <h1 class="titleContactLeft" data-animate="toRight" >ONDE ME ENCONTRAR</h1>
+          <h1 class="titleContactLeft" data-animate="toRight">
+            ONDE ME ENCONTRAR
+          </h1>
 
-          <p id="workMe" data-animate="toleft">Tem alguma dúvida ou quer trabalhar comigo?</p>
+          <p id="workMe" data-animate="toLeft">
+            Tem alguma dúvida ou quer trabalhar comigo?
+          </p>
 
           <div class="containerIcons" data-animate="toRight">
             <div class="emailPhoneContainer">
@@ -637,8 +694,12 @@
             </div>
           </div>
 
-          <a href="./images/curriculo.pdf" download id="download"
-          data-animate="toleft">CURRÍCULO
+          <a
+            href="./images/curriculo.pdf"
+            download
+            id="download"
+            data-animate="toLeft"
+            >CURRÍCULO
             <img src="./images/file-arrow-down-solid.png" alt="imgDownload" />
           </a>
         </div>

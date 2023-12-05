@@ -24,14 +24,90 @@ body {
 [data-animate] {
   opacity: 0;
 }
-[data-animate="toRight"] {
-  transform: translate3d(-100px, 0, 0) scale(0.1, 1);
+#init{
+  opacity: 0;
+  width: 100%;
+  height: 0;
 }
-[data-animate="toleft"] {
-  transform: translate3d(100px, 0, 0) scale(0.1, 1);
+[data-animate="toRight"] {
+  transform: translate3d(-600px, 0, 0)  scale(0.1, 1);
+  transition: 0.5s;
+}
+[data-animate="toLeft"] {
+  transform: translate3d(600px, 0, 0) scale(0.1, 1);
+  transition: 1.2s;
+}
+[data-animate="toUp"] {
+  transform: translate3d(0px, 0, 0) scale(1, 1);
+  transition: 1.2s;
 }
 [data-animate].on{
   opacity: 1;
   transform: translate3d(0px, 0, 0) scale(1, 1);
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-600px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(600px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-530px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(530px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-440px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(440px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-340px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(340px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-260px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(260px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-210px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(210px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-155px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(155px, 0, 0) scale(0.1, 1);
+  }
+}
+@media (max-width: 360px) {
+  [data-animate="toRight"] {
+    transform: translate3d(-155px, 0, 0)  scale(0.1, 1);
+  }
+  [data-animate="toLeft"] {
+    transform: translate3d(155px, 0, 0) scale(0.1, 1);
+  }
 }
 
