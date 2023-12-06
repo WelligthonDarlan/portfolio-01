@@ -1,5 +1,4 @@
 #projects {
-  /* border: 4px solid red; */
   background-color: #f5f5f5;
   color: #444649;
   width: 100%;
@@ -13,7 +12,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
 }
 #projectsTitle {
-  /* border: 3px solid rgb(17, 0, 255); */
   font-family: "Chakra Petch", sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -22,23 +20,6 @@
   height: 100%;
   padding: 100px 0px 100px 0px;
 }
-/* #containerBtnProjects {
-  border: 3px solid rgb(255, 60, 0);
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  padding: 0px 180px 0px 180px;
-}
-.btnProjects {
-  color: #616161;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 900;
-} */
 #containerProjects {
   display: flex;
   align-items: center;
@@ -48,7 +29,6 @@
   width: 100%;
   height: 100%;
 }
-
 .card {
   width: 400px;
   height: 400px;
@@ -66,7 +46,6 @@
 .opacityOff{
   opacity: 0;
 }
-
 .contentCard{
   width: 400px;
   height: 400px;
@@ -76,7 +55,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  /* opacity: 0; */
   position: relative;
   transition: 0.3s;
 }
@@ -106,7 +84,6 @@
   transform: translateY(0);
   opacity: 1;
 }
-
 .btnCard {
   transform: translateY(100px);
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -122,67 +99,56 @@
   background-color: #2bdefd;
   color: #fff;
 }
-
 .contentCard:hover .btnCard {
   transform: translateY(0);
   opacity: 1;
 }
-
 @keyframes fade {
   0% {
     transform: translate(0px, 300px) scale(0.5);
     opacity: 0;
   }
-
   50% {
     transform: translate(0px, 600px) scale(0.5);
     opacity: 0;
   }
-
   100% {
     transform: translate(0px, 0px) scale(1);
     opacity: 1 !important;
   }
 }
-
 /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
-
 .carouselContainer {
-  /* border: 5px solid red; */
   display: none;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
+  padding: 80px 400px 80px 400px;
 }
-
 .carouselContent {
-  /* border: 5px solid rgb(251, 255, 0); */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  height: 80%;
+  border: 2px solid red;
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
-
 .carouselSlides {
-  /* border: 5px solid rgb(255, 0, 212); */
+  border: 4px solid rgb(255, 217, 0);
   width: 100%;
-  height: 90%;
+  height: 100%;
   gap: 0;
   padding: 0;
-  /* background-color: aqua; */
 }
 .containerImage {
-  height: 80%;
-  /* border: 5px solid rgb(60, 255, 0); */
+  border: 2px solid rgb(0, 13, 255);
+  height: 60%;
   background-color: #ffffffdd;
   display: flex;
   justify-content: center;
@@ -190,40 +156,91 @@
   gap: 0;
   padding: 0;
 }
+.carouselSlide {
+  border: 2px solid rgb(0, 255, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+.carouselBtnNext {
+  /* border: none; */
+  border: 2px solid rgb(0, 255, 42);
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.carouselBtnNext:hover{
+  opacity: 1;
+}
+.carouselBtnPrev {
+  /* border: none; */
+  border: 2px solid rgb(0, 255, 42);
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  cursor: pointer;
+    opacity: 0.5;
+}
+.carouselBtnPrev:hover{
+opacity: 1;
+}
 .informCard {
-  /* border: 5px solid blue; */
+  border: 2px solid rgb(0, 0, 255);
   background-color: #ffffffdd;
   padding: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   padding: 2px;
   opacity:1;
+  width: 100%;
+  height: 40%;
 }
 .informCard h1 {
+  border: 2px solid rgb(255, 0, 238);
   font-family: "Chakra Petch", sans-serif;
   color: #444649;
   font-size: 30px;
   opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: translateY(0px);
+  width: 100%;
+  height: 25%;
 }
 .informCard p {
+  border: 2px solid rgb(255, 0, 238);
   color: #444649;
-  font-size: 20px;
-  width: 70%;
+  /* font-size: 24px; */
+  font-size: 100%;
   padding: 20px;
-  text-align: start;
+  display: flex;
+  align-items: center;
+  text-align: justify;
   opacity: 1;
   transform: translateY(0px);
+  width: 90%;
+  height: 40%;
 }
 .slideLinks {
-  width: 100%;
+  border: 2px solid rgb(255, 0, 238);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 20px;
+  width: 100%;
+  height: 20%;
 }
 .slideLinks a {
   border: 3px solid #594dff;
@@ -244,454 +261,70 @@
   background-color: transparent;
   color: #594dff;
   font-weight: 900;
+  border: 1px solid #594dff;
 }
 
-.carouselBtnNext {
-  /* border: 2px solid rgb(10, 63, 143); */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
 
-.carouselBtnPrev {
-  /* border: 2px solid rgb(10, 63, 143); */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.carouselSlide {
-  /* border: 2px solid rgb(162, 0, 255); */
+.containerBtnClose{
+  border: 2px solid rgb(255, 0, 238);
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  font-size: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 90%;
-  height: 90%;
+  justify-content: end;
+  padding: 15px;
+  width: 100%;
+  height: 15%;
+
 }
 .carouselBtnClose{
-  background-color: transparent;
-  font-size: 30px;
-  position: fixed;
-  font-weight: 100;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
   cursor: pointer;
-  top: 10px;
-  right: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.carouselBtnClose:hover{
+  opacity: 1;
 }
 
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
-@media (min-width: 601px) and (max-width: 1000px){
-  #projects {
-    background-color: #f5f5f5;
-    text-align: center;
-    flex-direction: column;
-    padding: 0px ;
-    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
-    height: 100%;
-  }
-  #projectsTitle {
-    /* border: 3px solid rgb(17, 0, 255); */
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #444649;
-    width: 100%;
-    height: 100%;
-    padding: 100px 0px 100px 0px;
-  }
-  #containerProjects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 150px;
-  }
-  .card {
-    width: 220px;
-    height: 220px;
-    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
-  }
-  .contentCard {
-    width: 220px;
-    height: 220px;
-    padding: 20px;
-  }
-  .card h1 {
-    font-size: 15px;
-  }
-  
-  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
-  
-  .carouselContent {
-    top: 25%;
-    left: 50%;
-    width: 90%;
-    height: 30%;
-    text-align: center;
-  }
-  .carouselSlides {
-    width: 100%;
-    height: 100%;
-    /* border: 2px solid rgb(0, 255, 21); */
-  }
-  .containerImage {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffff;
-    padding-top: 10px;
-   
-  }
-  .informCard {
-    background-color: #ffffffff;
-    padding: 0px;
-    gap: 10px;
-  }
-  .informCard h1 {
-    font-size: 20px;
-  }
-  .informCard p {
-    font-size: 14px;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-  }
-  .slideLinks a {
-    width: 100px;
-    height: 40px;
-    font-size: 10px;
-  }
-  .carouselBtnNext {
-    background-color: transparent;
-  }
-  .carouselBtnNext img{
-    width: 30px;
-  }
-  .carouselBtnPrev {
-    background-color: transparent;
-  }
-  .carouselBtnPrev img{
-    width: 30px;
-  }
-  .carouselSlide {
-    /* border: 2px solid rgb(162, 0, 255); */
-    width: 100%;
-    height: 100%;
-  }
-  .carouselBtnClose{
-    font-size: 20px;
-    top: 5px;
-    right: 10px;
-  }
-}
-@media (min-width: 481px) and (max-width: 600px){
-  #projects {
-    background-color: #f5f5f5;
-    text-align: center;
-    flex-direction: column;
-    padding: 0px ;
-    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
-    height: 100%;
-  }
-  #projectsTitle {
-    /* border: 3px solid rgb(17, 0, 255); */
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #444649;
-    width: 100%;
-    height: 100%;
-    padding: 100px 0px 100px 0px;
-  }
-  #containerProjects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 150px;
-  }
-  .card {
-    width: 220px;
-    height: 220px;
-    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
-  }
-  .contentCard {
-    width: 220px;
-    height: 220px;
-    padding: 20px;
-  }
-  .card h1 {
-    font-size: 15px;
-  }
-  
-  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
-  
-  .carouselContent {
-    top: 25%;
-    left: 50%;
-    width: 90%;
-    height: 30%;
-    text-align: center;
-  }
-  .carouselSlides {
-    width: 100%;
-    height: 100%;
-  }
-  .containerImage {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffff;
-  }
-  .informCard {
-    background-color: #ffffffff;
-    padding: 0px;
-    gap: 10px;
-  }
-  .informCard h1 {
-    font-size: 20px;
-  }
-  .informCard p {
-    font-size: 14px;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-  }
-  .slideLinks a {
-    width: 100px;
-    height: 40px;
-    font-size: 10px;
-  }
-  .carouselBtnNext {
-    background-color: transparent;
-  }
-  .carouselBtnNext img{
-    width: 30px;
-  }
-  .carouselBtnPrev {
-    background-color: transparent;
-  }
-  .carouselBtnPrev img{
-    width: 30px;
-  }
-  .carouselSlide {
-    /* border: 2px solid rgb(162, 0, 255); */
-    width: 100%;
-    height: 100vh;
-  }
-  .carouselBtnClose{
-    font-size: 20px;
-    top: 5px;
-    right: 10px;
-  }
-}
-@media (min-width: 361px) and (max-width: 480px){
-  #projects {
-    background-color: #f5f5f5;
-    text-align: center;
-    flex-direction: column;
-    padding: 0px ;
-    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
-    height: 100%;
-  }
-  #projectsTitle {
-    /* border: 3px solid rgb(17, 0, 255); */
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #444649;
-    width: 100%;
-    height: 100%;
-    padding: 100px 0px 100px 0px;
-  }
-  #containerProjects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 150px;
-  }
-  .card {
-    width: 320px;
-    height: 320px;
-    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
-  }
-  .contentCard {
-    width: 320px;
-    height: 320px;
-  }
-  
-  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
-  
-  .carouselContent {
-    top: 25%;
-    left: 50%;
-    width: 90%;
-    height: 30%;
-    text-align: center;
-  }
-  .carouselSlides {
-    width: 100%;
-    height: 100%;
-  }
-  .containerImage {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffff;
-  }
-  .informCard {
-    background-color: #ffffffff;
-    padding: 0px;
-    gap: 10px;
-  }
-  .informCard h1 {
-    font-size: 20px;
-  }
-  .informCard p {
-    font-size: 14px;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-  }
-  .slideLinks a {
-    width: 100px;
-    height: 40px;
-    font-size: 10px;
-  }
-  .carouselBtnNext {
-    background-color: transparent;
-  }
-  .carouselBtnNext img{
-    width: 30px;
-  }
-  .carouselBtnPrev {
-    background-color: transparent;
-  }
-  .carouselBtnPrev img{
-    width: 30px;
-  }
-  .carouselSlide {
-    /* border: 2px solid rgb(162, 0, 255); */
-    width: 100%;
-    height: 100vh;
-  }
-  .carouselBtnClose{
-    font-size: 20px;
-    top: 5px;
-    right: 10px;
-  }
-}
 
-@media (max-width: 360px){
-#projects {
-  background-color: #f5f5f5;
-  text-align: center;
-  flex-direction: column;
-  padding: 0px ;
-  clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
-  height: 100%;
+@media (min-width: 7680px)  {
 }
-#projectsTitle {
-  /* border: 3px solid rgb(17, 0, 255); */
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  color: #444649;
-  width: 100%;
-  height: 100%;
-  padding: 100px 0px 100px 0px;
+@media (min-width: 4320px) and (max-width: 7679px) {
 }
-#containerProjects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 150px;
+@media (min-width: 3840px) and (max-width: 4319px) {
 }
-.card {
-  width: 320px;
-  height: 320px;
-  box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+@media (min-width: 2560px) and (max-width: 3839px) {
 }
-.contentCard {
-  width: 320px;
-  height: 320px;
+@media (min-width: 2160px) and (max-width: 2559px) {
 }
-
-/* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
-
-.carouselContent {
-  top: 25%;
-  left: 50%;
-  width: 90%;
-  height: 30%;
-  text-align: center;
+@media (min-width: 1920px) and (max-width: 2159px) {
 }
-.carouselSlides {
-  width: 100%;
-  height: 100%;
+@media (min-width: 1600px) and (max-width: 1919px) {
 }
-.containerImage {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffffff;
+@media (min-width: 1536px) and (max-width: 1599px) {
 }
-.informCard {
-  background-color: #ffffffff;
-  padding: 0px;
-  gap: 10px;
+@media (min-width: 1440px) and (max-width: 1535px) {
 }
-.informCard h1 {
-  font-size: 20px;
+@media (min-width: 1366px) and (max-width: 1439px) {
 }
-.informCard p {
-  font-size: 14px;
-  width: 100%;
-  padding: 5px;
-  text-align: center;
+@media (min-width: 1280px) and (max-width: 1365px) {
 }
-.slideLinks a {
-  width: 100px;
-  height: 40px;
-  font-size: 10px;
+@media (min-width: 1080px) and (max-width: 1279px) {
 }
-.carouselBtnNext {
-  background-color: transparent;
+@media (min-width: 720px) and (max-width: 1079px) {
 }
-.carouselBtnNext img{
-  width: 30px;
+@media (min-width: 640px) and (max-width: 719px) {
 }
-.carouselBtnPrev {
-  background-color: transparent;
+@media (min-width: 480px) and (max-width: 639px) {
 }
-.carouselBtnPrev img{
-  width: 30px;
+@media (min-width: 426px) and (max-width: 479px) {
 }
-.carouselSlide {
-  /* border: 2px solid rgb(162, 0, 255); */
-  width: 100%;
-  height: 100vh;
+@media (min-width: 414px) and (max-width: 425px) {
 }
-.carouselBtnClose{
-  font-size: 20px;
-  top: 5px;
-  right: 10px;
+@media (min-width: 375px) and (max-width: 413px) {
 }
+@media (min-width: 360px) and (max-width: 374px) {
+}
+@media (max-width: 359px)  {
 }

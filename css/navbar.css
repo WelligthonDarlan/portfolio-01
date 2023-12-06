@@ -13,7 +13,6 @@
   overflow: hidden;
   width: 100%;
 }
-
 #navbarDesktop img {
   width: 220px;
 }
@@ -34,8 +33,10 @@
 .relative-navbar {
   position: relative !important;
 }
+.slideOn{
+  transform: translate3d(0px, -100px, 0px);
+}
 /* ---------------------NAVBAR MOBILE--⏬⏬⏬⏬⏬⏬------------------- */
-
 #menuBtn {
   display: none;
   position: fixed;
@@ -121,32 +122,17 @@
 .navOpacityOff {
   opacity: 0;
 }
-
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
-
 @media (min-width: 1367px) and (max-width: 1800px) {
-  body {
-    overflow: hidden;
-  }
-
   #navbarDesktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
-    height: 60px;
     padding: 0px 0px 0px 10px;
-    top: 0;
   }
-
   #navbarDesktop img {
     width: 150px;
     margin: 0px 40px 0px 80px;
   }
   #navbarDesktop div {
-    /* border: 1px solid red; */
     width: 100%;
     gap: 0px;
     padding-left: 0px;
@@ -156,7 +142,6 @@
     justify-content: center;
   }
   .btnNavbar {
-    /* border: 1px solid red; */
     width: 150px;
     height: 100%;
     font-size: 20px;
@@ -166,28 +151,15 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1366px) {
-  body {
-    overflow: hidden;
-  }
-
   #navbarDesktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
-    height: 60px;
     padding: 0px 0px 0px 10px;
-    top: 0;
   }
-
   #navbarDesktop img {
     width: 150px;
     margin: 0px 40px 0px 20px;
   }
   #navbarDesktop div {
-    /* border: 1px solid red; */
     width: 100%;
     gap: 0px;
     padding-left: 0px;
@@ -198,7 +170,6 @@
     gap: 40px;
   }
   .btnNavbar {
-    /* border: 1px solid red; */
     width: 150px;
     height: 100%;
     font-size: 20px;
@@ -208,10 +179,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    overflow: hidden;
-  }
-
   #navbarDesktop {
     display: flex;
     flex-direction: row;
@@ -223,13 +190,11 @@
     padding: 0px 0px 0px 10px;
     top: 0;
   }
-
   #navbarDesktop img {
     width: 150px;
     margin: 0px 40px 0px 0px;
   }
   #navbarDesktop div {
-    /* border: 1px solid red; */
     width: 100%;
     gap: 20px;
     padding-left: 0px;
@@ -239,7 +204,6 @@
     justify-content: center;
   }
   .btnNavbar {
-    /* border: 1px solid red; */
     width: 150px;
     height: 100%;
     font-size: 20px;
@@ -247,29 +211,18 @@
     padding: 10px 0px;
   }
 }
-@media (min-width: 601px) and (max-width: 991px) {
-  body {
-    overflow: hidden;
-  }
 
+@media (min-width: 601px) and (max-width: 991px) {
   #navbarDesktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
     height: 40px;
     padding: 0px 0px 0px 10px;
-    top: 0;
   }
-
   #navbarDesktop img {
     width: 120px;
     margin: 0px 40px 0px 0px;
   }
   #navbarDesktop div {
-    /* border: 1px solid red; */
     width: 100%;
     gap: 0px;
     padding-left: 0px;
@@ -280,7 +233,6 @@
     gap: 20px;
   }
   .btnNavbar {
-    /* border: 1px solid red; */
     width: 100px;
     height: 100%;
     font-size: 16px;
@@ -290,26 +242,15 @@
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
-  body {
-    overflow: hidden;
-  }
   #navbarDesktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
     height: 40px;
     padding: 0px 0px 0px 10px;
-    top: 0;
   }
-
   #navbarDesktop img {
     width: 80px;
   }
   #navbarDesktop div {
-    /* border: 1px solid red; */
     width: 100%;
     gap: 20px;
     padding-left: 20px;
@@ -319,7 +260,6 @@
     justify-content: center;
   }
   .btnNavbar {
-    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
     font-size: 12px;
@@ -353,6 +293,7 @@
     overflow: hidden;
   }
 }
+
 @media (max-width: 360px) {
   #navbarDesktop {
     display: none;

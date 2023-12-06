@@ -1,29 +1,24 @@
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
-// Definindo variáveis globais
 let w, h, particles;
-let particleDistance = 40; //Distancia entre as particulas(Tamanho dos quadrados)
+let particleDistance = 40; //Distancia entre as partículas(Tamanho dos quadrados)
 let mouse = {
 	x: undefined,
 	y: undefined,
-	radius: 90,//Distancia que as particulas ficam do mouse
+	radius: 90,//Distancia que as partículas ficam do mouse
 	color: "#7b71ffcc"
 };
-
-// Função para inicializar o códig
 
 function init() {
 	// Redimensiona o canvas e inicia a animação
 	resizeReset();
 	animationLoop();
 }
-
 // Redimensiona o canvas para o tamanho da janela
 function resizeReset() {
 	w = canvas.width = window.innerWidth;
 	h = canvas.height = window.innerHeight;
-
 	// Inicializa as partículas com base na distância definida
 	particles = [];
 	for (let y = (((h - particleDistance) % particleDistance) + particleDistance) / 2; y < h; y += particleDistance) {
@@ -32,7 +27,6 @@ function resizeReset() {
 		}
 	}
 }
-
 // Função para realizar a animação
 function animationLoop() {
 	// Limpa o canvas e desenha as partículas e as linhas
@@ -40,7 +34,6 @@ function animationLoop() {
 	drawScene();
 	requestAnimationFrame(animationLoop);
 }
-
 // Desenha as partículas e as linhas de conexão
 function drawScene() {
 	for (let i = 0; i < particles.length; i++) {
@@ -49,7 +42,6 @@ function drawScene() {
 	}
 	drawLine();
 }
-
 // Desenha as linhas de conexão entre as partículas
 function drawLine() {
 	for (let a = 0; a < particles.length; a++) {
@@ -79,19 +71,17 @@ function drawLine() {
 		}
 	}
 }
-
 // Função para lidar com o movimento do mouse
 function handleMouseMove(e) {
-	mouse.x = e.x;
-	mouse.y = e.y;
+	const rect = canvas.getBoundingClientRect();//Essa constante é usada para verificar se o mouse esta no canvas ou não
+  mouse.x = e.clientX - rect.left;
+  mouse.y = e.clientY - rect.top;
 }
-
 // Função para lidar com o evento de saída do mouse
 function handleMouseOut() {
 	mouse.x = undefined;
 	mouse.y = undefined;
 }
-
 // Classe para representar uma partícula
 class Particle {
 	constructor(x, y) {
@@ -103,7 +93,6 @@ class Particle {
 		this.color = "rgba(37,41,52,1)";
 		this.speed = (Math.random() * 25) + 5;
 	}
-
 	// Método para desenhar a partícula
 	draw() {
 		ctx.fillStyle = this.color;
@@ -112,13 +101,12 @@ class Particle {
 		ctx.closePath();
 		ctx.fill();
 	}
-
 	// Método para atualizar a posição da partícula com base na posição do mouse
 	update() {
 		let dx = mouse.x - this.x;
 		let dy = mouse.y - this.y;
 		let distance = Math.sqrt(dx * dx + dy * dy);
-		let changeColorDistance = 130;//Distancia da mudança de cor das particulas ao passar o mouse
+		let changeColorDistance = 130;//Distancia da mudança de cor das partículas ao passar o mouse
 
 		// Altera a cor da partícula se estiver perto o suficiente do mouse
 		this.color = distance < changeColorDistance ? mouse.color : "rgba(37,41,52,1)";
@@ -147,7 +135,6 @@ class Particle {
 		}
 	}
 }
-
 // Inicializa o código e adiciona os ouvintes de eventos
 if (window.innerWidth > 3200 ) {
 	console.log("A largura da janela é maior que 3200px. O script foi interrompido para evitar possivel travamento da pagina.");

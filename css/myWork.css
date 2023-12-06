@@ -1,6 +1,5 @@
 #myWork {
     color: #ababab;
-    /* border: 4px solid red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -10,9 +9,7 @@
     text-align: center;
     gap: 30px;
 }
-
 #myWorkTitle {
-    /* border: 3px solid rgb(17, 0, 255); */
     padding-top: 60px;
     font-family: "Chakra Petch", sans-serif;
     font-size: 40px;
@@ -21,9 +18,7 @@
     width: 100%;
     height: 100%;
 }
-
 .containerPrinciples {
-    /* border: 3px solid rgb(255, 0, 212); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,14 +26,12 @@
     width: 100%;
     padding: 100px;
 }
-
 .principles {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-
 .principles img {
     background-color: #2bddfdbd;
     clip-path: polygon(20% 0%,
@@ -52,7 +45,6 @@
     padding: 10px;
     width: 100px;
 }
-
 .principles h1 {
     font-family: "Chakra Petch", sans-serif;
     text-align: center;
@@ -60,18 +52,14 @@
     font-size: 35px;
     color: #d7f9ff;
 }
-
 .principles p {
-    /* border: 3px solid rgb(17, 0, 255); */
     width: 490px;
     text-align: center;
     padding: 30px;
     font-size: 20px;
     color: #d7f9ff;
 }
-
 .containerMyWork {
-    /* border: 4px solid yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -79,44 +67,30 @@
     width: 100%;
     height: 100%;
 }
-
 /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
 .myWorkLeft {
     width: 50%;
-    /* border: 4px solid rgb(0, 255, 34); */
 }
-
 .myWorkLeft img {
-    /* border: 4px solid rgb(11, 109, 24); */
     position: relative;
     width: 60%;
     height: 100%;
     animation: mymove 3s infinite ease;
 }
-
 @keyframes mymove {
-    0% {
-        bottom: -10px;
+    0%,100% {
+        bottom: -20px;
     }
-
     50% {
-        bottom: 20px;
-    }
-
-    100% {
-        bottom: -10px;
+        bottom: 10px;
     }
 }
-
 /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
 .myWorkRight {
-    /* border: 4px solid rebeccapurple; */
     width: 50%;
     height: 100%;
 }
-
 .containerRight {
-    /* border: 5px solid rgb(221, 12, 12); */
     width: 100%;
     height: 100%;
     padding: 0px 60px;
@@ -125,15 +99,11 @@
     flex-direction: column;
     justify-content: center;
 }
-
 .containerLinks {
     display: flex;
-    /* border: 5px solid rgb(255, 0, 0); */
     width: 100%;
 }
-
 .links {
-    /* border: 5px solid rgb(12, 78, 221); */
     font-family: "Chakra Petch", sans-serif;
     text-align: center;
     width: 100%;
@@ -144,13 +114,10 @@
     transition: 0.3s;
     position: relative;
 }
-
 .links:hover {
     color: #2bddfd93;
 }
-
 .links::after {
-    /* border: 5px solid rgb(12, 221, 57); */
     content: "";
     width: 0%;
     height: 3px;
@@ -163,13 +130,10 @@
     flex-direction: column;
     transition: 0.5s;
 }
-
 .links.active-link::after {
     width: 100%;
 }
-
 .contentLinks {
-    /* border: 5px solid rgb(12, 78, 221); */
     width: 100%;
     height: 70%;
     padding: 30px 5px;
@@ -179,13 +143,11 @@
     text-align: start;
     display: none;
 }
-
 .contentLinks ul li span {
     color: #1e9db4;
     font-size: 18px;
     padding: 10px;
 }
-
 .contentLinks ul li {
     text-align: justify;
     list-style: none;
@@ -193,16 +155,13 @@
     width: 100%;
     padding: 10px 0px;
 }
-
 #chanel{
     color: #ff8c2a;
     font-weight: 900;
 }
-
 .active-tab.active-tab {
     display: block;
 }
-
 #upArrow {
     background-color: #ff8c2a;
     padding: 13px;
@@ -222,7 +181,6 @@
     clip-path: polygon(0 0, 50% 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
     transition: clip-path 0.5s;
 }
-
 #upArrow:hover {
     background-color: #fa9945;
     clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 50% 70%, 0 100%);
@@ -232,746 +190,197 @@
 
 @media (min-width: 1367px) and (max-width: 1800px) {
     #myWork {
-        /* border: 4px solid red; */
         padding: 0px;
     }
-    
-    #myWorkTitle {
-        /* border: 3px solid rgb(17, 0, 255); */
-        padding-top: 60px;
-        font-family: "Chakra Petch", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: #d7f9ff;
-        width: 100%;
-        height: 100%;
-    }
-    
     .containerPrinciples {
-        /* border: 3px solid rgb(255, 0, 212); */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        padding: 100px;
         gap: 30px;
     }
-    
     .principles {
-        /* border: 4px solid rgb(0, 255, 0); */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 300px;
         height: 300px;
     }
-    
     .principles img {
-        /* border: 4px solid yellow; */
-        background-color: #2bddfdbd;
-        clip-path: polygon(20% 0%,
-                80% 0%,
-                100% 20%,
-                100% 80%,
-                80% 100%,
-                20% 100%,
-                0% 80%,
-                0% 20%);
-        padding: 10px;
         width: 80px;
     }
-    
-    .principles h1 {
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
-        padding: 10px;
-        font-size: 35px;
-        color: #d7f9ff;
-    }
-    
     .principles p {
-        /* border: 3px solid rgb(17, 0, 255); */
         width: 290px;
-        height: 9   0px;
-        text-align: center;
+        height: 90px;
         padding: 0px;
-        font-size: 20px;
         text-align: center;
         text-wrap: wrap;
     }
-    
     .containerMyWork {
-        /* border: 4px solid yellow; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: start;
-        width: 100%;
         height: 650px;
         padding: 0px 70px;
     }
-    
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
-        width: 50%;
-        /* border: 4px solid rgb(0, 255, 34); */
         height: 400px;
     }
-    
     .myWorkLeft img {
-        /* border: 4px solid rgb(11, 109, 24); */
-        position: relative;
         width: 400px;
-        height: 100%;
-        animation: mymove 3s infinite ease;
     }
-    
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-    
-        50% {
-            bottom: 20px;
-        }
-    
-        100% {
-            bottom: -10px;
-        }
-    }
-    
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-    .myWorkRight {
-        /* border: 4px solid rebeccapurple; */
-        width: 50%;
-        height: 100%;
-    }
-    
     .containerRight {
-        /* border: 5px solid rgb(221, 12, 12); */
-        width: 100%;
-        height: 100%;
         padding: 0px 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
     }
-    
-    .containerLinks {
-        display: flex;
-        /* border: 5px solid rgb(255, 0, 0); */
-        width: 100%;
-    }
-    
     .links {
-        /* border: 5px solid rgb(12, 78, 221); */
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
-        width: 100%;
-        color: #2bdefd;
         font-size: 16px;
-        font-weight: 100;
-        cursor: pointer;
-        transition: 0.3s;
-        position: relative;
     }
-    
-    .links:hover {
-        color: #2bddfd93;
-    }
-    
-    .links::after {
-        /* border: 5px solid rgb(12, 221, 57); */
-        content: "";
-        width: 0%;
-        height: 3px;
-        background: #2bdefd;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        bottom: -10px;
-        display: flex;
-        flex-direction: column;
-        transition: 0.5s;
-    }
-    
-    .links.active-link::after {
-        width: 100%;
-    }
-    
-    .contentLinks {
-        /* border: 5px solid rgb(12, 78, 221); */
-        width: 100%;
-        height: 70%;
-        padding: 30px 5px;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        text-align: start;
-        display: none;
-    }
-    
     .contentLinks ul li span {
-        color: #1e9db4;
         font-size: 20px;
-        padding: 10px;
     }
-    
     .contentLinks ul li {
-        text-align: justify;
-        list-style: none;
         font-size: 20px;
-        width: 100%;
-        padding: 10px 0px;
-    }
-    
-    .active-tab.active-tab {
-        display: block;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1366px) {
     #myWork {
-        /* border: 4px solid red; */
         padding: 0px;
     }
-    
-    #myWorkTitle {
-        /* border: 3px solid rgb(17, 0, 255); */
-        padding-top: 60px;
-        font-family: "Chakra Petch", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: #d7f9ff;
-        width: 100%;
-        height: 100%;
-    }
-    
     .containerPrinciples {
-        /* border: 3px solid rgb(255, 0, 212); */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        padding: 100px;
         gap: 30px;
     }
-    
     .principles {
-        /* border: 4px solid rgb(0, 255, 0); */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
         width: 300px;
         height: 300px;
     }
-    
     .principles img {
-        /* border: 4px solid yellow; */
-        background-color: #2bddfdbd;
-        clip-path: polygon(20% 0%,
-                80% 0%,
-                100% 20%,
-                100% 80%,
-                80% 100%,
-                20% 100%,
-                0% 80%,
-                0% 20%);
-        padding: 10px;
         width: 80px;
     }
-    
-    .principles h1 {
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
-        padding: 10px;
-        font-size: 35px;
-        color: #d7f9ff;
-    }
-    
     .principles p {
-        /* border: 3px solid rgb(17, 0, 255); */
         width: 290px;
-        height: 9   0px;
-        text-align: center;
+        height: 90px;
         padding: 0px;
-        font-size: 20px;
-        text-align: center;
         text-wrap: wrap;
     }
-    
     .containerMyWork {
-        /* border: 4px solid yellow; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: start;
-        width: 100;
         height: 650px;
         padding: 0px 30px;
     }
-    
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
-        width: 50%;
-        /* border: 4px solid rgb(0, 255, 34); */
         height: 400px;
     }
-    
     .myWorkLeft img {
-        /* border: 4px solid rgb(11, 109, 24); */
-        position: relative;
         width: 400px;
-        height: 100%;
-        animation: mymove 3s infinite ease;
     }
-    
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-    
-        50% {
-            bottom: 20px;
-        }
-    
-        100% {
-            bottom: -10px;
-        }
-    }
-    
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-    .myWorkRight {
-        /* border: 4px solid rebeccapurple; */
-        width: 50%;
-        height: 100%;
-    }
-    
     .containerRight {
-        /* border: 5px solid rgb(221, 12, 12); */
-        width: 100%;
-        height: 100%;
         padding: 0px 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
     }
-    
-    .containerLinks {
-        display: flex;
-        /* border: 5px solid rgb(255, 0, 0); */
-        width: 100%;
-    }
-    
     .links {
-        /* border: 5px solid rgb(12, 78, 221); */
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
-        width: 100%;
-        color: #2bdefd;
         font-size: 14px;
-        font-weight: 100;
-        cursor: pointer;
-        transition: 0.3s;
-        position: relative;
-    }
-    
-    .links:hover {
-        color: #2bddfd93;
-    }
-    
-    .links::after {
-        /* border: 5px solid rgb(12, 221, 57); */
-        content: "";
-        width: 0%;
-        height: 3px;
-        background: #2bdefd;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        bottom: -10px;
-        display: flex;
-        flex-direction: column;
-        transition: 0.5s;
-    }
-    
-    .links.active-link::after {
-        width: 100%;
-    }
-    
-    .contentLinks {
-        /* border: 5px solid rgb(12, 78, 221); */
-        width: 100%;
-        height: 70%;
-        padding: 30px 5px;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        text-align: start;
-        display: none;
-    }
-    
-    .contentLinks ul li span {
-        color: #1e9db4;
-        font-size: 18px;
-        padding: 10px;
-    }
-    
-    .contentLinks ul li {
-        text-align: justify;
-        list-style: none;
-        font-size: 18px;
-        width: 100%;
-        padding: 10px 0px;
-    }
-    
-    .active-tab.active-tab {
-        display: block;
     }
 }
 
 @media (min-width: 1001px) and (max-width: 1200px){
     #myWork {
-        /* border: 4px solid red; */
         padding: 0px;
     }
-    
-    #myWorkTitle {
-        /* border: 3px solid rgb(17, 0, 255); */
-        padding-top: 60px;
-        font-family: "Chakra Petch", sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: #d7f9ff;
-        width: 100%;
-        height: 100%;
-    }
-    
     .containerPrinciples {
-        /* border: 3px solid rgb(255, 0, 212); */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        padding: 100px;
         gap: 30px;
     }
-    
     .principles {
-        /* border: 4px solid rgb(0, 255, 0); */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
         width: 300px;
         height: 300px;
     }
-    
     .principles img {
-        /* border: 4px solid yellow; */
-        background-color: #2bddfdbd;
-        clip-path: polygon(20% 0%,
-                80% 0%,
-                100% 20%,
-                100% 80%,
-                80% 100%,
-                20% 100%,
-                0% 80%,
-                0% 20%);
-        padding: 10px;
         width: 80px;
     }
-    
-    .principles h1 {
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
-        padding: 10px;
-        font-size: 35px;
-        color: #d7f9ff;
-    }
-    
     .principles p {
-        /* border: 3px solid rgb(17, 0, 255); */
         width: 290px;
-        height: 9   0px;
-        text-align: center;
+        height: 90px;
         padding: 0px;
-        font-size: 20px;
-        text-align: center;
         text-wrap: wrap;
     }
-    
     .containerMyWork {
-        /* border: 4px solid yellow; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: start;
-        width: 100;
         height: 650px;
     }
-    
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
-        width: 50%;
-        /* border: 4px solid rgb(0, 255, 34); */
         height: 400px;
     }
-    
     .myWorkLeft img {
-        /* border: 4px solid rgb(11, 109, 24); */
-        position: relative;
         width: 400px;
-        height: 100%;
-        animation: mymove 3s infinite ease;
     }
-    
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-    
-        50% {
-            bottom: 20px;
-        }
-    
-        100% {
-            bottom: -10px;
-        }
-    }
-    
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-    .myWorkRight {
-        /* border: 4px solid rebeccapurple; */
-        width: 50%;
-        height: 100%;
-    }
-    
     .containerRight {
-        /* border: 5px solid rgb(221, 12, 12); */
-        width: 100%;
-        height: 100%;
         padding: 0px 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
     }
-    
-    .containerLinks {
-        display: flex;
-        /* border: 5px solid rgb(255, 0, 0); */
-        width: 100%;
-    }
-    
     .links {
-        /* border: 5px solid rgb(12, 78, 221); */
-        font-family: "Chakra Petch", sans-serif;
-        text-align: center;
-        width: 100%;
-        color: #2bdefd;
         font-size: 14px;
-        font-weight: 100;
-        cursor: pointer;
-        transition: 0.3s;
-        position: relative;
-    }
-    
-    .links:hover {
-        color: #2bddfd93;
-    }
-    
-    .links::after {
-        /* border: 5px solid rgb(12, 221, 57); */
-        content: "";
-        width: 0%;
-        height: 3px;
-        background: #2bdefd;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        bottom: -10px;
-        display: flex;
-        flex-direction: column;
-        transition: 0.5s;
-    }
-    
-    .links.active-link::after {
-        width: 100%;
-    }
-    
-    .contentLinks {
-        /* border: 5px solid rgb(12, 78, 221); */
-        width: 100%;
-        height: 70%;
-        padding: 30px 5px;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        text-align: start;
-        display: none;
-    }
-    
-    .contentLinks ul li span {
-        color: #1e9db4;
-        font-size: 18px;
-        padding: 10px;
-    }
-    
-    .contentLinks ul li {
-        text-align: justify;
-        list-style: none;
-        font-size: 18px;
-        width: 100%;
-        padding: 10px 0px;
-    }
-    
-    .active-tab.active-tab {
-        display: block;
     }
 }
+
 @media (min-width: 801px) and (max-width: 1000px){
     #myWork {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px;
-        text-align: center;
         gap: 0px;
         padding: 60px;
     }
-
     #myWorkTitle {
         padding-top: 50px;
         padding-bottom: 50px;
         font-size: 34px;
-        width: 100%;
-        height: 100%;
     }
-
     .containerPrinciples {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
         padding: 30px 80px 30px 80px ;
         gap: 40px;
     }
-
     .principles {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         width: 100%;
         gap: 10px;
     }
-
     .principles img {
-        background-color: #2bddfdbd;
         width: 80px;
     }
-
     .principles h1 {
         padding: 0px;
         font-size: 28px;
     }
-
     .principles p {
         width: 100%;
         padding: 0px;
         font-size: 22px;
     }
-
     .containerMyWork {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
-        width: 100%;
-        height: 100%;
     }
-
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
         width: 100%;
     }
     .myWorkLeft img {
-        position: relative;
         width: 80%;
         height: 80%;
-        animation: mymove 3s infinite ease;
         padding: 100px 0px 10px 0px;
     }
-
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-        50% {
-            bottom: 10px;
-        }
-        100% {
-            bottom: -10px;
-        }
-    }
-
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-
     .myWorkRight {
         width: 100%;
-        height: 100vh;
+        height: 700px;
         padding: 10px 5px 10px 5px;
     }
-
     .containerRight {
         padding: 0px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-
     .links {
-        width: 100%;
         font-size: 23px;
     }
-
     .links::after {
         height: 1px;
     }
-
-    .contentLinks {
-        padding: 30px 5px;
-    }
-
     .contentLinks ul li span {
-        color: #1e9db4;
         font-size:20px;
-        padding: 10px;
-        text-transform: uppercase;
-        font-weight: 600;
     }
-
     .contentLinks ul li {
         font-size: 22px;
-        padding: 10px 0px;
         text-align: center;
     }
-
-    .active-tab.active-tab {
-        display: block;
-    }
-
     #upArrow {
         padding: 7px;
         width: 30px;
@@ -980,141 +389,73 @@
         right: 10px;
     }
 }
+
 @media (min-width: 601px) and (max-width: 800px){
     #myWork {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px;
-        text-align: center;
         gap: 0px;
         padding: 60px;
     }
-
     #myWorkTitle {
         padding-top: 50px;
         padding-bottom: 50px;
         font-size: 30px;
-        width: 100%;
-        height: 100%;
     }
-
     .containerPrinciples {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
         padding: 30px 5px 30px 5px ;
         gap: 40px;
     }
-
     .principles {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         width: 100%;
         gap: 10px;
     }
-
     .principles img {
-        background-color: #2bddfdbd;
         width: 70px;
     }
-
     .principles h1 {
         padding: 0px;
         font-size: 22px;
     }
-
     .principles p {
         width: 100%;
         padding: 0px;
         font-size: 16px;
     }
-
     .containerMyWork {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
-        width: 100%;
-        height: 100%;
     }
-
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
         width: 100%;
     }
     .myWorkLeft img {
-        position: relative;
         width: 80%;
         height: 80%;
-        animation: mymove 3s infinite ease;
         padding: 100px 0px 10px 0px;
     }
-
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-        50% {
-            bottom: 10px;
-        }
-        100% {
-            bottom: -10px;
-        }
-    }
-
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-
     .myWorkRight {
         width: 100%;
-        height: 100vh;
+        height: 600px;
         padding: 10px 5px 10px 5px;
     }
-
     .containerRight {
         padding: 0px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-
     .links {
-        width: 100%;
-        font-size: 13px;
+        font-size: 18px;
     }
-
     .links::after {
         height: 1px;
     }
-
-    .contentLinks {
-        padding: 30px 5px;
-    }
-
     .contentLinks ul li span {
-        color: #1e9db4;
         font-size: 16px;
-        padding: 10px;
-        text-transform: uppercase;
         font-weight: 600;
     }
-
     .contentLinks ul li {
-        font-size: 18px;
-        padding: 10px 0px;
+        font-size: 20px;
         text-align: center;
     }
-
-    .active-tab.active-tab {
-        display: block;
-    }
-
     #upArrow {
         padding: 7px;
         width: 30px;
@@ -1123,140 +464,73 @@
         right: 10px;
     }
 }
+
 @media (min-width: 361px) and (max-width: 600px){
     #myWork {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         padding: 0px;
-        text-align: center;
         gap: 0px;
     }
-
     #myWorkTitle {
         padding-top: 50px;
         padding-bottom: 50px;
         font-size: 30px;
-        width: 100%;
-        height: 100%;
     }
-
     .containerPrinciples {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
         padding: 30px 5px 30px 5px ;
         gap: 40px;
     }
-
     .principles {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         width: 100%;
         gap: 10px;
     }
-
     .principles img {
-        background-color: #2bddfdbd;
         width: 70px;
     }
-
     .principles h1 {
         padding: 0px;
         font-size: 22px;
     }
-
     .principles p {
         width: 100%;
         padding: 0px;
         font-size: 16px;
     }
-
     .containerMyWork {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
-        width: 100%;
-        height: 100%;
     }
-
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
         width: 100%;
+        align-items: center;
     }
     .myWorkLeft img {
-        position: relative;
         width: 80%;
         height: 80%;
-        animation: mymove 3s infinite ease;
-        padding: 100px 0px 10px 0px;
+        padding: 50px 0px 0px 0px;
     }
-
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-        50% {
-            bottom: 10px;
-        }
-        100% {
-            bottom: -10px;
-        }
-    }
-
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-
     .myWorkRight {
         width: 100%;
-        height: 100vh;
+        height: 700px;
         padding: 10px 5px 10px 5px;
     }
-
     .containerRight {
         padding: 0px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-
     .links {
-        width: 100%;
         font-size: 13px;
     }
-
     .links::after {
         height: 1px;
     }
-
-    .contentLinks {
-        padding: 30px 5px;
-    }
-
     .contentLinks ul li span {
-        color: #1e9db4;
         font-size: 16px;
-        padding: 10px;
-        text-transform: uppercase;
         font-weight: 600;
     }
-
     .contentLinks ul li {
-        font-size: 18px;
-        padding: 10px 0px;
         text-align: center;
     }
-
-    .active-tab.active-tab {
-        display: block;
-    }
-
     #upArrow {
         padding: 7px;
         width: 30px;
@@ -1265,142 +539,74 @@
         right: 10px;
     }
 }
-
 
 @media (max-width: 360px) {
     #myWork {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         padding: 0px;
-        text-align: center;
         gap: 0px;
     }
-
     #myWorkTitle {
         padding-top: 50px;
         padding-bottom: 50px;
         font-size: 30px;
-        width: 100%;
-        height: 100%;
     }
-
     .containerPrinciples {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
         padding: 30px 5px 30px 5px ;
         gap: 40px;
     }
-
     .principles {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         width: 100%;
         gap: 10px;
     }
-
     .principles img {
-        background-color: #2bddfdbd;
         width: 70px;
     }
-
     .principles h1 {
         padding: 0px;
         font-size: 22px;
     }
-
     .principles p {
         width: 100%;
         padding: 0px;
         font-size: 16px;
     }
-
     .containerMyWork {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
-        width: 100%;
-        height: 100%;
+        align-items: center;
     }
-
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
         width: 100%;
     }
     .myWorkLeft img {
-        position: relative;
         width: 80%;
         height: 80%;
-        animation: mymove 3s infinite ease;
         padding: 100px 0px 10px 0px;
     }
-
-    @keyframes mymove {
-        0% {
-            bottom: -10px;
-        }
-        50% {
-            bottom: 10px;
-        }
-        100% {
-            bottom: -10px;
-        }
-    }
-
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
-
     .myWorkRight {
         width: 100%;
-        height: 100vh;
+        height: 700px;
         padding: 10px 5px 10px 5px;
     }
-
     .containerRight {
         padding: 0px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-
     .links {
-        width: 100%;
         font-size: 13px;
     }
-
     .links::after {
         height: 1px;
     }
-
-    .contentLinks {
-        padding: 30px 5px;
-    }
-
     .contentLinks ul li span {
-        color: #1e9db4;
         font-size: 16px;
-        padding: 10px;
-        text-transform: uppercase;
         font-weight: 600;
     }
-
     .contentLinks ul li {
         font-size: 18px;
-        padding: 10px 0px;
         text-align: center;
     }
-
-    .active-tab.active-tab {
-        display: block;
-    }
-
     #upArrow {
         padding: 7px;
         width: 30px;

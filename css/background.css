@@ -8,19 +8,16 @@
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
-
 html,
 body {
   scroll-behavior: smooth;
 }
-
 body {
   background: #232323;
   color: #d7f9ff;
   overflow-x: hidden;
   overflow: auto;
 }
-
 [data-animate] {
   opacity: 0;
 }
@@ -45,7 +42,6 @@ body {
   opacity: 1;
   transform: translate3d(0px, 0, 0) scale(1, 1);
 }
-
 @media (min-width: 1367px) and (max-width: 1920px) {
   [data-animate="toRight"] {
     transform: translate3d(-600px, 0, 0)  scale(0.1, 1);
@@ -110,4 +106,3 @@ body {
     transform: translate3d(155px, 0, 0) scale(0.1, 1);
   }
 }
-

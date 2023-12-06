@@ -1,4 +1,11 @@
 {
     "liveServer.settings.port": 5502,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "cSpell.language": "pt-BR,pt",
+    "cSpell.words": [
+        "Paluchowski",
+        "Welligthon",
+        "WHATSAPP",
+        "YODA"
+    ]
 }
