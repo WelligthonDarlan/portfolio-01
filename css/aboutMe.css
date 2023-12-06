@@ -62,7 +62,7 @@
     margin: 0px 10px 0px 10px;
 }
 .iconSocialMedia a img:hover{
-    animation: icon 0.5s forwards ease-out;
+    animation: icon 0.3s forwards ease-out;
 }
 @keyframes icon{
     0%,100%{
