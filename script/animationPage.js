@@ -25,4 +25,4 @@ function animateScroll() {
 animateScroll()
 window.addEventListener('scroll', debounce(function() {
 	animateScroll()
-}, 200))
+}, 100))

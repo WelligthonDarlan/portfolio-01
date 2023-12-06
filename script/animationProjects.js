@@ -49,10 +49,6 @@ openCarouselBtn.forEach((btn, index) => {
 		body.classList.toggle('overflowOff')
 		if (window.innerWidth > 480) {
 			navbarDesktop.classList.add('slideOn')
-			// navbarDesktop.style.opacity = "0"
-			// btnNavbar.forEach((link) => {
-			// 	link.style.display = 'none'
-			// })
 		} else if (window.innerWidth <= 480) {
 			menuBtn.style.opacity = "0"
 			menuBtn.style.top = "-200px"
@@ -74,10 +70,6 @@ document.querySelectorAll(".carouselBtnClose").forEach((out) => {
 				body.classList.remove('overflowOff')
 				if (window.innerWidth > 480) {
 					navbarDesktop.classList.remove('slideOn')
-					// navbarDesktop.style.opacity = '1'
-					// btnNavbar.forEach((link) => {
-					// 	link.style.display = 'inline'
-					// })
 				} else if (window.innerWidth <= 480) {
 					menuBtn.style.opacity = "1"
 					menuBtn.style.top = "20px"
@@ -100,10 +92,6 @@ carouselContainer.forEach((out) => {
 				body.classList.remove('overflowOff')
 				if (window.innerWidth > 480) {
 					navbarDesktop.classList.remove('slideOn')
-					// navbarDesktop.style.opacity = '1'
-					// btnNavbar.forEach((link) => {
-					// 	link.style.display = 'inline'
-					// })
 				} else if (window.innerWidth <= 480) {
 					menuBtn.style.opacity = "1"
 					menuBtn.style.top = "20px"

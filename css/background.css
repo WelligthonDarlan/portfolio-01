@@ -28,15 +28,15 @@ body {
 }
 [data-animate="toRight"] {
   transform: translate3d(-600px, 0, 0)  scale(0.1, 1);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 [data-animate="toLeft"] {
   transform: translate3d(600px, 0, 0) scale(0.1, 1);
-  transition: 1.2s;
+  transition: 0.9s;
 }
 [data-animate="toUp"] {
   transform: translate3d(0px, 0, 0) scale(1, 1);
-  transition: 1.2s;
+  transition: 0.9s;
 }
 [data-animate].on{
   opacity: 1;

@@ -179,9 +179,6 @@
   height: 300px;
   cursor: pointer;
 }
-.carouselBtnNext img{
-  /* height: 100%; */
-}
 .carouselBtnNext:hover{
   opacity: 1;
 }
@@ -195,9 +192,6 @@
   opacity: 0.5;
   height: 300px;
   cursor: pointer;
-}
-.carouselBtnPrev img{
-  /* height: 100%; */
 }
 .carouselBtnPrev:hover{
 opacity: 1;
@@ -334,7 +328,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    /* height: 70px; */
     right: 0px;
   }
   .containerImage {
@@ -349,7 +342,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    /* height: 70px; */
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -415,7 +407,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    height: 70px;
     right: 0px;
   }
   .containerImage {
@@ -430,7 +421,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    height: 70px;
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -496,7 +486,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    height: 70px;
     right: 0px;
   }
   .containerImage {
@@ -511,7 +500,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    height: 70px;
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -577,7 +565,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    height: 70px;
     right: 0px;
   }
   .containerImage {
@@ -592,7 +579,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    height: 70px;
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -658,7 +644,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    height: 70px;
     right: 0px;
   }
   .containerImage {
@@ -673,7 +658,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    height: 70px;
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -736,7 +720,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    height: 70px;
     right: 0px;
   }
   .containerImage {
@@ -750,7 +733,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    height: 70px;
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -813,7 +795,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none;
     width: 70px;
-    height: 70px;
     right: 0px;
   }
   .containerImage {
@@ -827,7 +808,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 70px;
-    height: 70px;
     left: 0px;
   }
   .carouselBtnPrev img{
@@ -901,7 +881,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -911,7 +890,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
@@ -978,7 +956,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -988,7 +965,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
@@ -1055,7 +1031,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -1065,7 +1040,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
@@ -1132,7 +1106,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -1142,7 +1115,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
@@ -1208,7 +1180,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -1218,7 +1189,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
@@ -1284,7 +1254,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -1294,7 +1263,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
@@ -1360,7 +1328,6 @@ opacity: 1;
   .carouselBtnNext {
     border: none; 
     width: 60px;
-    height: 60px;
   }
   .carouselBtnNext img{
     border: none;
@@ -1370,7 +1337,6 @@ opacity: 1;
   .carouselBtnPrev {
     border: none;
     width: 60px;
-    height: 60px;
   }
   .carouselBtnPrev img{
     border: none;
