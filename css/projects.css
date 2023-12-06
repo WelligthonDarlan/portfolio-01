@@ -133,31 +133,31 @@
   padding: 80px 400px 80px 400px;
 }
 .carouselContent {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 .carouselSlides {
-  border: 4px solid rgb(255, 217, 0);
+  /* border: 4px solid rgb(255, 217, 0); */
   width: 100%;
   height: 100%;
   gap: 0;
   padding: 0;
 }
 .containerImage {
-  border: 2px solid rgb(0, 13, 255);
+  /* border: 2px solid rgb(0, 13, 255); */
   height: 60%;
   background-color: #ffffffdd;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0;
-  padding: 0;
+  padding-top: 20px;
 }
 .carouselSlide {
-  border: 2px solid rgb(0, 255, 42);
+  /* border: 2px solid rgb(0, 255, 42); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,31 +169,41 @@
   height: 100%;
 }
 .carouselBtnNext {
-  /* border: none; */
-  border: 2px solid rgb(0, 255, 42);
+  background-image: linear-gradient(to bottom, transparent, transparent, #f5f5f555, transparent, transparent);
+  background-color: transparent;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  border: none;
   position: absolute;
   right: 0;
-  background-color: transparent;
-  cursor: pointer;
   opacity: 0.5;
+  height: 300px;
+  cursor: pointer;
+}
+.carouselBtnNext img{
+  /* height: 100%; */
 }
 .carouselBtnNext:hover{
   opacity: 1;
 }
 .carouselBtnPrev {
-  /* border: none; */
-  border: 2px solid rgb(0, 255, 42);
+  background-image: linear-gradient(to bottom, transparent, transparent, #f5f5f555, transparent, transparent);
+  background-color: transparent;
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  border: none;
   position: absolute;
   left: 0;
-  background-color: transparent;
+  opacity: 0.5;
+  height: 300px;
   cursor: pointer;
-    opacity: 0.5;
+}
+.carouselBtnPrev img{
+  /* height: 100%; */
 }
 .carouselBtnPrev:hover{
 opacity: 1;
 }
 .informCard {
-  border: 2px solid rgb(0, 0, 255);
+  /* border: 2px solid rgb(0, 0, 255); */
   background-color: #ffffffdd;
   padding: 10px;
   display: flex;
@@ -206,7 +216,7 @@ opacity: 1;
   height: 40%;
 }
 .informCard h1 {
-  border: 2px solid rgb(255, 0, 238);
+  /* border: 2px solid rgb(255, 0, 238); */
   font-family: "Chakra Petch", sans-serif;
   color: #444649;
   font-size: 30px;
@@ -219,7 +229,7 @@ opacity: 1;
   height: 25%;
 }
 .informCard p {
-  border: 2px solid rgb(255, 0, 238);
+  /* border: 2px solid rgb(255, 0, 238); */
   color: #444649;
   /* font-size: 24px; */
   font-size: 100%;
@@ -233,7 +243,7 @@ opacity: 1;
   height: 40%;
 }
 .slideLinks {
-  border: 2px solid rgb(255, 0, 238);
+  /* border: 2px solid rgb(255, 0, 238); */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,7 +276,7 @@ opacity: 1;
 
 
 .containerBtnClose{
-  border: 2px solid rgb(255, 0, 238);
+  /* border: 2px solid rgb(255, 0, 238); */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -301,30 +311,1096 @@ opacity: 1;
 @media (min-width: 1920px) and (max-width: 2159px) {
 }
 @media (min-width: 1600px) and (max-width: 1919px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  #containerProjects {
+    padding: 0px 180px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 380px 80px 380px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    /* height: 70px; */
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+    height: 60%;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    /* height: 70px; */
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 90%;
+    height: 40%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    padding: 0px 15px 10px 0px;
+    height: 20%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 1536px) and (max-width: 1599px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  #containerProjects {
+    padding: 0px 160px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 250px 80px 250px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+    height: 60%;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 90%;
+    height: 40%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    padding: 0px 15px 10px 0px;
+    height: 20%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 1440px) and (max-width: 1535px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  #containerProjects {
+    padding: 0px 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 250px 80px 250px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+    height: 60%;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 90%;
+    height: 40%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    padding: 0px 15px 10px 0px;
+    height: 20%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 1366px) and (max-width: 1439px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  #containerProjects {
+    padding: 0px 100px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 250px 80px 250px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+    height: 60%;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 90%;
+    height: 40%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    padding: 0px 15px 10px 0px;
+    height: 20%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 1280px) and (max-width: 1365px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  #containerProjects {
+    padding: 100px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 250px 80px 250px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+    height: 60%;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 90%;
+    height: 40%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    padding: 0px 15px 10px 0px;
+    height: 20%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 1080px) and (max-width: 1279px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 150px 80px 150px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 80%;
+    height: 40%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    padding: 0px 15px 10px 0px;
+    height: 20%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 720px) and (max-width: 1079px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+    padding: 0px 0px 200px 0px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 80px 80px 80px 80px;
+  }
+  .carouselBtnNext {
+    border: none;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+  }
+  .containerImage {
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 70px;
+    height: 70px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+    gap: 10px;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 18px;
+    padding: 25px;
+    width: 95%;
+    height: 50%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+    height: 30px;
+  }
+  .containerBtnClose{
+    height: 10%;
+  }
+  .containerBtnClose img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 640px) and (max-width: 719px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+    padding: 80px 10px 80px 10px;
+  }
+  .containerImage {
+    height: 60%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 40%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }
 @media (min-width: 480px) and (max-width: 639px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+    padding: 80px 10px 80px 10px;
+  }
+  .containerImage {
+    height: 40%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 60%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }
 @media (min-width: 426px) and (max-width: 479px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+    padding: 80px 10px 80px 10px;
+  }
+  .containerImage {
+    height: 40%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 60%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }
 @media (min-width: 414px) and (max-width: 425px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+    padding: 80px 10px 80px 10px;
+  }
+  .containerImage {
+    height: 40%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 60%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }
 @media (min-width: 375px) and (max-width: 413px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+  }
+  .containerImage {
+    height: 40%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 60%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }
 @media (min-width: 360px) and (max-width: 374px) {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+  }
+  .containerImage {
+    height: 30%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 70%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }
 @media (max-width: 359px)  {
+  #projects {
+    padding: 0px ;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  #containerProjects {
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+  .card {
+    width: 320px;
+    height: 320px;
+    box-shadow: -2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .contentCard {
+    width: 320px;
+    height: 320px;
+  }
+  /* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+  .carouselContainer {
+    padding: 0px;
+  }
+  .carouselSlides {
+    height: 100vh;
+  }
+  .containerImage {
+    height: 30%;
+    background-color: #ffffffff;
+  }
+  .carouselBtnNext {
+    border: none; 
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnNext img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .carouselBtnPrev img{
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+  .informCard {
+    height: 70%;
+    background-color: #ffffffff;
+  }
+  .informCard h1 {
+    font-size: 25px;
+    width: 90%;
+    height: 20%;
+  }
+  .informCard p {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 45%;
+  }
+  .slideLinks {
+    justify-content: space-around;
+    padding: 0px;
+    height: 20%;
+  }
+  .slideLinks a {
+    width: 150px;
+  }
+  .containerBtnClose{
+    height: 15%;
+  }
 }

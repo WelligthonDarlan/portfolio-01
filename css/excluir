@@ -1,0 +1,285 @@
+#projects {
+  background-color: #f5f5f5;
+  color: #444649;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0px 200px 200px 200px;
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 50% 100%, 0 97%);
+}
+#projectsTitle {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #444649;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px 100px 0px;
+}
+#containerProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.opacityOn{
+  opacity: 1;
+}
+.opacityOff{
+  opacity: 0;
+}
+.contentCard{
+  width: 400px;
+  height: 400px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+.contentCard:hover {
+  opacity: 1;
+}
+.card h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 25px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateY(-100px);
+  color: #1b242f;
+  opacity: 0;
+}
+.contentCard:hover h1 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card p {
+  font-size: 14px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateY(-100px);
+  color: #1b242f;
+  opacity: 0;
+}
+.contentCard:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.btnCard {
+  transform: translateY(100px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  border: 3px solid #2bdefd;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+}
+.btnCard:hover {
+  background-color: #2bdefd;
+  color: #fff;
+}
+.contentCard:hover .btnCard {
+  transform: translateY(0);
+  opacity: 1;
+}
+@keyframes fade {
+  0% {
+    transform: translate(0px, 300px) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0px, 600px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 1 !important;
+  }
+}
+/* ------------------CAROCEL--⏬⏬⏬⏬⏬⏬------------ */
+.carouselContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  padding: 80px 400px 80px 400px;
+}
+.carouselContent {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.carouselSlides {
+  /* border: 4px solid rgb(255, 217, 0); */
+  width: 100%;
+  height: 100%;
+  gap: 0;
+  padding: 0;
+}
+.containerImage {
+  /* border: 2px solid rgb(0, 13, 255); */
+  height: 60%;
+  background-color: #ffffffdd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding-top: 20px;
+}
+.carouselSlide {
+  /* border: 2px solid rgb(0, 255, 42); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+.carouselBtnNext {
+  border: none;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.carouselBtnNext:hover{
+  opacity: 1;
+}
+.carouselBtnPrev {
+  border: none;
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  cursor: pointer;
+    opacity: 0.5;
+}
+.carouselBtnPrev:hover{
+opacity: 1;
+}
+.informCard {
+  /* border: 2px solid rgb(0, 0, 255); */
+  background-color: #ffffffdd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 2px;
+  opacity:1;
+  width: 100%;
+  height: 40%;
+}
+.informCard h1 {
+  /* border: 2px solid rgb(255, 0, 238); */
+  font-family: "Chakra Petch", sans-serif;
+  color: #444649;
+  font-size: 30px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0px);
+  width: 100%;
+  height: 25%;
+}
+.informCard p {
+  /* border: 2px solid rgb(255, 0, 238); */
+  color: #444649;
+  /* font-size: 24px; */
+  font-size: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  opacity: 1;
+  transform: translateY(0px);
+  width: 90%;
+  height: 40%;
+}
+.slideLinks {
+  /* border: 2px solid rgb(255, 0, 238); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+  height: 20%;
+}
+.slideLinks a {
+  border: 3px solid #594dff;
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #594dff;
+  color: #fff;
+}
+.slideLinks a:hover {
+  border: 0;
+  background-color: transparent;
+  color: #594dff;
+  font-weight: 900;
+  border: 1px solid #594dff;
+}
+
+
+.containerBtnClose{
+  /* border: 2px solid rgb(255, 0, 238); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  padding: 15px;
+  width: 100%;
+  height: 15%;
+
+}
+.carouselBtnClose{
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.carouselBtnClose:hover{
+  opacity: 1;
+}
