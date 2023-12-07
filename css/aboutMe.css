@@ -46,7 +46,6 @@
     opacity: 1;
     animation: blink 0.7s infinite;
 }
-
 @keyframes blink {
     0%,
     100% {
@@ -56,7 +55,6 @@
         opacity: 0;
     }
 }
-
 .iconSocialMedia a img {
     width: 40px;
     margin: 0px 10px 0px 10px;

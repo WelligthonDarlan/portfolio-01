@@ -20,7 +20,6 @@
 .copyrightWppContainer{
   bottom: 170px !important;
 }
-
 #containerYodaSMS {
   display: flex;
   flex-direction: row;
@@ -67,7 +66,6 @@
     text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.363);
   color: #000;
   opacity: 1;
-
 }
 @keyframes myMovieYoda {
   0% {
@@ -93,87 +91,42 @@
 }
 
 /* ---------------------MEDIA QUERY--⏬⏬⏬⏬⏬⏬------------------- */
+
 @media (min-width: 361px) and (max-width: 600px) {
   .iconWpp {
     width: 60px;
-    font-size: 40px;
     left: 2px;
   }
   #containerYodaSMS {
     width: 140px;
-    height: 50px;
-    position: fixed;
     bottom: 60px;
     left: 5px;
     z-index: 2000;
-    text-align: center;
   }
   #yodaSMS {
     font-size: 10px;
     padding: 9px 2px 0px 14px;
-    color: #000;
   }
   #closeYodaSMS {
-    cursor: pointer;
     font-size: 15px;
-    font-weight: 800;
-    color: #000;
-    padding: 3px 9px 10px 0px;
-  }
-  @keyframes myMovieYoda {
-    0% {
-      bottom: 4px;
-      filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
-    50% {
-      bottom: 0px;
-      filter: drop-shadow(-1px 1px 10px #2bfd945b);
-    }
-    100% {
-      bottom: 4px;
-      filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
   }
 }
 @media (max-width: 360px) {
   .iconWpp {
     width: 60px;
-    font-size: 40px;
     left: 2px;
   }
   #containerYodaSMS {
     width: 140px;
-    height: 50px;
-    position: fixed;
     bottom: 60px;
     left: 5px;
     z-index: 2000;
-    text-align: center;
   }
   #yodaSMS {
     font-size: 10px;
     padding: 9px 2px 0px 14px;
-    color: #000;
   }
   #closeYodaSMS {
-    cursor: pointer;
     font-size: 15px;
-    font-weight: 800;
-    color: #000;
-    padding: 3px 9px 10px 0px;
-  }
-  @keyframes myMovieYoda {
-    0% {
-      bottom: 4px;
-      filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
-    50% {
-      bottom: 0px;
-      filter: drop-shadow(-1px 1px 10px #2bfd945b);
-    }
-    100% {
-      bottom: 4px;
-      filter: drop-shadow(-1px 1px 30px #2bfd945b);
-    }
   }
 }

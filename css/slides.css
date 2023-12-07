@@ -16,16 +16,6 @@
 #card6 {
   background: url(../images/slides/proj-card-6.png) no-repeat center center/cover;
 }
-/* #card7 {
-  background-color: crimson;
-}
-#card8 {
-  background-color: cornflowerblue;
-}
-#card9 {
-  background-color: darkgoldenrod;
-} */
-
 #slide1-1 {
   background-image: url(../images/slides/slide1-1.png);
   animation: slide 0.3s forwards;
@@ -38,7 +28,6 @@
   background-image: url(../images/slides/slide1-3.png);
   animation: slide 0.3s forwards;
 }
-
 #slide2-1 {
   background-image: url(../images/slides/slide2-1.png);
   animation: slide 0.3s forwards;
@@ -51,7 +40,6 @@
   background-image: url(../images/slides/slide2-3.png);
   animation: slide 0.3s forwards;
 }
-
 #slide3-1 {
   background-image: url(../images/slides/slide3-1.png);
   animation: slide 0.3s forwards;
@@ -64,7 +52,6 @@
   background-image: url(../images/slides/slide3-3.png);
   animation: slide 0.3s forwards;
 }
-
 #slide4-1 {
   background-image: url(../images/slides/slide4-1.png);
   animation: slide 0.3s forwards;
@@ -77,7 +64,6 @@
   background-image: url(../images/slides/slide4-3.png);
   animation: slide 0.3s forwards;
 }
-
 #slide5-1 {
   background-image: url(../images/slides/slide5-1.png);
   animation: slide 0.3s forwards;
@@ -90,7 +76,6 @@
   background-image: url(../images/slides/slide5-3.png);
   animation: slide 0.3s forwards;
 }
-
 #slide6-1 {
   background-image: url(../images/slides/slide6-1.png);
   animation: slide 0.3s forwards;
