@@ -53,6 +53,7 @@
     color: #d7f9ff;
 }
 .principles p {
+    font-family: 'Raleway', sans-serif;
     width: 490px;
     text-align: center;
     padding: 30px;
@@ -147,11 +148,13 @@
     color: #1e9db4;
     font-size: 18px;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 .contentLinks ul li {
+    font-family: 'Raleway', sans-serif;
     text-align: justify;
     list-style: none;
-    font-size: 18px;
+    font-size: 19px;
     width: 100%;
     padding: 10px 0px;
 }
