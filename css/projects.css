@@ -138,6 +138,15 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  animation: carouselOpen 0.5s forwards;
+}
+@keyframes carouselOpen {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 .carouselSlides {
   /* border: 4px solid rgb(255, 217, 0); */
@@ -222,7 +231,14 @@ opacity: 1;
   width: 100%;
   height: 25%;
 }
+.separete{
+  width: 100%;
+  height: 3px;
+  background-color: #444649;
+}
 .informCard p {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 600;
   /* border: 2px solid rgb(255, 0, 238); */
   color: #444649;
   /* font-size: 24px; */
@@ -267,20 +283,10 @@ opacity: 1;
   font-weight: 900;
   border: 1px solid #594dff;
 }
-
-
-.containerBtnClose{
-  /* border: 2px solid rgb(255, 0, 238); */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  padding: 15px;
-  width: 100%;
-  height: 15%;
-
-}
 .carouselBtnClose{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
   width: 30px;
   height: 30px;
   opacity: 0.5;
@@ -374,14 +380,14 @@ opacity: 1;
     width: 150px;
     height: 30px;
   }
-  .containerBtnClose{
+  /* .containerBtnClose{
     padding: 0px 15px 10px 0px;
     height: 20%;
   }
   .containerBtnClose img {
     width: 20px;
     height: 20px;
-  }
+  } */
 }
 @media (min-width: 1536px) and (max-width: 1599px) {
   #projects {
@@ -872,7 +878,6 @@ opacity: 1;
   }
   .carouselSlides {
     height: 100vh;
-    padding: 80px 10px 80px 10px;
   }
   .containerImage {
     height: 60%;
@@ -947,7 +952,6 @@ opacity: 1;
   }
   .carouselSlides {
     height: 100vh;
-    padding: 80px 10px 80px 10px;
   }
   .containerImage {
     height: 40%;
@@ -1022,7 +1026,6 @@ opacity: 1;
   }
   .carouselSlides {
     height: 100vh;
-    padding: 80px 10px 80px 10px;
   }
   .containerImage {
     height: 40%;
@@ -1097,7 +1100,6 @@ opacity: 1;
   }
   .carouselSlides {
     height: 100vh;
-    padding: 80px 10px 80px 10px;
   }
   .containerImage {
     height: 40%;
@@ -1144,9 +1146,9 @@ opacity: 1;
   .slideLinks a {
     width: 150px;
   }
-  .containerBtnClose{
+  /* .containerBtnClose{
     height: 15%;
-  }
+  } */
 }
 @media (min-width: 375px) and (max-width: 413px) {
   #projects {

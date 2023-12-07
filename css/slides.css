@@ -28,60 +28,89 @@
 
 #slide1-1 {
   background-image: url(../images/slides/slide1-1.png);
+  animation: slide 0.3s forwards;
 }
 #slide1-2 {
   background-image: url(../images/slides/slide1-2.png);
+  animation: slide 0.3s forwards;
 }
 #slide1-3 {
   background-image: url(../images/slides/slide1-3.png);
+  animation: slide 0.3s forwards;
 }
 
 #slide2-1 {
   background-image: url(../images/slides/slide2-1.png);
+  animation: slide 0.3s forwards;
 }
 #slide2-2 {
   background-image: url(../images/slides/slide2-2.png);
+  animation: slide 0.3s forwards;
 }
 #slide2-3 {
   background-image: url(../images/slides/slide2-3.png);
+  animation: slide 0.3s forwards;
 }
 
 #slide3-1 {
   background-image: url(../images/slides/slide3-1.png);
+  animation: slide 0.3s forwards;
 }
 #slide3-2 {
   background-image: url(../images/slides/slide3-2.png);
+  animation: slide 0.3s forwards;
 }
 #slide3-3 {
   background-image: url(../images/slides/slide3-3.png);
+  animation: slide 0.3s forwards;
 }
 
 #slide4-1 {
   background-image: url(../images/slides/slide4-1.png);
+  animation: slide 0.3s forwards;
 }
 #slide4-2 {
   background-image: url(../images/slides/slide4-2.png);
+  animation: slide 0.3s forwards;
 }
 #slide4-3 {
   background-image: url(../images/slides/slide4-3.png);
+  animation: slide 0.3s forwards;
 }
 
 #slide5-1 {
   background-image: url(../images/slides/slide5-1.png);
+  animation: slide 0.3s forwards;
 }
 #slide5-2 {
   background-image: url(../images/slides/slide5-2.png);
+  animation: slide 0.3s forwards;
 }
 #slide5-3 {
   background-image: url(../images/slides/slide5-3.png);
+  animation: slide 0.3s forwards;
 }
 
 #slide6-1 {
   background-image: url(../images/slides/slide6-1.png);
+  animation: slide 0.3s forwards;
 }
 #slide6-2 {
   background-image: url(../images/slides/slide6-2.png);
+  animation: slide 0.3s forwards;
 }
 #slide6-3 {
   background-image: url(../images/slides/slide6-3.png);
+  animation: slide 0.3s forwards;
+}
+@keyframes slide {
+  0%{
+    transform: scale(0.5);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
 }

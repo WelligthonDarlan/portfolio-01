@@ -6,19 +6,15 @@
   font-size: 40px;
   cursor: pointer;
   z-index: 4999;
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   animation: myMovieYoda 2s infinite ease-out;
   opacity: 0.7;
+  transition: 0.3s;
 }
 .iconWpp:hover {
   opacity: 1;
+  scale: 1.1;
 }
 .copyrightWppImg{
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   animation: myMovieYodaCP 2s infinite ease-out;
 }
 .copyrightWppContainer{
@@ -48,9 +44,11 @@
     0% 75%
   );
   opacity: 0.7;
+  transition: 0.3s;
 }
 #containerYodaSMS:hover {
   opacity: 1;
+  scale: 1.1;
 }
 #yodaSMS {
   font-size: 15px;
