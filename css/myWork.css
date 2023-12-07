@@ -8,6 +8,7 @@
     padding: 200px;
     text-align: center;
     gap: 30px;
+    
 }
 #myWorkTitle {
     padding-top: 60px;
@@ -145,6 +146,7 @@
     display: none;
 }
 .contentLinks ul li span {
+    text-transform: uppercase;
     color: #1e9db4;
     font-size: 18px;
     padding: 10px;
@@ -213,7 +215,7 @@
         text-wrap: wrap;
     }
     .containerMyWork {
-        height: 650px;
+        height: 900px;
         padding: 0px 70px;
     }
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
@@ -260,7 +262,7 @@
         text-wrap: wrap;
     }
     .containerMyWork {
-        height: 650px;
+        height: 900px;
         padding: 0px 30px;
     }
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
@@ -301,7 +303,7 @@
         text-wrap: wrap;
     }
     .containerMyWork {
-        height: 650px;
+        height: 800px;
     }
     /* --------------COLUNA--1--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkLeft {
@@ -365,7 +367,7 @@
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkRight {
         width: 100%;
-        height: 700px;
+        height: 800px;
         padding: 10px 5px 10px 5px;
     }
     .containerRight {
@@ -439,7 +441,7 @@
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkRight {
         width: 100%;
-        height: 600px;
+        height: 800px;
         padding: 10px 5px 10px 5px;
     }
     .containerRight {
@@ -515,7 +517,7 @@
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkRight {
         width: 100%;
-        height: 700px;
+        height: 950px;
         padding: 10px 5px 10px 5px;
     }
     .containerRight {
@@ -590,7 +592,7 @@
     /* --------------COLUNA--2--⏬⏬⏬⏬⏬⏬------------------ */
     .myWorkRight {
         width: 100%;
-        height: 700px;
+        height: 900px;
         padding: 10px 5px 10px 5px;
     }
     .containerRight {

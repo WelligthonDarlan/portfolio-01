@@ -137,7 +137,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  animation: carouselOpen 0.5s forwards;
+  animation: carouselOpen 0.2s forwards;
 }
 @keyframes carouselOpen {
   0%{
